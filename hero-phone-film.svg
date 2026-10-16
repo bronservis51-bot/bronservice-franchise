@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1800" role="img" aria-labelledby="t d">
+  <title id="t">Дизайн-плёнка Бронь Сервис</title>
+  <desc id="d">Тёмная декоративная плёнка с синими световыми дугами и русскими подписями.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1425"/>
+      <stop offset="38%" stop-color="#182c59"/>
+      <stop offset="70%" stop-color="#09111f"/>
+      <stop offset="100%" stop-color="#040609"/>
+    </linearGradient>
+    <radialGradient id="glow1" cx="28%" cy="18%" r="70%">
+      <stop offset="0%" stop-color="#8ca8ff" stop-opacity="0.58"/>
+      <stop offset="42%" stop-color="#4468d0" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#4468d0" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="80%" cy="28%" r="55%">
+      <stop offset="0%" stop-color="#d5ddff" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#5176de" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#5176de" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.96"/>
+      <stop offset="45%" stop-color="#d5dbf4" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#86a0ec" stop-opacity="0.18"/>
+    </linearGradient>
+    <filter id="softBlur"><feGaussianBlur stdDeviation="26"/></filter>
+    <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.35"/></filter>
+  </defs>
+
+  <rect width="900" height="1800" fill="url(#bg)"/>
+  <rect width="900" height="1800" fill="url(#glow1)"/>
+  <rect width="900" height="1800" fill="url(#glow2)"/>
+
+  <g opacity="0.23">
+    <path d="M90 250C255 110 470 72 710 160" fill="none" stroke="#6f8ef2" stroke-width="3"/>
+    <path d="M45 380C230 210 485 155 800 250" fill="none" stroke="#7ea2ff" stroke-width="2"/>
+    <path d="M100 1470C300 1350 550 1328 815 1405" fill="none" stroke="#7ea2ff" stroke-width="2"/>
+  </g>
+
+  <g opacity="0.08">
+    <path d="M0 290H900M0 460H900M0 630H900M0 800H900M0 970H900M0 1140H900M0 1310H900M0 1480H900" stroke="#ffffff"/>
+    <path d="M120 0V1800M290 0V1800M460 0V1800M630 0V1800M800 0V1800" stroke="#ffffff"/>
+  </g>
+
+  <circle cx="695" cy="305" r="160" fill="#d7dfff" fill-opacity="0.13" filter="url(#softBlur)"/>
+  <circle cx="236" cy="310" r="118" fill="#6f8ef2" fill-opacity="0.18" filter="url(#softBlur)"/>
+
+  <g filter="url(#shadow)">
+    <path d="M95 1060C190 936 286 872 417 821c133-52 286-57 412-20" fill="none" stroke="url(#silver)" stroke-width="24" stroke-linecap="round"/>
+    <path d="M88 1152c130-55 247-70 376-54 122 15 224 55 343 119" fill="none" stroke="#7ea2ff" stroke-opacity="0.82" stroke-width="14" stroke-linecap="round"/>
+    <path d="M150 720c114-43 223-47 342-7 87 29 155 76 240 154" fill="none" stroke="#ffffff" stroke-opacity="0.65" stroke-width="10" stroke-linecap="round"/>
+  </g>
+
+  <g opacity="0.88">
+    <circle cx="190" cy="650" r="44" fill="#ffffff" fill-opacity="0.08" stroke="#ffffff" stroke-opacity="0.3" stroke-width="2"/>
+    <circle cx="190" cy="650" r="18" fill="#9cb3ff" fill-opacity="0.68"/>
+    <circle cx="726" cy="970" r="57" fill="#ffffff" fill-opacity="0.06" stroke="#ffffff" stroke-opacity="0.22" stroke-width="2"/>
+    <circle cx="726" cy="970" r="23" fill="#dfe6ff" fill-opacity="0.78"/>
+  </g>
+
+  <g opacity="0.23">
+    <path d="M134 1285L334 1088" stroke="#ffffff" stroke-width="2"/>
+    <path d="M206 1330L406 1133" stroke="#7ea2ff" stroke-width="2"/>
+    <path d="M540 780L720 596" stroke="#ffffff" stroke-width="2"/>
+    <path d="M604 822L782 638" stroke="#7ea2ff" stroke-width="2"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#ffffff">
+    <text x="90" y="138" font-size="35" font-weight="700" letter-spacing="8">БРОНЬ СЕРВИС</text>
+    <text x="90" y="188" font-size="20" letter-spacing="5" opacity="0.72">ИНДИВИДУАЛЬНЫЙ ДИЗАЙН</text>
+
+    <rect x="88" y="1434" rx="20" ry="20" width="295" height="62" fill="#ffffff" fill-opacity="0.1" stroke="#ffffff" stroke-opacity="0.2"/>
+    <text x="120" y="1476" font-size="28" font-weight="700" letter-spacing="2">ДИЗАЙН-ПЛЁНКА</text>
+
+    <text x="90" y="1608" font-size="82" font-weight="700" letter-spacing="-1">360°</text>
+    <text x="92" y="1670" font-size="26" font-weight="700" letter-spacing="5" opacity="0.8">ЗАЩИТА И СТИЛЬ</text>
+
+    <text x="670" y="1648" text-anchor="end" font-size="22" letter-spacing="4" opacity="0.6">ДЛЯ СМАРТФОНОВ</text>
+  </g>
+</svg>

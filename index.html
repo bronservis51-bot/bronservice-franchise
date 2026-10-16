@@ -122,8 +122,8 @@
         <div class="options" role="tablist" aria-label="Типы покрытия">
           <button class="option" type="button" role="tab" aria-selected="true" data-kind="screen">Экран</button>
           <button class="option" type="button" role="tab" aria-selected="false" data-kind="body">Корпус 360°</button>
-          <button class="option" type="button" role="tab" aria-selected="false" data-kind="design">Дизайн</button>
-          <button class="option" type="button" role="tab" aria-selected="false" data-kind="camera">Линзы камер</button>
+          <button class="option" type="button" role="tab" aria-selected="false" data-kind="devices">Разные устройства</button>
+          <button class="option" type="button" role="tab" aria-selected="false" data-kind="camera">Камера</button>
         </div>
         <div class="option-details" aria-live="polite"><b id="optionTitle">Защищаем экран</b><p id="optionDesc">Глянцевые и матовые покрытия помогают защитить экран от повседневных царапин.</p></div>
       </div>
@@ -176,16 +176,16 @@
     nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.textContent='☰';menu.setAttribute('aria-expanded','false')}));
     const options={
       screen:['Защищаем экран','Глянцевые и матовые покрытия помогают защитить экран от повседневных царапин.'],
-      body:['Защита корпуса 360°','Плёнка для корпуса и доступных поверхностей устройства — без громоздкого чехла.'],
-      design:['Индивидуальный стиль','Различные декоративные покрытия и индивидуальные дизайны для гаджетов.'],
-      camera:['Защита линз камер','Дополнительная защита для линз камер смартфона от повседневных царапин.']
+      body:['Защита корпуса 360°','Плёнка на весь корпус телефона — защита со всех сторон и индивидуальный дизайн без громоздкого чехла.'],
+      devices:['Разные устройства','Защищаем не только телефоны: плёнка для ноутбуков и другой техники — на корпус и доступные поверхности.'],
+      camera:['Защита камеры','Дополнительная защита камеры смартфона от повседневных царапин.']
     };
     const productPhotos=[
-      {title:'Дизайн с ночным городом',category:'01 / ДИЗАЙН',kind:'design'},
-      {title:'Индивидуальный дизайн',category:'02 / ДИЗАЙН',kind:'design'},
-      {title:'Защита корпуса техники',category:'03 / КОРПУС',kind:'body'},
+      {title:'Дизайн с ночным городом',category:'01 / КОРПУС 360°',kind:'body'},
+      {title:'Индивидуальный дизайн',category:'02 / КОРПУС 360°',kind:'body'},
+      {title:'Защита ноутбука',category:'03 / РАЗНЫЕ УСТРОЙСТВА',kind:'devices'},
       {title:'Защита экрана',category:'04 / ЭКРАН',kind:'screen'},
-      {title:'Защита линз камер',category:'05 / КАМЕРЫ',kind:'camera'}
+      {title:'Защита камеры',category:'05 / КАМЕРА',kind:'camera'}
     ];
     const productSlides=[...document.querySelectorAll('.product-gallery-photo')];
     const productThumbs=[...document.querySelectorAll('.product-gallery-thumb')];
@@ -206,7 +206,7 @@
     productThumbs.forEach((button,i)=>button.addEventListener('click',()=>showProductPhoto(i)));
     document.getElementById('productPrev').addEventListener('click',()=>showProductPhoto(currentPhoto-1));
     document.getElementById('productNext').addEventListener('click',()=>showProductPhoto(currentPhoto+1));
-    const photoByKind={screen:3,body:2,design:0,camera:4};
+    const photoByKind={screen:3,body:0,devices:2,camera:4};
     productTabs.forEach(button=>button.addEventListener('click',()=>showProductPhoto(photoByKind[button.dataset.kind])));
     const gallery=document.querySelector('.product-gallery');
     gallery.addEventListener('keydown',event=>{

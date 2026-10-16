@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1800" role="img" aria-labelledby="t d">
+  <title id="t">Смартфон с дизайн-плёнкой на задней панели</title>
+  <desc id="d">Тёмно-синий смартфон, вид сзади, с декоративной плёнкой в фирменной эстетике Бронь Сервис.</desc>
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#17305f"/>
+      <stop offset="40%" stop-color="#224a92"/>
+      <stop offset="78%" stop-color="#0e2040"/>
+      <stop offset="100%" stop-color="#071120"/>
+    </linearGradient>
+    <linearGradient id="bodyGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.18"/>
+      <stop offset="45%" stop-color="#91abff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.08"/>
+    </linearGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#cad0db"/>
+      <stop offset="50%" stop-color="#8a9099"/>
+      <stop offset="100%" stop-color="#d9dfe8"/>
+    </linearGradient>
+    <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#325ea7"/>
+      <stop offset="100%" stop-color="#183463"/>
+    </linearGradient>
+    <radialGradient id="camGlass" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#173766"/>
+      <stop offset="30%" stop-color="#09131d"/>
+      <stop offset="75%" stop-color="#040608"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <radialGradient id="moon" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff2b3"/>
+      <stop offset="100%" stop-color="#e0bf4d"/>
+    </radialGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="28" stdDeviation="34" flood-color="#000000" flood-opacity="0.34"/></filter>
+    <filter id="inner"><feGaussianBlur stdDeviation="12"/></filter>
+  </defs>
+
+  <rect width="900" height="1800" rx="120" fill="url(#body)"/>
+  <rect width="900" height="1800" rx="120" fill="url(#bodyGlow)"/>
+
+  <g opacity="0.18">
+    <path d="M70 185h760" stroke="#d7e3ff"/>
+    <path d="M70 285h760" stroke="#d7e3ff" stroke-opacity="0.6"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="95" width="760" height="410" rx="84" fill="url(#plate)" stroke="url(#frame)" stroke-width="16"/>
+    <g>
+      <circle cx="220" cy="220" r="100" fill="#dbe1ec"/>
+      <circle cx="220" cy="220" r="82" fill="url(#camGlass)"/>
+      <circle cx="220" cy="220" r="25" fill="#10386c" opacity="0.8"/>
+      <circle cx="220" cy="220" r="9" fill="#325ea7"/>
+      <circle cx="210" cy="204" r="17" fill="#ffffff" opacity="0.15"/>
+    </g>
+    <g>
+      <circle cx="455" cy="220" r="100" fill="#dbe1ec"/>
+      <circle cx="455" cy="220" r="82" fill="url(#camGlass)"/>
+      <circle cx="455" cy="220" r="25" fill="#10386c" opacity="0.8"/>
+      <circle cx="455" cy="220" r="9" fill="#325ea7"/>
+      <circle cx="445" cy="204" r="17" fill="#ffffff" opacity="0.15"/>
+    </g>
+    <g>
+      <circle cx="220" cy="430" r="100" fill="#dbe1ec"/>
+      <circle cx="220" cy="430" r="82" fill="url(#camGlass)"/>
+      <circle cx="220" cy="430" r="25" fill="#10386c" opacity="0.8"/>
+      <circle cx="220" cy="430" r="9" fill="#325ea7"/>
+      <circle cx="210" cy="414" r="17" fill="#ffffff" opacity="0.15"/>
+    </g>
+    <circle cx="660" cy="178" r="42" fill="#f2f0eb"/>
+    <circle cx="660" cy="178" r="18" fill="#fff7d1" opacity="0.55"/>
+    <circle cx="662" cy="314" r="12" fill="#c9d0da"/>
+    <circle cx="661" cy="314" r="5" fill="#31353a"/>
+    <circle cx="662" cy="428" r="40" fill="#0d1116"/>
+  </g>
+
+  <g>
+    <circle cx="212" cy="810" r="118" fill="url(#moon)" opacity="0.96"/>
+    <g fill="#0d1626" opacity="0.76">
+      <path d="M62 760c55 18 99 25 155 17 33-4 65-14 111-13 41 1 90 15 138 38-44 6-87 19-120 43-48 35-100 54-174 39-52-10-95-36-131-73 9-14 15-29 21-51z"/>
+      <path d="M113 687c42 8 78 13 118 4 24-6 46-17 84-18 42 0 83 15 118 40-50 4-95 21-128 47-44 34-90 54-162 43-29-5-56-15-82-31 19-25 34-53 52-85z"/>
+    </g>
+    <g fill="#0b111a">
+      <path d="M86 1450V1090l56-90v450z"/>
+      <path d="M148 1450v-410l94-145v555z"/>
+      <path d="M252 1450v-320l76-123v443z"/>
+      <path d="M334 1450V935l120-175v690z"/>
+      <path d="M468 1450V1080l72-114v484z"/>
+      <path d="M547 1450v-295l97-156v451z"/>
+      <path d="M653 1450V1028l72-112v534z"/>
+      <path d="M731 1450v-335l74-118v453z"/>
+    </g>
+    <g fill="#ffba4b" opacity="0.92">
+      <rect x="177" y="1115" width="12" height="22"/>
+      <rect x="208" y="1088" width="10" height="18"/>
+      <rect x="368" y="894" width="14" height="24"/>
+      <rect x="396" y="930" width="11" height="17"/>
+      <rect x="612" y="1184" width="12" height="20"/>
+      <rect x="762" y="1128" width="14" height="24"/>
+      <rect x="762" y="1166" width="14" height="24"/>
+      <rect x="524" y="1015" width="10" height="16"/>
+      <rect x="553" y="1043" width="10" height="16"/>
+      <rect x="593" y="1085" width="12" height="20"/>
+      <rect x="352" y="985" width="10" height="16"/>
+      <rect x="288" y="1170" width="10" height="16"/>
+    </g>
+  </g>
+
+  <g opacity="0.34">
+    <path d="M88 560C240 595 346 629 457 692c101 57 179 124 267 218" fill="none" stroke="#9bb4ff" stroke-width="8" stroke-linecap="round"/>
+    <path d="M113 635c134 12 239 42 349 98 80 41 170 105 252 185" fill="none" stroke="#e9f0ff" stroke-width="4" stroke-linecap="round"/>
+  </g>
+
+  <g font-family="Arial, Helvetica, sans-serif" fill="#ffffff">
+    <rect x="95" y="1520" width="276" height="58" rx="18" fill="#ffffff" fill-opacity="0.12" stroke="#ffffff" stroke-opacity="0.18"/>
+    <text x="126" y="1558" font-size="29" font-weight="700" letter-spacing="2">АВТОРСКИЙ ДИЗАЙН</text>
+    <text x="96" y="1638" font-size="64" font-weight="700">360°</text>
+    <text x="96" y="1693" font-size="25" font-weight="700" letter-spacing="4">ЗАЩИТА И СТИЛЬ</text>
+    <text x="95" y="1740" font-size="20" opacity="0.72" letter-spacing="2">ПЛЁНКА НА ЗАДНЮЮ ПАНЕЛЬ СМАРТФОНА</text>
+    <text x="804" y="1734" text-anchor="end" font-size="30" font-weight="700" opacity="0.9">БС</text>
+  </g>
+</svg>

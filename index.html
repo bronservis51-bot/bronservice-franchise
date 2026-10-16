@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Франшиза Бронь Сервис. Откройте свою точку защиты гаджетов. Поддержка в запуске, обучение, лекала, поставки и сопровождение партнёров.">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Франшиза Бронь Сервис — откройте свою точку">
+  <meta property="og:description" content="Работаем с 2019 года. 40 открытых торговых точек. Узнайте условия открытия франшизы в своём городе.">
+  <title>Франшиза Бронь Сервис — собственный бизнес под нашим брендом</title>
+  <link rel="icon" type="image/png" href="assets/shield-white.png">
+  <style>
+    :root{--black:#111112;--dark:#191a1b;--line:#d6d7d6;--white:#f7f7f5;--gray:#777b7d;--paper:#f2f2f0}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:92px}
+    body{margin:0;background:var(--paper);color:var(--black);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}button{font:inherit}a,button{-webkit-tap-highlight-color:transparent}
+    :focus-visible{outline:2px solid #92969a;outline-offset:4px}::selection{background:#babdc0}
+    .wrap{width:min(1320px,calc(100% - 100px));margin:auto}.upper{font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.upper::before{content:'';display:inline-block;width:7px;height:7px;margin:0 11px 1px 0;background:currentColor;border-radius:50%}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:27px;min-height:58px;padding:18px 26px;background:#fff;border:1px solid white;color:#151516;text-transform:uppercase;letter-spacing:.07em;font-size:12px;font-weight:800;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-3px);background:#dbdcde}.btn.inverse{background:#161718;border-color:#161718;color:#fff}.btn.inverse:hover{background:#343638}
+    .nav{height:80px;position:sticky;top:0;z-index:40;background:rgba(15,16,17,.97);color:#fff;border-bottom:1px solid #3e4143;backdrop-filter:blur(12px)}
+    .nav .wrap{height:100%;display:flex;align-items:center;gap:40px;justify-content:space-between}.logo{display:inline-flex;align-items:center;gap:12px;flex-shrink:0}.logo img{width:157px;height:60px;object-fit:contain}.logo small{border-left:1px solid #575a5d;padding-left:15px;color:#bbb;font-size:10px;font-weight:bold;text-transform:uppercase;letter-spacing:.12em}
+    .links{display:flex;gap:33px;color:#aeb0b1;font-size:12px;font-weight:700}.links a:hover{color:#fff}.nav .btn{min-height:45px;padding:10px 16px;font-size:10px;gap:13px}
+    .menu{display:none;width:44px;height:43px;color:#fff;background:none;border:1px solid #57595b;font-size:25px;cursor:pointer}
+    .hero{position:relative;overflow:hidden;color:#fff;background:#101112}.hero:before{content:'';position:absolute;inset:0;background-image:linear-gradient(#ffffff0c 1px,transparent 1px),linear-gradient(90deg,#ffffff0c 1px,transparent 1px);background-size:84px 84px;mask-image:linear-gradient(90deg,transparent 40%,black 100%)}
+    .hero-inner{min-height:690px;display:grid;grid-template-columns:1.16fr .84fr;align-items:center;position:relative}.hero-copy{padding:88px 0}.pre{font-size:12px;letter-spacing:.16em;font-weight:800;color:#aeb0b3;text-transform:uppercase;display:flex;align-items:center;gap:16px}.pre:before{content:'';height:1px;width:35px;background:#737679}
+    .hero h1{font-size:clamp(64px,7.9vw,118px);letter-spacing:-.09em;line-height:.91;margin:36px 0 29px;font-weight:800;position:relative;z-index:3}.hero h1 em{font-style:normal;color:#898c90}.hero-copy>p{font-size:17px;color:#adb1b6;line-height:1.7;max-width:475px;margin:0 0 36px}
+    .hero-cta{display:flex;gap:24px;align-items:center;flex-wrap:wrap}.hero-cta span{font-size:11px;max-width:180px;line-height:1.6;color:#888c91}
+    .hero-art{height:640px;position:relative;display:grid;place-items:center}.rings{position:absolute;width:490px;height:490px;border:1px solid #ffffff1c;border-radius:50%;box-shadow:0 0 0 70px #ffffff06,0 0 0 145px #ffffff05}
+    .device{width:244px;height:484px;border-radius:42px;padding:11px;background:#07080a;border:3px solid #86888d;box-shadow:26px 40px 65px #000b,0 0 38px #fff1;position:relative;transform:rotate(14deg);animation:float 6s ease-in-out infinite}.device::before{position:absolute;right:-7px;top:100px;width:5px;height:60px;background:#8b8e92;content:'';border-radius:3px}
+    .screen{height:100%;border:1px solid #63666b;border-radius:31px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 18% 10%,#565961 0%,#262a30 32%,#101216 68%,#08090b 100%)}.screen::after{content:'';position:absolute;inset:0;background:linear-gradient(117deg,#ffffff22,transparent 31%,transparent 75%,#ffffff0f);pointer-events:none}.island{position:absolute;top:0;left:50%;transform:translateX(-50%);width:93px;height:25px;border-radius:0 0 16px 16px;background:#040507}.screen img{position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);width:120px}.screen-label{position:absolute;bottom:37px;text-align:center;left:0;right:0;font-size:9px;letter-spacing:.23em;font-weight:700;color:#c1c3c7}
+    .float-tag{position:absolute;top:105px;right:-8px;transform:rotate(-10deg);background:#f5f5f3;color:#161718;padding:19px 23px;box-shadow:10px 20px 40px #0005}.float-tag b{display:block;font-size:43px;line-height:1;letter-spacing:-.09em}.float-tag small{font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+    .round-tag{position:absolute;left:-30px;bottom:90px;border:1px solid #737579;border-radius:50%;height:120px;width:120px;display:grid;place-items:center;text-align:center;line-height:1.6;font-weight:800;letter-spacing:.09em;font-size:10px;transform:rotate(-17deg);color:#b5b7b9}
+    .hero-baseline{border-top:1px solid #ffffff30;display:flex;justify-content:space-between;align-items:center;padding:20px 0;color:#858a8e;font-size:10px;letter-spacing:.14em;font-weight:800;text-transform:uppercase}
+    .metrics{background:#e5e5e3}.metric-grid{display:grid;grid-template-columns:repeat(4,1fr)}.metric{padding:37px 20px 41px;border-right:1px solid #c9c9c7}.metric:first-child{padding-left:0}.metric:last-child{border-right:none}.metric strong{display:block;font-size:clamp(42px,5.5vw,75px);letter-spacing:-.09em;line-height:1.04}.metric span{display:block;margin-top:9px;color:#727577;font-weight:700;font-size:12px}
+    .section{padding:122px 0}.section-head{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;margin-bottom:52px}.section h2{font-size:clamp(46px,6vw,89px);letter-spacing:-.078em;line-height:.97;margin:21px 0 0}.section .lead{max-width:390px;font-size:15px;line-height:1.78;color:#787b7d;margin:0 0 7px}
+    .about{background:#f7f7f5}.about-grid{display:grid;grid-template-columns:.78fr 1.22fr;gap:110px}.about-copy{padding-top:6px}.about-intro{font-size:clamp(26px,3.4vw,43px);line-height:1.18;letter-spacing:-.053em;font-weight:700;margin:0 0 27px}.about-description{font-size:16px;line-height:1.85;color:#717476}.about-stroke{font-size:28px;font-family:Georgia,serif;font-style:italic;margin:40px 0 0;color:#64676a}
+    .lines{border-top:1px solid #d5d5d3;margin-top:38px}.line{display:grid;grid-template-columns:51px 1fr;padding:23px 0;border-bottom:1px solid #d5d5d3;gap:8px}.line small{font-size:11px;color:#898b8e}.line b{display:block;font-size:18px;margin-bottom:8px;letter-spacing:-.035em}.line p{margin:0;font-size:13px;line-height:1.6;color:#898b8e}
+    .benefits{background:#151617;color:#fff}.benefits .lead{color:#969a9e}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#444649;border:1px solid #444649}.card{background:#191a1b;padding:36px;min-height:286px;display:flex;flex-direction:column;transition:background .2s}.card:hover{background:#232527}.card-top{display:flex;justify-content:space-between;align-items:start;color:#898c8f}.card-top span{font-size:24px;color:#dadcdd}.card-top small{font-size:11px}.card h3{margin:auto 0 15px;font-size:27px;line-height:1.06;letter-spacing:-.05em}.card p{margin:0;color:#a5a7a9;font-size:13px;line-height:1.73}
+    .product{background:#e7e7e5}.product-grid{display:grid;grid-template-columns:1fr 1fr;gap:85px;align-items:center}.product p{font-size:16px;color:#717476;line-height:1.7;max-width:480px}.options{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}.option{border:1px solid #b7b9ba;padding:12px 18px;cursor:pointer;background:transparent;color:#76797b;font-weight:800;font-size:12px}.option:hover,.option[aria-selected="true"]{background:#191a1b;color:#fff;border-color:#191a1b}.option-details{border-top:1px solid #c8c9c8;margin-top:26px;padding-top:24px;min-height:100px}.option-details b{font-size:19px;display:block;letter-spacing:-.05em}.option-details p{font-size:13px;margin:7px 0}
+
+    /* PRODUCT / 03 — real photography gallery; aligned with the original monochrome identity */
+    .product-grid{grid-template-columns:minmax(0,.91fr) minmax(0,1.09fr);gap:64px}
+    .product-copy{min-width:0}
+    .product-gallery{min-width:0}
+    .product-gallery-stage{position:relative;aspect-ratio:.89;min-height:480px;overflow:hidden;background:#181a1b;isolation:isolate}
+    .product-gallery-photo{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;visibility:hidden;transform:scale(1.035);transition:opacity .35s ease,transform .65s ease,visibility .35s}
+    .product-gallery-photo.is-active{opacity:1;visibility:visible;transform:scale(1)}
+    .product-gallery-stage::after{content:'';pointer-events:none;position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.57),transparent 23%,transparent 55%,rgba(0,0,0,.78))}
+    .product-gallery-top,.product-gallery-bottom{position:absolute;left:0;right:0;z-index:2;display:flex;justify-content:space-between;gap:12px;color:white;align-items:center}
+    .product-gallery-top{top:0;padding:25px 25px 0;align-items:start}
+    .product-gallery-kicker{font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;line-height:1.5}
+    .product-gallery-number{white-space:nowrap;font-size:24px;font-weight:800;letter-spacing:-.06em;line-height:1}
+    .product-gallery-number span{font-size:13px;opacity:.62;letter-spacing:0}
+    .product-gallery-bottom{bottom:0;padding:0 25px 27px;align-items:end}
+    .product-gallery-description{min-width:0}
+    .product-gallery-description small{display:block;margin-bottom:9px;color:#d1d3d4;font-size:10px;letter-spacing:.13em;text-transform:uppercase;font-weight:800}
+    .product-gallery-description strong{display:block;font-size:clamp(19px,2.5vw,30px);letter-spacing:-.05em;line-height:1.08}
+    .product-gallery-arrows{display:flex;gap:6px;flex-shrink:0}
+    .product-gallery-arrow{width:44px;height:44px;border:1px solid #ffffff80;background:#1119;color:white;font-size:23px;display:grid;place-items:center;cursor:pointer;transition:background .2s}
+    .product-gallery-arrow:hover{background:#f7f7f5;color:#151617}
+    .product-gallery-thumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin-top:8px}
+    .product-gallery-thumb{position:relative;min-width:0;aspect-ratio:1.08;display:block;padding:0;border:2px solid transparent;background:#151617;cursor:pointer;overflow:hidden;transition:border-color .2s,opacity .2s;opacity:.69}
+    .product-gallery-thumb:hover{opacity:1}
+    .product-gallery-thumb[aria-pressed="true"]{border-color:#101112;opacity:1}
+    .product-gallery-thumb img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s}
+    .product-gallery-thumb:hover img{transform:scale(1.06)}
+    .product-gallery-thumb span{position:absolute;top:6px;left:6px;padding:4px 6px;color:#fff;background:#0009;font-weight:800;font-size:10px;letter-spacing:.04em}
+    .product-gallery-note{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid #b8bab9;margin-top:14px;padding-top:13px;color:#75787a;font-size:10px;line-height:1.5;text-transform:uppercase;letter-spacing:.08em;font-weight:800}
+    .product-gallery-note span:last-child{white-space:nowrap;color:#26282a}
+    @media(max-width:1130px){.product-grid{gap:38px}.product-gallery-stage{min-height:420px}}
+    @media(max-width:780px){.product-grid{grid-template-columns:1fr;gap:33px}.product-gallery-stage{min-height:0;aspect-ratio:.86}.product-gallery-top{padding:18px 18px 0}.product-gallery-bottom{padding:0 18px 20px}.product-gallery-arrow{height:42px;width:42px}}
+    @media(max-width:450px){.product-gallery-kicker{font-size:9px;letter-spacing:.1em}.product-gallery-description strong{font-size:21px}.product-gallery-thumb span{font-size:9px;top:4px;left:4px}.product-gallery-thumbs{gap:5px;margin-top:5px}.product-gallery-note{font-size:9px}}
+    .finance{background:#f7f7f5}.finance-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:85px}.finance-copy p{color:#7b7d7f;font-size:17px;line-height:1.8;max-width:430px;margin:28px 0 35px}.price{background:#171819;padding:43px;color:#fff;position:relative;overflow:hidden}.price:after{content:'₽';position:absolute;font-size:320px;right:-20px;top:-25px;opacity:.035;font-weight:bold;pointer-events:none}.price small{color:#b1b4b6;text-transform:uppercase;font-size:11px;letter-spacing:.15em}.amount{font-size:clamp(55px,6vw,88px);letter-spacing:-.085em;font-weight:800;margin:27px 0 24px;line-height:1}.amount span{font-size:.52em;letter-spacing:0}.price-notes{border-top:1px solid #424446;display:grid;grid-template-columns:1fr 1fr;margin-top:30px}.price-notes div{padding:24px 12px 0 0}.price-notes div+div{border-left:1px solid #424446;padding-left:20px}.price-notes b{font-size:18px;display:block;margin-bottom:9px}.price-notes p{font-size:12px;line-height:1.65;color:#a4a7a9;margin:0}.legal{font-size:11px;color:#a4a6a8;line-height:1.7;margin:27px 0 0}.finance-annotations{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin-top:35px}.annotation{border-top:1px solid #cdcecc;padding-top:16px;font-size:12px;color:#7c7e80;line-height:1.65}.annotation b{font-size:16px;display:block;color:#111;margin-bottom:5px}
+    .steps{background:#dcdddb}.step-row{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #aeb0ae}.step{min-height:230px;border-right:1px solid #b9bbba;padding:27px 20px 20px 0}.step:not(:first-child){padding-left:22px}.step:last-child{border-right:0}.step-number{color:#777a7b;font-size:51px;font-weight:800;letter-spacing:-.09em}.step h3{font-size:19px;letter-spacing:-.045em;line-height:1.15;margin:49px 0 9px}.step p{font-size:12px;line-height:1.6;color:#717476;margin:0}
+    .faq{background:#f7f7f5}.faq-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px}.faq-list{border-top:1px solid #c6c8c8}.faq details{border-bottom:1px solid #c6c8c8}.faq summary{list-style:none;display:flex;justify-content:space-between;align-items:center;cursor:pointer;padding:26px 0;font-size:18px;font-weight:750;letter-spacing:-.03em;gap:22px}.faq summary::-webkit-details-marker{display:none}.faq summary span{font-size:24px;font-weight:400;transition:transform .25s}.faq details[open] summary span{transform:rotate(45deg)}.faq details p{margin:-5px 20px 28px 0;color:#737678;font-size:14px;line-height:1.8}
+    .bottom-cta{background:#121314;color:#fff;padding:100px 0;position:relative;overflow:hidden}.bottom-cta:after{content:'БС';position:absolute;font-size:620px;color:#ffffff05;font-weight:900;right:-70px;top:-40px;letter-spacing:-.2em;pointer-events:none}.bottom-cta>.wrap{position:relative;z-index:1}.bottom-cta h2{font-size:clamp(59px,8vw,117px);letter-spacing:-.086em;line-height:.95;margin:32px 0 28px}.bottom-cta h2 em{font-style:normal;color:#85888c}.bottom-cta p{font-size:16px;line-height:1.75;color:#aeb1b4;max-width:515px;margin:0 0 36px}
+    footer{background:#121314;border-top:1px solid #333638;color:#9b9ea0}.footer-main{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:35px 0}.footer-main div{text-align:right;font-size:13px;line-height:1.9}.footer-bottom{border-top:1px solid #303234;padding:21px 0 29px;display:flex;align-items:start;justify-content:space-between;gap:40px;font-size:11px;line-height:1.6}
+    .wa-float{position:fixed;bottom:20px;right:20px;z-index:30;width:55px;height:55px;display:grid;place-items:center;border-radius:50%;background:#fff;border:1px solid #dedede;box-shadow:0 9px 30px #0004;transition:transform .2s}.wa-float:hover{transform:scale(1.07)}.wa-float svg{width:29px;height:29px}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}.reveal.show{opacity:1;transform:none}
+    @keyframes float{0%,100%{transform:rotate(14deg) translateY(7px)}50%{transform:rotate(12deg) translateY(-9px)}}
+    @media(max-width:1130px){.wrap{width:calc(100% - 64px)}.nav .wrap{gap:20px}.links{gap:16px}.hero h1{font-size:clamp(62px,8.2vw,105px)}.hero-art{transform:scale(.86)}.about-grid{gap:55px}.finance-grid{gap:50px}.card{padding:28px}}
+    @media(max-width:780px){html{scroll-padding-top:75px}.wrap{width:calc(100% - 40px)}.nav{height:72px}.logo img{width:143px}.logo small{display:none}.nav .btn{display:none}.menu{display:block}.links{position:absolute;left:0;right:0;top:72px;background:#191a1b;border-top:1px solid #444;display:none;flex-direction:column;gap:25px;padding:27px 20px 32px;font-size:15px}.links.open{display:flex}
+      .hero-inner{display:block;min-height:0}.hero-copy{padding:74px 0 18px}.hero h1{font-size:clamp(59px,11vw,90px)}.hero-copy>p{font-size:15px}.hero-art{height:400px;transform:scale(.64);transform-origin:center 30%;margin:-17px 0 -54px}.hero-baseline{font-size:9px}.hero-baseline span:last-child{display:none}
+      .metric-grid{grid-template-columns:repeat(2,1fr)}.metric{border-bottom:1px solid #c9c9c7;padding:24px 17px}.metric:nth-child(odd){padding-left:0}.metric:nth-child(even){border-right:0}.metric:nth-child(n+3){border-bottom:0}.metric strong{font-size:58px}
+      .section{padding:78px 0}.section-head{display:block;margin-bottom:36px}.section .lead{margin:22px 0 0}.section h2{font-size:clamp(45px,10vw,66px)}.about-grid,.product-grid,.finance-grid,.faq-grid{grid-template-columns:1fr;gap:30px}.about-intro{font-size:31px}.about-description{font-size:15px}.cards{grid-template-columns:repeat(2,1fr)}.card{min-height:245px}.price{padding:31px}.amount{font-size:67px}.step-row{grid-template-columns:repeat(2,1fr)}.step{border-bottom:1px solid #b9bbba;min-height:200px;padding:22px 15px 20px 0}.step:nth-child(even){border-right:0;padding-left:20px}.step:nth-child(odd){padding-left:0}.step h3{margin-top:35px}.bottom-cta{padding:80px 0}.bottom-cta h2{font-size:clamp(55px,11vw,83px)}.footer-bottom{display:block}.footer-bottom span{display:block;margin:10px 0}}
+    @media(max-width:450px){.hero h1{font-size:55px}.hero-cta .btn{width:100%}.hero-cta span{max-width:none}.hero-art{transform:scale(.54);margin:-35px 0 -87px}.metric strong{font-size:46px}.cards{grid-template-columns:1fr}.card{min-height:205px}.price-notes,.finance-annotations{grid-template-columns:1fr}.price-notes div+div{padding:18px 0 0;border-left:0;border-top:1px solid #424446}.amount{font-size:55px}.step h3{font-size:16px}.faq summary{font-size:16px}.footer-main{display:block}.footer-main div{text-align:left;margin-top:17px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <header class="nav"><div class="wrap">
+    <a href="#top" class="logo" aria-label="Бронь Сервис — на главную"><img src="assets/bron-logo-white.png" alt="БРОНЬ СЕРВИС"><small>Франшиза</small></a>
+    <nav class="links" id="navigation" aria-label="Навигация"><a href="#about">О компании</a><a href="#benefits">Преимущества</a><a href="#finance">Условия</a><a href="#steps">Как открыть</a><a href="#faq">Вопросы</a></nav>
+    <a class="btn wa-link" href="https://wa.me/79956666614" target="_blank" rel="noopener noreferrer">Купить франшизу <span>↗</span></a>
+    <button class="menu" id="menu" aria-label="Открыть меню" aria-controls="navigation" aria-expanded="false">☰</button>
+  </div></header>
+  <main id="top">
+    <section class="hero"><div class="wrap hero-inner">
+      <div class="hero-copy"><div class="pre">Франшиза нового поколения / 2026</div>
+        <h1>Защищаем<br>гаджеты.<br><em>Создаём</em><br>бизнес.</h1>
+        <p>Откройте собственную точку «Бронь Сервис» в своём городе. Понятный продукт, сильный бренд и поддержка команды — от первого разговора до запуска.</p>
+        <div class="hero-cta"><a class="btn wa-link" href="https://wa.me/79956666614" target="_blank" rel="noopener noreferrer">Купить франшизу <span>↗</span></a><span>Напишите напрямую исполнительному директору в WhatsApp</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="rings"></div><div class="device"><div class="screen"><div class="island"></div><img src="assets/shield-white.png" alt=""><div class="screen-label">PROTECTION / DESIGN / 360°</div></div></div><div class="float-tag"><b>360°</b><small>защита гаджета</small></div><div class="round-tag">ОТКРОЙ<br>СВОЙ<br>БИЗНЕС</div></div>
+    </div><div class="wrap hero-baseline"><span>01 / Защита, которую выбирают</span><span>С 2019 года — Бронь Сервис</span></div></section>
+    <section class="metrics"><div class="wrap metric-grid"><div class="metric"><strong>2019</strong><span>год начала работы</span></div><div class="metric"><strong>40</strong><span>открытых торговых точек*</span></div><div class="metric"><strong>45</strong><span>дней гарантии на плёнку</span></div><div class="metric"><strong>≈15</strong><span>минут на установку</span></div></div></section>
+    <section class="section about" id="about"><div class="wrap about-grid">
+      <div class="reveal"><div class="upper">01 / Кто мы</div><h2>Больше,<br>чем плёнка.</h2><div class="about-stroke">Бронь Сервис.</div></div>
+      <div class="reveal"><p class="about-intro">Мы делаем защиту гаджетов привычной услугой — и делимся технологией бизнеса с партнёрами.</p><p class="about-description">Клиент выбирает защитное или декоративное покрытие, специалист вырезает лекало на плоттере и устанавливает плёнку. Всё происходит прямо в торговой точке — без сложного производства и большого помещения.</p>
+      <div class="lines"><div class="line"><small>01</small><div><b>Понятная услуга</b><p>Плёнка на экран, корпус и индивидуальные дизайны.</p></div></div><div class="line"><small>02</small><div><b>Компактный формат</b><p>Торговый островок в торговом центре или другой подходящей локации.</p></div></div><div class="line"><small>03</small><div><b>Поддержка запуска</b><p>Помогаем с открытием, обучением персонала и организацией работы.</p></div></div></div></div>
+    </div></section>
+    <section class="section benefits" id="benefits"><div class="wrap"><div class="section-head reveal"><div><div class="upper">02 / Почему мы</div><h2>Вам не нужно<br>начинать с нуля.</h2></div><p class="lead">Вы получаете не только бренд, но и накопленный опыт действующей сети — для запуска и работы своей точки.</p></div>
+      <div class="cards"><article class="card reveal"><div class="card-top"><span>↗</span><small>01 / 06</small></div><h3>Помощь<br>в открытии</h3><p>Рекомендации по выбору локации, организации торгового места и подготовке к запуску.</p></article><article class="card reveal"><div class="card-top"><span>◈</span><small>02 / 06</small></div><h3>Собственные<br>лекала</h3><p>Доступ к базе шаблонов для резки плёнки и технологиям их подготовки.</p></article><article class="card reveal"><div class="card-top"><span>◎</span><small>03 / 06</small></div><h3>Обучение<br>команды</h3><p>Обучение продукту, работе с плоттером, оклейке гаджетов и стандартам продаж.</p></article><article class="card reveal"><div class="card-top"><span>▦</span><small>04 / 06</small></div><h3>Поставки<br>материалов</h3><p>Ассортимент плёнок и инструментов для повседневной работы точки.</p></article><article class="card reveal"><div class="card-top"><span>✳</span><small>05 / 06</small></div><h3>Маркетинг<br>и бренд</h3><p>Фирменный стиль, рекламные наработки и рекомендации по продвижению.</p></article><article class="card reveal"><div class="card-top"><span>↔</span><small>06 / 06</small></div><h3>Сопровождение<br>партнёров</h3><p>Коммуникация с управляющей компанией и поддержка после открытия.</p></article></div>
+    </div></section>
+    <section class="section product" id="product"><div class="wrap product-grid">
+      <div class="product-copy reveal">
+        <div class="upper">03 / Продукт</div><h2>Технология,<br>которую видно.</h2>
+        <p>Полиуретановая плёнка помогает сохранять внешний вид смартфонов и других гаджетов. Покрытие вырезается под модель устройства на месте.</p>
+        <div class="options" role="tablist" aria-label="Типы покрытия">
+          <button class="option" type="button" role="tab" aria-selected="true" data-kind="screen">Экран</button>
+          <button class="option" type="button" role="tab" aria-selected="false" data-kind="body">Корпус 360°</button>
+          <button class="option" type="button" role="tab" aria-selected="false" data-kind="design">Дизайн</button>
+          <button class="option" type="button" role="tab" aria-selected="false" data-kind="camera">Линзы камер</button>
+        </div>
+        <div class="option-details" aria-live="polite"><b id="optionTitle">Защищаем экран</b><p id="optionDesc">Глянцевые и матовые покрытия помогают защитить экран от повседневных царапин.</p></div>
+      </div>
+      <div class="product-gallery reveal" aria-label="Галерея продукции Бронь Сервис">
+        <div class="product-gallery-stage" id="productGallery" aria-roledescription="Галерея из пяти фотографий">
+          <img class="product-gallery-photo" src="assets/product-city-design.webp" alt="Смартфон с синим дизайном: ночной город, силуэты небоскрёбов и луна" loading="lazy" decoding="async" aria-hidden="true">
+          <img class="product-gallery-photo" src="assets/product-personal-design.webp" alt="Чёрный смартфон с индивидуальным серебристым оформлением и надписью АККХИ" loading="lazy" decoding="async" aria-hidden="true">
+          <img class="product-gallery-photo" src="assets/product-laptop-protection.webp" alt="Мастер разглаживает прозрачную защитную плёнку на крышке ноутбука" loading="lazy" decoding="async" aria-hidden="true">
+          <img class="product-gallery-photo is-active" src="assets/product-screen-protection.webp" alt="Мастер аккуратно устанавливает прозрачную защиту на экран смартфона" loading="lazy" decoding="async" aria-hidden="false">
+          <img class="product-gallery-photo" src="assets/product-camera-protection.webp" alt="Крупный план установки защитного кольца на линзу камеры смартфона" loading="lazy" decoding="async" aria-hidden="true">
+          <div class="product-gallery-top"><span class="product-gallery-kicker">BRON SERVICE / PRODUCT DETAILS</span><div class="product-gallery-number"><b id="productPhotoNumber">04</b> <span>/ 05</span></div></div>
+          <div class="product-gallery-bottom"><div class="product-gallery-description" aria-live="polite"><small id="productPhotoCategory">04 / ЭКРАН</small><strong id="productPhotoTitle">Защита экрана</strong></div>
+            <div class="product-gallery-arrows"><button class="product-gallery-arrow" type="button" id="productPrev" aria-label="Предыдущая фотография">←</button><button class="product-gallery-arrow" type="button" id="productNext" aria-label="Следующая фотография">→</button></div>
+          </div>
+        </div>
+        <div class="product-gallery-thumbs" role="group" aria-label="Выбрать фотографию">
+          <button class="product-gallery-thumb" type="button" data-photo="0" aria-label="Фото 1 из 5: дизайн с ночным городом" aria-pressed="false"><img src="assets/product-city-design.webp" alt="" loading="lazy"><span>01</span></button>
+          <button class="product-gallery-thumb" type="button" data-photo="1" aria-label="Фото 2 из 5: персональный дизайн" aria-pressed="false"><img src="assets/product-personal-design.webp" alt="" loading="lazy"><span>02</span></button>
+          <button class="product-gallery-thumb" type="button" data-photo="2" aria-label="Фото 3 из 5: защита ноутбука" aria-pressed="false"><img src="assets/product-laptop-protection.webp" alt="" loading="lazy"><span>03</span></button>
+          <button class="product-gallery-thumb" type="button" data-photo="3" aria-label="Фото 4 из 5: защита экрана смартфона" aria-pressed="true"><img src="assets/product-screen-protection.webp" alt="" loading="lazy"><span>04</span></button>
+          <button class="product-gallery-thumb" type="button" data-photo="4" aria-label="Фото 5 из 5: защита камеры" aria-pressed="false"><img src="assets/product-camera-protection.webp" alt="" loading="lazy"><span>05</span></button>
+        </div>
+        <div class="product-gallery-note"><span>Примеры защиты и дизайна гаджетов</span><span>01 — 05</span></div>
+      </div>
+    </div></section>
+    <section class="section finance" id="finance"><div class="wrap finance-grid"><div class="finance-copy reveal"><div class="upper">04 / Условия</div><h2>Бизнес<br>начинается<br>с цифр.</h2><p>Полный бюджет открытия рассчитываем под ваш город, аренду, формат островка и необходимое оборудование.</p><a class="btn inverse wa-link" href="https://wa.me/79956666614" target="_blank" rel="noopener noreferrer">Обсудить инвестиции <span>↗</span></a></div>
+      <div class="reveal"><div class="price"><small>Паушальный взнос</small><div class="amount">450 000 <span>₽</span></div><small>Разовый платёж за присоединение к франшизе</small><div class="price-notes"><div><b>+ Оборудование</b><p>Плоттер, рабочее место, инструменты и программное обеспечение.</p></div><div><b>+ Запуск точки</b><p>Торговый островок, материалы, аренда и дополнительные расходы.</p></div></div><p class="legal">Размер взноса — по материалам компании от октября 2026 года. Итоговые инвестиции, обязательные платежи и условия договора обсуждаются индивидуально. Не является публичной офертой.</p></div><div class="finance-annotations"><div class="annotation"><b>Финансовая модель</b>Разберём структуру возможных доходов, затрат и сценариев работы точки.</div><div class="annotation"><b>Без обещаний прибыли</b>Результаты зависят от места, посещаемости, аренды, затрат и управления.</div></div></div>
+    </div></section>
+    <section class="section steps" id="steps"><div class="wrap"><div class="section-head reveal"><div><div class="upper">05 / Путь партнёра</div><h2>От идеи —<br>к своей точке.</h2></div><p class="lead">Пять понятных шагов к открытию бизнеса под нашим брендом.</p></div><div class="step-row"><div class="step reveal"><div class="step-number">01</div><h3>Знакомство</h3><p>Город, ваши цели и вопросы по франшизе.</p></div><div class="step reveal"><div class="step-number">02</div><h3>Договор<br>и план</h3><p>Согласование условий и этапов открытия.</p></div><div class="step reveal"><div class="step-number">03</div><h3>Локация<br>и подготовка</h3><p>Место, оформление островка, оборудование.</p></div><div class="step reveal"><div class="step-number">04</div><h3>Обучение<br>команды</h3><p>Практика, технология оклейки и продажи.</p></div><div class="step reveal"><div class="step-number">05</div><h3>Запуск<br>и поддержка</h3><p>Открываем точку и остаёмся на связи.</p></div></div></div></section>
+    <section class="section faq" id="faq"><div class="wrap faq-grid"><div class="reveal"><div class="upper">06 / FAQ</div><h2>О чём<br>обычно<br>спрашивают.</h2><p class="lead" style="margin-top:24px">Не нашли ответ? Исполнительный директор проконсультирует напрямую.</p></div><div class="faq-list reveal">
+      <details><summary>Сколько стоит открыть точку? <span>+</span></summary><p>Паушальный взнос — 450 000 ₽. Дополнительно нужны инвестиции в оборудование, оформление торговой точки, аренду и закупку материалов. Полный бюджет зависит от города и рассчитывается индивидуально.</p></details>
+      <details><summary>Нужен ли опыт в бизнесе? <span>+</span></summary><p>Формат подойдёт начинающему предпринимателю и владельцу уже действующего бизнеса. Поможем освоить продукт и базовые процессы.</p></details>
+      <details><summary>Как проходит обучение? <span>+</span></summary><p>Знакомим партнёра и сотрудников с технологией оклейки, лекалами, ассортиментом и стандартами обслуживания. Конкретная программа согласуется перед запуском.</p></details>
+      <details><summary>Помогаете выбрать место? <span>+</span></summary><p>Да, обсуждаем требования к локации, торговому потоку и размещению островка. Финальное решение принимается с учётом конкретных условий аренды.</p></details>
+      <details><summary>Когда окупится франшиза? <span>+</span></summary><p>Единого гарантированного срока нет. Окупаемость зависит от продаж, местоположения, арендной ставки и других затрат. Предложим рассмотреть финансовую модель по вашему городу.</p></details>
+      <details><summary>Есть ли регулярные платежи? <span>+</span></summary><p>Актуальные условия и структуру обязательных платежей объясним до подписания договора.</p></details>
+    </div></div></section>
+    <section class="bottom-cta" id="contact"><div class="wrap"><div class="upper">Начнём разговор?</div><h2>Следующая<br>точка может<br>быть <em>вашей.</em></h2><p>Напишите в WhatsApp. Исполнительный директор расскажет об условиях франшизы и поможет оценить возможности открытия в вашем городе.</p><a class="btn wa-link" href="https://wa.me/79956666614" target="_blank" rel="noopener noreferrer">Купить франшизу <span>↗</span></a></div></section>
+  </main>
+  <footer><div class="wrap"><div class="footer-main"><a href="#top" class="logo"><img src="assets/bron-logo-white.png" alt="БРОНЬ СЕРВИС"><small>Франшиза</small></a><div><a href="tel:+79956666614">+7 995 666-66-14</a><br><a class="wa-link" href="https://wa.me/79956666614" target="_blank" rel="noopener noreferrer">Написать в WhatsApp ↗</a></div></div><div class="footer-bottom"><span>© 2026 «Бронь Сервис». Франшиза защиты гаджетов.</span><span>* Количество открытых точек — по предоставленным материалам от октября 2026 года.<br>Информация носит ознакомительный характер и не является публичной офертой.</span></div></div></footer>
+  <a class="wa-float wa-link" href="https://wa.me/79956666614" target="_blank" rel="noopener noreferrer" aria-label="Написать в WhatsApp о франшизе"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.7 8.1c.4-.4.7-.4 1 0l1 1.4c.2.3.2.6 0 .8l-.6.6a8.8 8.8 0 0 0 3 3l.6-.6c.3-.2.6-.2.9 0l1.4 1c.4.3.4.6 0 1-.6.6-1.3 1-2.2.7-2.5-.7-5.3-3.4-6-6-.2-.9.2-1.6.9-2z"/></svg></a>
+  <script>
+  (function(){
+    const waNumber='79956666614';
+    const waMessage='Здравствуйте! Интересует франшиза «Бронь Сервис». Подскажите, пожалуйста, какие условия открытия в моём городе?';
+    const waUrl='https://wa.me/'+waNumber+'?text='+encodeURIComponent(waMessage);
+    document.querySelectorAll('.wa-link').forEach(a=>{a.href=waUrl});
+    const menu=document.getElementById('menu'),nav=document.getElementById('navigation');
+    menu.addEventListener('click',()=>{const isOpen=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(isOpen));menu.setAttribute('aria-label',isOpen?'Закрыть меню':'Открыть меню');menu.textContent=isOpen?'×':'☰'});
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.textContent='☰';menu.setAttribute('aria-expanded','false')}));
+    const options={
+      screen:['Защищаем экран','Глянцевые и матовые покрытия помогают защитить экран от повседневных царапин.'],
+      body:['Защита корпуса 360°','Плёнка для корпуса и доступных поверхностей устройства — без громоздкого чехла.'],
+      design:['Индивидуальный стиль','Различные декоративные покрытия и индивидуальные дизайны для гаджетов.'],
+      camera:['Защита линз камер','Дополнительная защита для линз камер смартфона от повседневных царапин.']
+    };
+    const productPhotos=[
+      {title:'Дизайн с ночным городом',category:'01 / ДИЗАЙН',kind:'design'},
+      {title:'Индивидуальный дизайн',category:'02 / ДИЗАЙН',kind:'design'},
+      {title:'Защита корпуса техники',category:'03 / КОРПУС',kind:'body'},
+      {title:'Защита экрана',category:'04 / ЭКРАН',kind:'screen'},
+      {title:'Защита линз камер',category:'05 / КАМЕРЫ',kind:'camera'}
+    ];
+    const productSlides=[...document.querySelectorAll('.product-gallery-photo')];
+    const productThumbs=[...document.querySelectorAll('.product-gallery-thumb')];
+    const productTabs=[...document.querySelectorAll('.option')];
+    let currentPhoto=3;
+    function showProductPhoto(index){
+      currentPhoto=(index+productPhotos.length)%productPhotos.length;
+      const photo=productPhotos[currentPhoto];
+      productSlides.forEach((img,i)=>{img.classList.toggle('is-active',i===currentPhoto);img.setAttribute('aria-hidden',String(i!==currentPhoto))});
+      productThumbs.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===currentPhoto)));
+      document.getElementById('productPhotoNumber').textContent=String(currentPhoto+1).padStart(2,'0');
+      document.getElementById('productPhotoTitle').textContent=photo.title;
+      document.getElementById('productPhotoCategory').textContent=photo.category;
+      productTabs.forEach(button=>button.setAttribute('aria-selected',String(button.dataset.kind===photo.kind)));
+      document.getElementById('optionTitle').textContent=options[photo.kind][0];
+      document.getElementById('optionDesc').textContent=options[photo.kind][1];
+    }
+    productThumbs.forEach((button,i)=>button.addEventListener('click',()=>showProductPhoto(i)));
+    document.getElementById('productPrev').addEventListener('click',()=>showProductPhoto(currentPhoto-1));
+    document.getElementById('productNext').addEventListener('click',()=>showProductPhoto(currentPhoto+1));
+    const photoByKind={screen:3,body:2,design:0,camera:4};
+    productTabs.forEach(button=>button.addEventListener('click',()=>showProductPhoto(photoByKind[button.dataset.kind])));
+    const gallery=document.querySelector('.product-gallery');
+    gallery.addEventListener('keydown',event=>{
+      if(event.key==='ArrowLeft'||event.key==='ArrowRight'){
+        event.preventDefault();showProductPhoto(currentPhoto+(event.key==='ArrowRight'?1:-1));
+      }
+    });
+    let touchStartX=null;
+    document.getElementById('productGallery').addEventListener('touchstart',event=>{touchStartX=event.touches[0]?.clientX??null},{passive:true});
+    document.getElementById('productGallery').addEventListener('touchend',event=>{
+      if(touchStartX===null)return;
+      const delta=event.changedTouches[0].clientX-touchStartX;
+      if(Math.abs(delta)>55)showProductPhoto(currentPhoto+(delta<0?1:-1));
+      touchStartX=null;
+    },{passive:true});
+    if('IntersectionObserver' in window){const o=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');o.unobserve(e.target)}})},{threshold:.08});document.querySelectorAll('.reveal').forEach(e=>o.observe(e))}else{document.querySelectorAll('.reveal').forEach(e=>e.classList.add('show'))}
+  })();
+  </script>
+</body>
+</html>

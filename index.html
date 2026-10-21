@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#111213">
+  <meta name="theme-color" content="#050a18">
   <title>Франшиза «Бронь Сервис» — свой бизнес на защите телефонов</title>
   <meta name="description" content="Свой бизнес на защите телефонов: островок 4–6 м², плёнка с дизайном на любую модель. Опыт не нужен — обучим. Вложения ≈1 млн ₽, окупаемость 7–10 месяцев.">
   <meta property="og:type" content="website">
@@ -12,266 +12,260 @@
   <meta property="og:description" content="Вложения ≈1 млн ₽, окупаемость 7–10 месяцев, открытие за 30 дней. 38 точек в России, Казахстане и Турции.">
   <meta property="og:image" content="https://bronservis51-bot.github.io/bronservice-franchise/og-image.jpg">
   <link rel="icon" type="image/png" href="shield-white.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="kiosk-crop-m.webp" media="(max-width:780px)">
+  <link rel="preload" as="image" href="kiosk-crop.webp" media="(min-width:781px)">
   <style>
-    :root{--ink:#111213;--ink3:#232427;--paper:#f4f4f1;--paper2:#ebebe7;--line:#d9d9d4;--line-d:#ffffff22;--mute:#7a7d80;--mute-d:#a4a7aa;--accent:#c8243c;--wrap:min(1180px,calc(100% - 40px));--head:68px}
+    :root{--blue:#2f5cff;--blue2:#1b3fd6;--night:#050a18;--ink:#0b1430;--mute:#66708a;--soft:#f2f5fb;--line:#e1e7f2;--wrap:min(1200px,calc(100% - 48px));--head:84px}
     *{box-sizing:border-box}
     [hidden]{display:none!important}
-    html{scroll-behavior:smooth;scroll-padding-top:var(--head);-webkit-text-size-adjust:100%}
-    body{margin:0;background:var(--paper);color:var(--ink);font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+    html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+    body{margin:0;background:#fff;color:var(--ink);font-family:Manrope,system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
     body.lock{overflow:hidden}
     a{color:inherit;text-decoration:none}button,input,textarea{font:inherit;color:inherit}
     img{display:block;max-width:100%}
-    :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
-    .wrap{width:var(--wrap);margin-inline:auto}
-    .kicker{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
-    .dark .kicker{color:var(--mute-d)}
-    h1,h2,h3{margin:0;font-weight:800}
-    h2{font-size:clamp(34px,5vw,64px);line-height:.98;letter-spacing:-.06em;margin:16px 0 0}
-    h1 em,h2 em{font-style:normal;color:#8d9094}
-    .lead{font-size:clamp(16px,1.35vw,18px);line-height:1.6;color:var(--mute);max-width:500px;margin:20px 0 0}
-    .dark .lead{color:var(--mute-d)}
-    .section{padding:clamp(72px,10vw,128px) 0}
-    .dark{background:var(--ink);color:#fff}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:56px;padding:16px 28px;border:0;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:transform .18s,background .18s;white-space:nowrap}
-    .btn:hover{transform:translateY(-2px)}
-    .btn-light{background:#fff;color:var(--ink)}.btn-light:hover{background:#e6e6e3}
-    .btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:#2c2d30}
-    
-    /* Шапка */
-    .head{position:sticky;top:0;z-index:50;height:var(--head);background:#111213f2;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-d);color:#fff}
-    .head .wrap{height:100%;display:flex;align-items:center;gap:28px}
-    .logo img{width:132px;height:50px;object-fit:contain;object-position:left center}
-    .nav{display:flex;gap:28px;margin-left:auto;font-size:13px;font-weight:700;color:#b9bcbf}
-    .nav a:hover{color:#fff}
-    .head .btn{min-height:42px;padding:10px 16px;font-size:11px;gap:10px;margin-left:8px}
+    :focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+    .wrap{width:var(--wrap);margin:auto}
+    .chip{display:inline-flex;align-items:center;height:34px;padding:0 14px;border-radius:999px;background:#2f5cff14;color:var(--blue2);font-size:13px;font-weight:700}
+    h1,h2,h3{font-family:Unbounded,system-ui,sans-serif;font-weight:700;letter-spacing:-.02em;margin:0}
+    h2{font-size:clamp(30px,3.6vw,48px);line-height:1.12;margin-top:20px}
+    h2 span{color:var(--blue)}
+    .lead{color:#4f5a75;font-size:clamp(16px,1.3vw,19px);max-width:540px;margin:20px 0 0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;height:58px;padding:0 30px;border:0;border-radius:16px;background:linear-gradient(135deg,#4f7bff,#2448e6);color:#fff;font-weight:700;font-size:16px;cursor:pointer;box-shadow:0 14px 34px -10px #2f5cffaa,inset 0 1px 0 #ffffff40;transition:transform .18s,box-shadow .18s}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 18px 40px -10px #2f5cffcc,inset 0 1px 0 #ffffff40}
+    .section{padding:clamp(72px,9vw,128px) 0}
+    .soft{background:var(--soft)}
+
+    /* Шапка: прозрачная над первым экраном, тёмная при прокрутке */
+    .head{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .25s,box-shadow .25s}
+    .head.solid{background:#050a18e8;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 1px 0 #ffffff14}
+    .head .wrap{height:var(--head);display:flex;align-items:center;gap:32px}
+    .head .logo img{height:44px;width:auto}
+    .head nav{margin-left:auto;display:flex;gap:30px;font-size:15px;font-weight:600;color:#ffffffb3}
+    .head nav a:hover{color:#fff}
+    .head .btn{height:46px;padding:0 22px;font-size:14px;border-radius:14px}
 
     /* Первый экран */
-    .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;min-height:min(calc(100svh - var(--head)),860px);padding:clamp(28px,5vh,64px) 0}
-    .hero h1{font-size:clamp(44px,min(5.6vw,10.5vh),84px);line-height:.93;letter-spacing:-.075em;margin:clamp(18px,3vh,28px) 0 0}
-    .hero .lead{max-width:440px}
-    .hero .btn{margin-top:clamp(24px,4vh,36px)}
-    .hero-photo{display:none}
-    .collage{position:relative;height:min(600px,calc(100svh - var(--head) - 110px));min-height:420px}
-    .collage img{position:absolute;object-fit:cover;background:var(--ink3)}
-    .collage .c-main{right:0;top:0;width:72%;height:88%}
-    .collage .c-sub{left:0;bottom:0;width:46%;height:48%;border:8px solid var(--ink)}
+    .hero{position:relative;overflow:hidden;color:#fff;background:var(--night);padding-top:var(--head)}
+    .hero .bg{position:absolute;inset:0;z-index:0;overflow:hidden}
+    .hero .bg img{position:absolute;right:0;top:0;height:100%;width:auto;max-width:none;aspect-ratio:1.169;object-fit:cover;object-position:center}
+    .hero .bg:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#050a18 0%,#050a18 34%,#050a18bf 43%,#050a1826 55%,transparent 64%),linear-gradient(0deg,#050a18 0%,transparent 22%),linear-gradient(180deg,#050a18aa 0%,transparent 20%)}
+    .hero .main{position:relative;z-index:1;min-height:min(calc(100vh - var(--head)),780px);display:flex;flex-direction:column;justify-content:center;padding:24px 0 80px}
+    .hero .chip{background:#ffffff1a;color:#dbe4ff;backdrop-filter:blur(8px);align-self:flex-start}
+    .hero h1{font-size:clamp(44px,4.8vw,70px);line-height:1.04;margin-top:26px;max-width:760px}
+    .hero h1 span{background:linear-gradient(90deg,#a9c0ff,#4f7bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero .lead{color:#c9d4f2;max-width:520px}
+    .hero .main .btn{margin-top:38px;align-self:flex-start}
+    .pills{display:flex;gap:12px;flex-wrap:wrap;margin-top:56px}
+    .pills div{background:#ffffff12;border:1px solid #ffffff26;border-radius:18px;padding:16px 20px;backdrop-filter:blur(12px);min-width:170px}
+    .pills b{display:block;font-family:Unbounded,sans-serif;font-size:22px;font-weight:600}
+    .pills span{font-size:13px;color:#c9d4f2}
 
-    /* Продукт */
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:48px}
-    .step{margin:0}
-    .step div{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--paper2)}
-    .step div small{position:absolute;top:14px;left:14px;z-index:1;background:#fff;color:var(--ink);font-size:12px;font-weight:800;letter-spacing:.04em;line-height:1;padding:7px 9px}
-    .step img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
-    .step:hover img{transform:scale(1.03)}
-    .step figcaption{padding-top:14px;font-size:17px;font-weight:800;letter-spacing:-.03em;line-height:1.3}
+    /* Как это работает */
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:52px}
+    .step{margin:0;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 20px 50px -30px #0b143040}
+    .step .ph{aspect-ratio:4/3;overflow:hidden}
+    .step img{width:100%;height:100%;object-fit:cover}
+    .step figcaption{display:flex;gap:14px;align-items:center;padding:20px 22px 24px;font-size:18px;font-weight:700;line-height:1.3}
+    .step i{flex:none;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#4f7bff,#2448e6);color:#fff;display:grid;place-items:center;font-style:normal;font-family:Unbounded,sans-serif;font-size:14px}
 
-    /* Цифры */
-    .numbers{background:#fff}
-    .two{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-    .photo{margin:0;aspect-ratio:4/5;overflow:hidden;background:var(--paper2)}
-    .photo img{width:100%;height:100%;object-fit:cover}
-    .rows{margin-top:32px;border-top:1px solid var(--line)}
-    .rows div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:15px 0;border-bottom:1px solid var(--line)}
-    .rows span{color:var(--mute);font-size:15px}
-    .rows b{font-size:clamp(19px,1.9vw,24px);letter-spacing:-.04em;text-align:right;white-space:nowrap}
-    .note{font-size:12px;color:var(--mute);margin:16px 0 0;line-height:1.5}
+    /* Деньги */
+    .money .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:56px;align-items:center}
+    .card{border-radius:32px;padding:40px;background:radial-gradient(600px 400px at 90% 0%,#3d6bff 0%,#1b3fd6 35%,#071233 100%);color:#fff;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 32px;box-shadow:0 40px 90px -30px #1b3fd6aa}
+    .card b{display:block;font-family:Unbounded,sans-serif;font-weight:600;font-size:clamp(22px,2.2vw,30px);line-height:1.15}
+    .card span{display:block;font-size:14px;color:#c9d4f2;line-height:1.4;margin-top:4px}
+    .note{font-size:13px;color:var(--mute);margin:18px 0 0}
+    .live{position:relative;margin:28px 0 0;border-radius:24px;overflow:hidden;aspect-ratio:16/10;box-shadow:0 30px 60px -30px #0b143066}
+    .live img{width:100%;height:100%;object-fit:cover;object-position:35% 62%}
+    .live figcaption{position:absolute;left:16px;bottom:16px;background:#ffffffeb;border-radius:12px;padding:8px 14px;font-size:13px;font-weight:700}
 
-    /* Что получаете */
-    .worries{display:grid;grid-template-columns:repeat(4,1fr);gap:0 32px;margin-top:44px}
-    .worries div{border-top:2px solid var(--ink);padding-top:18px}
-    .worries b{display:block;font-size:19px;letter-spacing:-.035em;line-height:1.2}
-    .worries p{margin:8px 0 0;font-size:15px;color:var(--mute);line-height:1.55}
+    /* Поддержка */
+    .support{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:52px}
+    .sup{background:#fff;border-radius:24px;padding:28px;border:1px solid var(--line)}
+    .ico{width:52px;height:52px;border-radius:16px;background:#2f5cff12;color:var(--blue);display:grid;place-items:center}
+    .sup h3{font-size:18px;font-weight:600;margin-top:22px;letter-spacing:-.01em}
+    .sup p{margin:10px 0 0;color:#4f5a75;font-size:15px;line-height:1.5}
 
-    /* Финал */
-    .final .two{grid-template-columns:.8fr 1.2fr}
-    .final .photo img{object-position:center 30%}
-    .final .btn{margin-top:32px}
-    .final .note{color:var(--mute-d)}
-
-    .foot{background:var(--ink);color:#8f9295;border-top:1px solid var(--line-d);font-size:13px}
-    .foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 40px;padding:28px 0 32px}
-    .foot a{color:#fff}
-    .foot .legal{flex-basis:100%;font-size:11px;line-height:1.6}
+    /* Знакомство */
+    .final .box{border-radius:36px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;background:radial-gradient(700px 500px at 100% 100%,#1b3fd6 0%,#071233 70%);color:#fff}
+    .final figure{margin:0;min-height:520px}
+    .final figure img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+    .final .in{padding:64px;align-self:center}
+    .final .chip{background:#ffffff1a;color:#dbe4ff}
+    .final h2 span{color:#a9c0ff}
+    .final .lead{color:#c9d4f2}
+    .final .btn{margin-top:36px;background:#fff;color:var(--ink);box-shadow:none}
+    .final .small{font-size:13px;color:#a9b6d8;margin:14px 0 0}
+    footer{color:var(--mute);font-size:14px}
+    footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 32px;padding:32px 0 44px}
+    footer a{color:var(--ink);font-weight:600}
+    footer .legal{flex-basis:100%;font-size:12px;line-height:1.5}
 
     /* Анкета */
-    dialog.quiz{border:0;padding:0;margin:auto;width:min(540px,100%);max-width:100%;max-height:min(92vh,800px);background:var(--paper);color:var(--ink);box-shadow:0 30px 100px #000a;overscroll-behavior:contain}
-    dialog.quiz::backdrop{background:#0b0b0ccc;backdrop-filter:blur(4px)}
-    .q-in{display:flex;flex-direction:column;max-height:min(92vh,800px)}
-    .q-top{display:flex;align-items:center;gap:14px;padding:18px 22px 0}
-    .q-count{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-    .q-close{margin-left:auto;width:40px;height:40px;border:1px solid var(--line);background:#fff;font-size:22px;line-height:1;cursor:pointer;display:grid;place-items:center}
-    .q-bar{height:3px;background:var(--line);margin:14px 22px 0}
-    .q-bar i{display:block;height:100%;width:20%;background:var(--ink);transition:width .3s}
-    .q-body{overflow:auto;padding:26px 22px 8px;flex:1}
-    .q-step h3{font-size:clamp(26px,5vw,32px);letter-spacing:-.055em;line-height:1.05;margin:0 0 20px}
-    .q-step .hint{font-size:14px;color:var(--mute);margin:-12px 0 20px;line-height:1.5}
-    .q-label{display:block;font-size:13px;font-weight:800;margin:22px 0 9px}
+    dialog.quiz{border:0;padding:0;margin:auto;width:min(520px,100%);max-width:100%;max-height:min(92vh,820px);border-radius:28px;background:var(--soft);color:var(--ink);box-shadow:0 40px 120px #000a;overscroll-behavior:contain}
+    dialog.quiz::backdrop{background:#050a18cc;backdrop-filter:blur(6px)}
+    .q-in{display:flex;flex-direction:column;max-height:min(92vh,820px)}
+    .q-top{display:flex;align-items:center;gap:12px;padding:22px 22px 0}
+    .q-count{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+    .q-close{margin-left:auto;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:20px;line-height:1;cursor:pointer;display:grid;place-items:center}
+    .q-bar{height:4px;background:var(--line);margin:16px 22px 0;border-radius:4px;overflow:hidden}
+    .q-bar i{display:block;height:100%;width:20%;background:var(--blue);border-radius:4px;transition:width .3s}
+    .q-body{overflow:auto;padding:28px 22px 8px;flex:1}
+    .q-step h3{font-size:24px;line-height:1.15;margin:0 0 20px}
+    .q-step .hint{font-size:15px;color:var(--mute);margin:-12px 0 20px;line-height:1.5}
+    .q-label{display:block;font-size:14px;font-weight:600;margin:22px 0 10px}
     h3+.q-label,.hint+.q-label{margin-top:0}
-    .q-input{width:100%;height:54px;padding:0 15px;border:1px solid #c6c6c1;background:#fff;font-size:17px;border-radius:0;-webkit-appearance:none}
-    textarea.q-input{height:84px;padding:12px 15px;resize:vertical;font-size:16px}
-    .q-input:focus{outline:2px solid var(--ink);outline-offset:-1px}
-    .opts{display:grid;gap:8px}
+    .q-input{width:100%;height:56px;padding:0 16px;border:1px solid var(--line);border-radius:16px;background:#fff;font-size:17px;-webkit-appearance:none}
+    textarea.q-input{height:88px;padding:14px 16px;resize:vertical;font-size:16px}
+    .q-input:focus{outline:2px solid var(--blue);outline-offset:-1px}
+    .opts{display:grid;gap:10px}
     .opt{position:relative;display:block;cursor:pointer}
     .opt input{position:absolute;opacity:0;pointer-events:none}
-    .opt span{display:flex;align-items:center;gap:12px;min-height:54px;padding:12px 15px;border:1px solid #c6c6c1;background:#fff;font-size:15px;font-weight:700;line-height:1.3;transition:border-color .15s,background .15s}
-    .opt span:before{content:"";flex:none;width:18px;height:18px;border-radius:50%;border:1.5px solid #9a9c9f;background:#fff}
-    .opt:hover span{border-color:var(--ink)}
-    .opt input:checked+span{border-color:var(--ink);background:var(--ink);color:#fff}
-    .opt input:checked+span:before{border:5px solid #fff;background:var(--ink)}
-    .opt input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+    .opt span{display:flex;align-items:center;gap:12px;min-height:58px;padding:14px 16px;border:1px solid var(--line);border-radius:16px;background:#fff;font-size:16px;font-weight:600;line-height:1.3;transition:border-color .15s,box-shadow .15s}
+    .opt span:before{content:"";flex:none;width:20px;height:20px;border-radius:50%;border:1.5px solid #a5adc2;background:#fff;transition:border .15s}
+    .opt:hover span{border-color:#b9c6ef}
+    .opt input:checked+span{border-color:var(--blue2);box-shadow:inset 0 0 0 1px var(--blue2)}
+    .opt input:checked+span:before{border:6px solid var(--blue2)}
+    .opt input:focus-visible+span{outline:2px solid var(--blue);outline-offset:2px}
     .opts.row3{grid-template-columns:repeat(3,1fr)}
     .opts.row3 span{justify-content:center;padding:12px 8px}
     .opts.row3 span:before{display:none}
-    .q-warn{display:none;margin:14px 0 0;padding:12px 14px;background:#fff;border-left:3px solid var(--accent);font-size:14px;line-height:1.5}
+    .q-warn{display:none;margin:14px 0 0;padding:12px 14px;border-radius:12px;background:#fff6e6;color:#7a5200;font-size:14px;line-height:1.45}
     .q-warn.on{display:block}
-    .q-err{display:none;color:var(--accent);font-size:13px;font-weight:700;margin:12px 0 0}
+    .q-err{display:none;color:#c8243c;font-size:14px;font-weight:700;margin:12px 0 0}
     .q-err.on{display:block}
     .consent{display:flex;gap:10px;align-items:flex-start;font-size:12px;color:var(--mute);line-height:1.5;margin-top:16px}
-    .consent input{width:18px;height:18px;margin:1px 0 0;accent-color:var(--ink);flex:none}
+    .consent input{width:18px;height:18px;margin:1px 0 0;accent-color:var(--blue2);flex:none}
     .trap{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-    .q-foot{display:flex;gap:8px;padding:14px 22px calc(18px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:var(--paper)}
-    .q-foot .btn{flex:1;min-height:54px}
-    .q-foot .q-back{flex:0 0 auto;background:transparent;border:1px solid #c6c6c1;color:var(--ink);padding:16px 18px}
-    .q-done{text-align:center;padding:48px 8px 24px}
-    .q-done .ok{width:64px;height:64px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:30px;margin:0 auto 22px}
-    .q-done h3{font-size:clamp(28px,6vw,36px);margin:0}
-    .q-done p{font-size:17px;color:#45484b;max-width:360px;margin:12px auto 0;line-height:1.55}
+    .q-foot{display:flex;gap:10px;padding:16px 22px calc(22px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:var(--soft)}
+    .q-foot .btn{flex:1;height:56px}
+    .q-foot .q-back{flex:0 0 56px;padding:0;background:#fff;color:var(--ink);border:1px solid var(--line);box-shadow:none;font-size:20px}
+    .q-done{text-align:center;padding:56px 8px 24px}
+    .q-done .ok{width:76px;height:76px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:34px;margin:0 auto 26px;box-shadow:0 20px 40px -14px var(--blue)}
+    .q-done h3{margin:0}
+    .q-done p{font-size:17px;color:#3d4762;max-width:360px;margin:14px auto 0;line-height:1.55}
     .q-fallback{display:none;margin-top:14px;font-size:14px;line-height:1.5}
     .q-fallback.on{display:block}
     .q-fallback a{text-decoration:underline;font-weight:700}
 
-    .rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
-    .rv.in{opacity:1;transform:none}
-
     @media(max-width:1000px){
-      .nav{display:none}.head .btn{margin-left:auto}
-      .hero .wrap{gap:32px}
-      .worries{grid-template-columns:1fr 1fr;gap:28px 32px}
+      .head nav{display:none}.head .btn{margin-left:auto}
+      .support{grid-template-columns:1fr 1fr}
     }
     @media(max-width:780px){
-      :root{--head:60px}
-      .logo img{width:116px}
-      .head .btn{padding:9px 13px;min-height:40px}
-      .hero-photo{display:block;position:relative;height:min(32svh,270px);overflow:hidden;background:var(--ink3)}
-      .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:46% 42%}
-      .hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,18,19,.05) 0%,rgba(17,18,19,.15) 45%,var(--ink) 100%)}
-      .hero .wrap{display:block;min-height:0;padding:0 0 32px;margin-top:-28px;position:relative}
-      .numbers .photo{display:none}
-      .hero h1{font-size:clamp(38px,min(12.1vw,8.6svh),80px)}
-      .hero .btn{width:100%}
-      .collage{display:none}
-      .steps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:20px;gap:12px;margin:32px -20px 0;padding:0 20px 4px;scrollbar-width:none}
+      :root{--wrap:calc(100% - 40px);--head:66px}
+      .head .logo img{height:36px}.head .btn{height:40px;padding:0 16px;font-size:13px}
+      .hero .bg{top:var(--head);bottom:auto;height:calc(100vw / 1.169)}
+      .hero .bg img{position:static;width:100%;height:100%;aspect-ratio:auto;object-position:center 70%}
+      .hero .bg:after{background:linear-gradient(180deg,transparent 0%,transparent 70%,#050a18 100%)}
+      .hero .main{min-height:calc(100svh - var(--head));justify-content:flex-end;padding:0 0 40px}
+      .hero h1{font-size:34px;margin-top:18px}.hero .main .btn{width:100%;margin-top:28px}
+      .pills{margin-top:24px;gap:8px;flex-wrap:nowrap}.pills div{padding:10px 12px;flex:1;min-width:0}.pills b{font-size:14px;white-space:nowrap}.pills span{font-size:11px;display:block;line-height:1.3}
+      .steps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:20px;margin:36px -20px 0;padding:0 20px 12px;gap:12px;scrollbar-width:none}
       .steps::-webkit-scrollbar{display:none}
-      .step{flex:0 0 78%;scroll-snap-align:start}
-      .step:last-child{margin-right:20px}
-      .two,.final .two{grid-template-columns:1fr;gap:36px}
-      .photo{aspect-ratio:4/3}
-      .worries{grid-template-columns:1fr;gap:24px;margin-top:32px}
-      .final .btn{width:100%}
-      dialog.quiz{width:100%;height:100%;max-height:none;margin:0}
+      .step{flex:0 0 78%;scroll-snap-align:start}.step:last-child{margin-right:20px}
+      .money .wrap{grid-template-columns:1fr;gap:28px}.card{padding:24px;gap:20px 16px}.card b{font-size:18px}.card span{font-size:13px}
+      .support{gap:12px;margin-top:36px}.sup{padding:20px}.sup h3{font-size:15px;margin-top:16px}.sup p{font-size:14px}
+      .final .box{grid-template-columns:1fr;border-radius:28px}.final figure{min-height:0;height:240px}.final .in{padding:28px}.final .btn{width:100%}
+      footer .wrap{flex-direction:column}
+      dialog.quiz{width:100%;height:100%;max-height:none;margin:0;border-radius:0}
       .q-in{height:100%;max-height:none}
-      .q-top{padding-top:calc(14px + env(safe-area-inset-top))}
+      .q-top{padding-top:calc(18px + env(safe-area-inset-top))}
     }
-    @media(max-width:370px){.opts.row3{grid-template-columns:1fr}}
-    @media(max-width:780px) and (max-height:620px){.hero-photo{height:22svh}.hero .lead{font-size:15px;margin-top:14px}.hero .btn{margin-top:18px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+    @media(max-width:370px){.hero h1{font-size:30px}.opts.row3{grid-template-columns:1fr}.support{grid-template-columns:1fr}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
   </style>
 </head>
 <body>
-  <header class="head">
+  <header class="head" id="head">
     <div class="wrap">
       <a class="logo" href="#top" aria-label="Бронь Сервис — наверх"><img src="bron-logo-white.png" alt="Бронь Сервис" width="132" height="50"></a>
-      <nav class="nav" aria-label="Разделы"><a href="#product">Как это работает</a><a href="#money">Деньги</a><a href="#support">Поддержка</a></nav>
-      <button class="btn btn-light" type="button" data-quiz>Купить франшизу</button>
+      <nav aria-label="Разделы"><a href="#product">Как это работает</a><a href="#money">Деньги</a><a href="#support">Поддержка</a></nav>
+      <button class="btn" type="button" data-quiz>Купить франшизу</button>
     </div>
   </header>
 
   <main id="top">
-    <section class="hero dark" aria-labelledby="h1">
-      <div class="hero-photo" aria-hidden="true"><img src="kiosk-mall.webp" alt="" width="1800" height="1350" fetchpriority="high"></div>
+    <section class="hero" aria-labelledby="h1">
+      <div class="bg" aria-hidden="true"><picture><source media="(max-width:780px)" srcset="kiosk-crop-m.webp"><img src="kiosk-crop.webp" alt="" width="1800" height="1540" fetchpriority="high"></picture></div>
+      <div class="wrap main">
+        <div class="chip">Франшиза · с 2019 года</div>
+        <h1 id="h1">Свой бизнес<br>на защите<br><span>телефонов</span></h1>
+        <p class="lead">Островок 4–6 м² и плёнка с дизайном на любую модель телефона. Опыт не нужен — всему научим.</p>
+        <button class="btn" type="button" data-quiz>Купить франшизу</button>
+        <div class="pills"><div><b>38</b><span>точек в 3 странах</span></div><div><b>≈1 млн ₽</b><span>вложения</span></div><div><b>7–10 мес</b><span>окупаемость</span></div></div>
+      </div>
+    </section>
+
+    <section class="section soft" id="product" aria-labelledby="product-h">
+      <div class="wrap">
+        <div class="chip">Почему это работает</div>
+        <h2 id="product-h">Телефон есть у каждого. <span>Плёнка — одна на все модели.</span></h2>
+        <p class="lead">Плоттер вырезает её под телефон клиента из базы лекал. Склад чехлов не нужен, средний чек — около 2 000 ₽.</p>
+        <div class="steps">
+          <figure class="step"><div class="ph"><img src="film-design.webp" alt="Телефон с дизайнерской плёнкой" width="1000" height="1500" loading="lazy" style="object-position:center 62%"></div><figcaption><i>1</i>Клиент выбирает дизайн</figcaption></figure>
+          <figure class="step"><div class="ph"><img src="film-plotter.webp" alt="Плоттер режет плёнку по лекалу" width="900" height="1350" loading="lazy" style="object-position:center 55%"></div><figcaption><i>2</i>Плоттер режет под модель</figcaption></figure>
+          <figure class="step"><div class="ph"><img src="film-apply.webp" alt="Мастер клеит плёнку на телефон" width="1500" height="1000" loading="lazy"></div><figcaption><i>3</i>Мастер клеит за 25 минут</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section money" id="money" aria-labelledby="money-h">
       <div class="wrap">
         <div>
-          <div class="kicker">Франшиза · с 2019 года</div>
-          <h1 id="h1">Свой бизнес<br>на защите<br><em>телефонов.</em></h1>
-          <p class="lead">Островок 4–6 м² и плёнка с дизайном на любую модель телефона. Опыт не нужен — всему научим.</p>
-          <button class="btn btn-light" type="button" data-quiz>Купить франшизу</button>
+          <div class="chip">Деньги</div>
+          <h2 id="money-h">Сколько вложить <span>и когда вернётся</span></h2>
+          <p class="lead">Ориентиры по работающим точкам сети. Точный расчёт под ваш город директор покажет на созвоне.</p>
+          <figure class="live"><img src="kiosk-live.webp" alt="Островок «Бронь Сервис» с покупателями" width="1400" height="933" loading="lazy"><figcaption>Островок 4–6 м²</figcaption></figure>
+          <p class="note">Не является публичной офертой.</p>
         </div>
-        <div class="collage" aria-hidden="true">
-          <img class="c-main" src="film-design.webp" alt="" width="1000" height="1500" fetchpriority="high">
-          <img class="c-sub" src="film-roses.webp" alt="" width="900" height="1350">
+        <div class="card">
+          <div><b>≈1 млн ₽</b><span>вложения под ключ</span></div>
+          <div><b>450 000 ₽</b><span>паушальный взнос, входит в сумму</span></div>
+          <div><b>200 тыс – 1 млн ₽</b><span>выручка точки в месяц</span></div>
+          <div><b>7–10 мес</b><span>окупаемость</span></div>
+          <div><b>7 %</b><span>роялти от выручки</span></div>
+          <div><b>30 дней</b><span>от договора до открытия</span></div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="product" aria-labelledby="product-h">
+    <section class="section soft" id="support" aria-labelledby="support-h">
       <div class="wrap">
-        <div class="rv">
-          <div class="kicker">Почему это работает</div>
-          <h2 id="product-h">Телефон есть<br><em>у каждого.</em></h2>
-          <p class="lead">А плёнка у нас одна на все модели: плоттер вырезает её под телефон клиента из базы лекал. Склад чехлов не нужен, средний чек — около 2 000 ₽.</p>
-        </div>
-        <div class="steps">
-          <figure class="step rv"><div><small>01</small><img src="film-wall.webp" alt="Витрина с образцами дизайнов плёнки" width="900" height="1350" loading="lazy"></div><figcaption>Клиент выбирает дизайн</figcaption></figure>
-          <figure class="step rv"><div><small>02</small><img src="film-plotter.webp" alt="Мастер запускает плоттер, который режет плёнку по лекалу" width="900" height="1350" loading="lazy" style="object-position:center 55%"></div><figcaption>Плоттер режет под модель</figcaption></figure>
-          <figure class="step rv"><div><small>03</small><img src="film-apply.webp" alt="Мастер клеит текстурную плёнку на Samsung" width="1500" height="1000" loading="lazy" style="object-position:40% center"></div><figcaption>Мастер клеит за 25 минут</figcaption></figure>
+        <div class="chip">Поддержка</div>
+        <h2 id="support-h">Вы не будете <span>разбираться один</span></h2>
+        <div class="support">
+          <div class="sup"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 8l9-4 9 4-9 4-9-4z"/><path d="M7 10v5c3 2 7 2 10 0v-5"/></svg></div><h3>Обучение</h3><p>5–7 дней с вами или вашим мастером: оклейка, плоттер, продажи.</p></div>
+          <div class="sup"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s7-6.2 7-11a7 7 0 10-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><h3>Место</h3><p>Подберём точку с потоком людей и проверим, свободен ли ваш город.</p></div>
+          <div class="sup"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 7l9-4 9 4v10l-9 4-9-4V7z"/><path d="M3 7l9 4 9-4M12 11v10"/></svg></div><h3>Закупка</h3><p>Плёнку, плоттер и расходники поставляем мы — по самым низким ценам, с качеством, проверенным на 38 точках.</p></div>
+          <div class="sup"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 12a8 8 0 0116 0v5a3 3 0 01-3 3h-1v-6h4M4 14h4v6H7a3 3 0 01-3-3v-3z"/></svg></div><h3>После открытия</h3><p>Онлайн-кабинет с планом и инструкциями, реклама и команда на связи.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section numbers" id="money" aria-labelledby="money-h">
-      <div class="wrap two">
-        <figure class="photo rv"><img src="kiosk-mall.webp" alt="Островок «Бронь Сервис»" width="1800" height="1350" loading="lazy" style="object-position:38% center"></figure>
-        <div class="rv">
-          <div class="kicker">Деньги</div>
-          <h2 id="money-h">Сколько вложить<br><em>и когда вернётся.</em></h2>
-          <div class="rows">
-            <div><span>Вложения под ключ</span><b>≈1 млн ₽</b></div>
-            <div><span>Из них паушальный взнос</span><b>450 000 ₽</b></div>
-            <div><span>Выручка точки в месяц</span><b>200 тыс – 1 млн ₽</b></div>
-            <div><span>Окупаемость</span><b>7–10 мес</b></div>
-            <div><span>Роялти</span><b>7 % от выручки</b></div>
-            <div><span>От договора до открытия</span><b>30 дней</b></div>
+    <section class="section final" id="final" aria-labelledby="final-h">
+      <div class="wrap">
+        <div class="box">
+          <figure><img src="franchise-handshake.webp" alt="Директор «Бронь Сервис» пожимает руку новому партнёру" width="900" height="1350" loading="lazy"></figure>
+          <div class="in">
+            <div class="chip">Знакомство</div>
+            <h2 id="final-h">Начнём <span>с разговора</span></h2>
+            <p class="lead">Директор компании лично знакомится с каждым будущим партнёром. Расскажите о себе в короткой анкете — он позвонит и честно скажет, подойдёт ли формат вашему городу.</p>
+            <button class="btn" type="button" data-quiz>Купить франшизу</button>
+            <p class="small">5 вопросов · 2 минуты</p>
           </div>
-          <p class="note">Ориентиры по работающим точкам сети. Расчёт под ваш город директор покажет на созвоне. Не является публичной офертой.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="support" aria-labelledby="gets-h">
-      <div class="wrap">
-        <div class="rv">
-          <div class="kicker">Поддержка</div>
-          <h2 id="gets-h">Вы не будете<br><em>разбираться один.</em></h2>
-        </div>
-        <div class="worries rv">
-          <div><b>Обучение</b><p>5–7 дней с вами или вашим мастером: оклейка, плоттер, продажи.</p></div>
-          <div><b>Место</b><p>Подберём точку с потоком людей и проверим, свободен ли ваш город.</p></div>
-          <div><b>Закупка</b><p>Плёнку, плоттер и расходники поставляем мы — по самым низким ценам. Без поиска поставщиков и переплат, с качеством, проверенным на 38 точках.</p></div>
-          <div><b>После открытия</b><p>Онлайн-кабинет с планом и инструкциями, реклама и команда на связи.</p></div>
-        </div>
-      </div>
-    </section>
-
-
-    <section class="section dark final" aria-labelledby="final-h">
-      <div class="wrap two">
-        <figure class="photo rv"><img src="franchise-handshake.webp" alt="Директор «Бронь Сервис» пожимает руку новому партнёру" width="900" height="1350" loading="lazy"></figure>
-        <div class="rv">
-          <div class="kicker">Знакомство</div>
-          <h2 id="final-h">Начнём<br><em>с разговора.</em></h2>
-          <p class="lead">Директор компании лично знакомится с каждым будущим партнёром. Расскажите о себе в короткой анкете — он позвонит и честно скажет, подойдёт ли формат вашему городу.</p>
-          <button class="btn btn-light" type="button" data-quiz>Купить франшизу</button>
-          <p class="note">5 вопросов · 2 минуты</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="foot">
+  <footer>
     <div class="wrap">
-      <img src="bron-logo-white.png" alt="Бронь Сервис" width="132" height="50" style="width:132px;height:50px;object-fit:contain;object-position:left">
-      <div><a href="tel:+79956666614">+7 995 666-66-14</a> · <a href="https://wa.me/79956666614" target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
-      <div class="legal">© 2026 «Бронь Сервис». Цифры — по данным компании на октябрь 2026 года, ориентировочные. Не является публичной офертой.</div>
+      <span>© 2026 «Бронь Сервис»</span>
+      <span><a href="tel:+79956666614">+7 995 666-66-14</a> · <a href="https://wa.me/79956666614" target="_blank" rel="noopener noreferrer">WhatsApp</a></span>
+      <span class="legal">Цифры — по данным компании на октябрь 2026 года, ориентировочные. Информация на сайте не является публичной офертой.</span>
     </div>
   </footer>
 
@@ -285,6 +279,7 @@
 
         <section class="q-step" data-step="0">
           <h3>Где хотите открыться?</h3>
+          <p class="hint">Проверим, свободен ли ваш город.</p>
           <label class="q-label" for="q-city">Город</label>
           <input class="q-input" id="q-city" name="city" autocomplete="address-level2" placeholder="Например, Краснодар" maxlength="80">
           <span class="q-label">Когда хотите открыть точку?</span>
@@ -359,7 +354,7 @@
       </div>
       <div class="q-foot">
         <button class="btn q-back" type="button" id="q-back" hidden aria-label="Назад">←</button>
-        <button class="btn btn-dark" type="submit" id="q-next">Дальше</button>
+        <button class="btn" type="submit" id="q-next">Дальше</button>
       </div>
     </form>
   </dialog>
@@ -467,11 +462,10 @@
     [].forEach.call(document.querySelectorAll('[data-quiz]'),function(b){b.addEventListener('click',open)});
     if(location.hash==='#anketa')open();
 
-    // Плавное появление блоков при прокрутке
-    if('IntersectionObserver' in window){
-      var rv=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');rv.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});
-      [].forEach.call(document.querySelectorAll('.rv'),function(el){rv.observe(el)});
-    }else{[].forEach.call(document.querySelectorAll('.rv'),function(el){el.classList.add('in')})}
+    // Шапка темнеет, когда первый экран прокручен
+    var head=document.getElementById('head');
+    function onScroll(){head.classList.toggle('solid',window.scrollY>40)}
+    window.addEventListener('scroll',onScroll,{passive:true});onScroll();
   })();
   </script>
 </body>

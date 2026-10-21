@@ -50,9 +50,6 @@
     .hero h1{font-size:clamp(44px,min(5.6vw,10.5vh),84px);line-height:.93;letter-spacing:-.075em;margin:clamp(18px,3vh,28px) 0 0}
     .hero .lead{max-width:440px}
     .hero .btn{margin-top:clamp(24px,4vh,36px)}
-    .facts{display:flex;gap:36px;margin-top:clamp(28px,5vh,48px)}
-    .facts b{display:block;font-size:clamp(20px,2vw,26px);letter-spacing:-.05em;line-height:1.1}
-    .facts span{display:block;font-size:12px;color:var(--mute-d);margin-top:2px}
     .hero-photo{display:none}
     .collage{position:relative;height:min(600px,calc(100svh - var(--head) - 110px));min-height:420px}
     .collage img{position:absolute;object-fit:cover;background:var(--ink3)}
@@ -85,17 +82,6 @@
     .worries b{display:block;font-size:19px;letter-spacing:-.035em;line-height:1.2}
     .worries p{margin:8px 0 0;font-size:15px;color:var(--mute);line-height:1.55}
 
-    /* Вопросы */
-    .faq{background:var(--paper2)}
-    .faq .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:64px;align-items:start}
-    .faq-list{border-top:1px solid #cfcfca}
-    .faq details{border-bottom:1px solid #cfcfca}
-    .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:20px 0;font-size:18px;font-weight:800;letter-spacing:-.03em;line-height:1.3}
-    .faq summary::-webkit-details-marker{display:none}
-    .faq summary:after{content:"+";font-size:26px;font-weight:300;line-height:.9;transition:transform .2s}
-    .faq details[open] summary:after{transform:rotate(45deg)}
-    .faq details p{margin:-6px 40px 22px 0;color:#5d6063;font-size:15px;line-height:1.7}
-
     /* Финал */
     .final .two{grid-template-columns:.8fr 1.2fr}
     .final .photo img{object-position:center 30%}
@@ -106,8 +92,6 @@
     .foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 40px;padding:28px 0 32px}
     .foot a{color:#fff}
     .foot .legal{flex-basis:100%;font-size:11px;line-height:1.6}
-
-    .dock{display:none}
 
     /* Анкета */
     dialog.quiz{border:0;padding:0;margin:auto;width:min(540px,100%);max-width:100%;max-height:min(92vh,800px);background:var(--paper);color:var(--ink);box-shadow:0 30px 100px #000a;overscroll-behavior:contain}
@@ -175,25 +159,15 @@
       .numbers .photo{display:none}
       .hero h1{font-size:clamp(38px,min(12.1vw,8.6svh),80px)}
       .hero .btn{width:100%}
-      .facts{justify-content:space-between;gap:12px}
-      .facts b{font-size:clamp(17px,5.2vw,24px)}
-      .facts span{font-size:11px}
       .collage{display:none}
       .steps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:20px;gap:12px;margin:32px -20px 0;padding:0 20px 4px;scrollbar-width:none}
       .steps::-webkit-scrollbar{display:none}
       .step{flex:0 0 78%;scroll-snap-align:start}
       .step:last-child{margin-right:20px}
-      .two,.final .two,.faq .wrap{grid-template-columns:1fr;gap:36px}
+      .two,.final .two{grid-template-columns:1fr;gap:36px}
       .photo{aspect-ratio:4/3}
       .worries{grid-template-columns:1fr;gap:24px;margin-top:32px}
-      .faq summary{font-size:16px}
-      .faq details p{margin-right:0}
       .final .btn{width:100%}
-      .dock{display:block;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#111213f0;border-top:1px solid var(--line-d);transform:translateY(110%);transition:transform .25s}
-      .dock.on{transform:none}
-      .dock .btn{width:100%;min-height:52px}
-      body.lock .dock{display:none}
-      .foot .wrap{padding-bottom:96px}
       dialog.quiz{width:100%;height:100%;max-height:none;margin:0}
       .q-in{height:100%;max-height:none}
       .q-top{padding-top:calc(14px + env(safe-area-inset-top))}
@@ -207,7 +181,7 @@
   <header class="head">
     <div class="wrap">
       <a class="logo" href="#top" aria-label="Бронь Сервис — наверх"><img src="bron-logo-white.png" alt="Бронь Сервис" width="132" height="50"></a>
-      <nav class="nav" aria-label="Разделы"><a href="#product">Как это работает</a><a href="#money">Деньги</a><a href="#faq">Вопросы</a></nav>
+      <nav class="nav" aria-label="Разделы"><a href="#product">Как это работает</a><a href="#money">Деньги</a><a href="#support">Поддержка</a></nav>
       <button class="btn btn-light" type="button" data-quiz>Купить франшизу</button>
     </div>
   </header>
@@ -219,13 +193,8 @@
         <div>
           <div class="kicker">Франшиза · с 2019 года</div>
           <h1 id="h1">Свой бизнес<br>на защите<br><em>телефонов.</em></h1>
-          <p class="lead">Островок 4–6 м² и плёнка с дизайном на любую модель. Опыт не нужен — научим и откроемся вместе за 30 дней.</p>
+          <p class="lead">Островок 4–6 м² и плёнка с дизайном на любую модель телефона. Опыт не нужен — всему научим.</p>
           <button class="btn btn-light" type="button" data-quiz>Купить франшизу</button>
-          <div class="facts">
-            <div><b>≈1 млн ₽</b><span>вложения</span></div>
-            <div><b>7–10 мес</b><span>окупаемость</span></div>
-            <div><b>38 точек</b><span>в 3 странах</span></div>
-          </div>
         </div>
         <div class="collage" aria-hidden="true">
           <img class="c-main" src="film-design.webp" alt="" width="1000" height="1500" fetchpriority="high">
@@ -268,32 +237,21 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="gets-h">
+    <section class="section" id="support" aria-labelledby="gets-h">
       <div class="wrap">
         <div class="rv">
           <div class="kicker">Поддержка</div>
           <h2 id="gets-h">Вы не будете<br><em>разбираться один.</em></h2>
         </div>
         <div class="worries rv">
-          <div><b>Нет опыта</b><p>Обучим вас или мастера за 5–7 дней: оклейка, плоттер, продажи.</p></div>
-          <div><b>Не знаете, где встать</b><p>Поможем найти место с потоком людей и проверим, свободен ли город.</p></div>
-          <div><b>Где брать плёнку</b><p>Поставляем сами по самым низким ценам — о закупке думать не нужно.</p></div>
-          <div><b>Что после открытия</b><p>Онлайн-кабинет с планом и инструкциями, реклама и команда на связи.</p></div>
+          <div><b>Обучение</b><p>5–7 дней с вами или вашим мастером: оклейка, плоттер, продажи.</p></div>
+          <div><b>Место</b><p>Подберём точку с потоком людей и проверим, свободен ли ваш город.</p></div>
+          <div><b>Закупка</b><p>Плёнку, плоттер и расходники поставляем мы — по самым низким ценам. Без поиска поставщиков и переплат, с качеством, проверенным на 38 точках.</p></div>
+          <div><b>После открытия</b><p>Онлайн-кабинет с планом и инструкциями, реклама и команда на связи.</p></div>
         </div>
       </div>
     </section>
 
-    <section class="section faq" id="faq" aria-labelledby="faq-h">
-      <div class="wrap">
-        <div class="rv"><div class="kicker">Вопросы</div><h2 id="faq-h">О чём обычно<br><em>спрашивают.</em></h2></div>
-        <div class="faq-list rv">
-          <details><summary>У меня нет опыта в бизнесе. Получится?</summary><p>Да. За 5–7 дней обучаем вас или вашего мастера: оклейка, плоттер, продажи. После открытия команда остаётся на связи, а в онлайн-кабинете — инструкции на каждый случай.</p></details>
-          <details><summary>Где можно поставить островок?</summary><p>Почти везде, где есть поток людей, — нужно всего 4–6 м². Поможем выбрать место и проверим, свободна ли территория в вашем городе.</p></details>
-          <details><summary>Почему плёнка, а не чехлы?</summary><p>Чехлы нужно закупать под каждую модель — это склад и остатки. Плёнка одна на все телефоны: плоттер вырезает её по лекалу.</p></details>
-          <details><summary>Кому франшиза не подойдёт?</summary><p>Тем, у кого нет около 1 млн ₽, кто ищет пассивный доход без участия или хочет менять продукт и стандарты под себя.</p></details>
-        </div>
-      </div>
-    </section>
 
     <section class="section dark final" aria-labelledby="final-h">
       <div class="wrap two">
@@ -316,8 +274,6 @@
       <div class="legal">© 2026 «Бронь Сервис». Цифры — по данным компании на октябрь 2026 года, ориентировочные. Не является публичной офертой.</div>
     </div>
   </footer>
-
-  <div class="dock" id="dock"><button class="btn btn-light" type="button" data-quiz>Купить франшизу</button></div>
 
   <dialog class="quiz" id="quiz" aria-labelledby="q-title">
     <form class="q-in" id="qform" novalidate>
@@ -511,12 +467,8 @@
     [].forEach.call(document.querySelectorAll('[data-quiz]'),function(b){b.addEventListener('click',open)});
     if(location.hash==='#anketa')open();
 
-    // Нижняя кнопка на телефоне — после первого экрана, кроме последнего блока
-    var dock=document.getElementById('dock'), hero=document.querySelector('.hero'), fin=document.querySelector('.final');
+    // Плавное появление блоков при прокрутке
     if('IntersectionObserver' in window){
-      var vis={hero:true,final:false};
-      var io=new IntersectionObserver(function(es){es.forEach(function(x){vis[x.target===hero?'hero':'final']=x.isIntersecting});dock.classList.toggle('on',!vis.hero&&!vis.final)});
-      io.observe(hero);io.observe(fin);
       var rv=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');rv.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});
       [].forEach.call(document.querySelectorAll('.rv'),function(el){rv.observe(el)});
     }else{[].forEach.call(document.querySelectorAll('.rv'),function(el){el.classList.add('in')})}

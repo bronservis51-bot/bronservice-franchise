@@ -62,11 +62,11 @@
     /* Продукт */
     .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:48px}
     .step{margin:0}
-    .step div{aspect-ratio:4/5;overflow:hidden;background:var(--paper2)}
+    .step div{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--paper2)}
+    .step div small{position:absolute;top:14px;left:14px;z-index:1;background:#fff;color:var(--ink);font-size:12px;font-weight:800;letter-spacing:.04em;line-height:1;padding:7px 9px}
     .step img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
     .step:hover img{transform:scale(1.03)}
-    .step figcaption{display:flex;gap:12px;align-items:baseline;padding-top:14px;font-size:17px;font-weight:800;letter-spacing:-.03em}
-    .step figcaption small{font-size:11px;color:var(--mute);letter-spacing:.08em}
+    .step figcaption{padding-top:14px;font-size:17px;font-weight:800;letter-spacing:-.03em;line-height:1.3}
 
     /* Цифры */
     .numbers{background:#fff}
@@ -174,9 +174,10 @@
       .facts b{font-size:clamp(17px,5.2vw,24px)}
       .facts span{font-size:11px}
       .collage{display:none}
-      .steps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:32px -20px 0;padding:0 20px 4px;scrollbar-width:none}
+      .steps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:20px;gap:12px;margin:32px -20px 0;padding:0 20px 4px;scrollbar-width:none}
       .steps::-webkit-scrollbar{display:none}
-      .step{flex:0 0 76%;scroll-snap-align:start}
+      .step{flex:0 0 78%;scroll-snap-align:start}
+      .step:last-child{margin-right:20px}
       .two,.final .two,.faq .wrap{grid-template-columns:1fr;gap:36px}
       .photo{aspect-ratio:4/3}
       .gets{grid-template-columns:1fr;margin-top:28px}
@@ -235,9 +236,9 @@
           <p class="lead">Плоттер вырезает её под любой телефон из нашей базы лекал. Склад чехлов не нужен.</p>
         </div>
         <div class="steps">
-          <figure class="step rv"><div><img src="film-wall.webp" alt="Витрина с образцами дизайнов плёнки" width="900" height="1350" loading="lazy"></div><figcaption><small>01</small>Клиент выбирает дизайн</figcaption></figure>
-          <figure class="step rv"><div><img src="film-plotter.webp" alt="Мастер запускает плоттер, который режет плёнку по лекалу" width="900" height="1350" loading="lazy" style="object-position:center 55%"></div><figcaption><small>02</small>Плоттер режет под модель</figcaption></figure>
-          <figure class="step rv"><div><img src="film-apply.webp" alt="Мастер клеит текстурную плёнку на Samsung" width="1500" height="1000" loading="lazy" style="object-position:40% center"></div><figcaption><small>03</small>Мастер клеит за 25 минут</figcaption></figure>
+          <figure class="step rv"><div><small>01</small><img src="film-wall.webp" alt="Витрина с образцами дизайнов плёнки" width="900" height="1350" loading="lazy"></div><figcaption>Клиент выбирает дизайн</figcaption></figure>
+          <figure class="step rv"><div><small>02</small><img src="film-plotter.webp" alt="Мастер запускает плоттер, который режет плёнку по лекалу" width="900" height="1350" loading="lazy" style="object-position:center 55%"></div><figcaption>Плоттер режет под модель</figcaption></figure>
+          <figure class="step rv"><div><small>03</small><img src="film-apply.webp" alt="Мастер клеит текстурную плёнку на Samsung" width="1500" height="1000" loading="lazy" style="object-position:40% center"></div><figcaption>Мастер клеит за 25 минут</figcaption></figure>
         </div>
       </div>
     </section>

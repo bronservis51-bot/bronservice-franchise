@@ -157,23 +157,27 @@
     @media(max-width:780px){
       :root{--wrap:calc(100% - 40px);--head:66px}
       .head .logo img{height:36px}.head .btn{height:40px;padding:0 16px;font-size:13px}
-      .hero .bg{top:var(--head);bottom:auto;height:calc(100vw / 1.169)}
-      .hero .bg img{position:static;width:100%;height:100%;aspect-ratio:auto;object-position:center 70%}
-      .hero .bg:after{background:linear-gradient(180deg,transparent 0%,transparent 70%,#050a18 100%)}
-      .hero .main{min-height:calc(100svh - var(--head));justify-content:flex-end;padding:0 0 40px}
-      .hero h1{font-size:34px;margin-top:18px}.hero .main .btn{width:100%;margin-top:28px}
-      .pills{margin-top:24px;gap:8px;flex-wrap:nowrap}.pills div{padding:10px 12px;flex:1;min-width:0}.pills b{font-size:14px;white-space:nowrap}.pills span{font-size:11px;display:block;line-height:1.3}
+      .hero .bg{position:relative;inset:auto;height:clamp(200px,62vw,300px)}
+      .hero .bg img{position:static;width:100%;height:100%;aspect-ratio:auto;object-position:center 88%}
+      .hero .bg:after{background:linear-gradient(180deg,transparent 0%,transparent 78%,#050a18 100%)}
+      .hero .main{min-height:0;justify-content:flex-start;padding:18px 0 36px}
+      .hero .chip{height:30px;font-size:12px;padding:0 12px}
+      .hero h1{font-size:clamp(28px,8.4vw,36px);margin-top:14px}
+      .hero .lead{font-size:16px;margin-top:14px;line-height:1.5}
+      .hero .main .btn{width:100%;margin-top:22px}
+      .pills{margin-top:20px;gap:8px;flex-wrap:nowrap}.pills div{padding:10px 12px;flex:1;min-width:0}.pills b{font-size:14px;white-space:nowrap}.pills span{font-size:11px;display:block;line-height:1.3}
       .steps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:20px;margin:36px -20px 0;padding:0 20px 12px;gap:12px;scrollbar-width:none}
       .steps::-webkit-scrollbar{display:none}
       .step{flex:0 0 78%;scroll-snap-align:start}.step:last-child{margin-right:20px}
       .money .wrap{grid-template-columns:1fr;gap:28px}.card{padding:24px;gap:20px 16px}.card b{font-size:18px}.card span{font-size:13px}
       .support{gap:12px;margin-top:36px}.sup{padding:20px}.sup h3{font-size:15px;margin-top:16px}.sup p{font-size:14px}
-      .final .box{grid-template-columns:1fr;border-radius:28px}.final figure{min-height:0;height:240px}.final .in{padding:28px}.final .btn{width:100%}
+      .final .box{grid-template-columns:1fr;border-radius:28px}.final figure{min-height:0;height:auto;aspect-ratio:1/1}.final figure img{object-position:center 4%}.final .in{padding:28px}.final .btn{width:100%}
       footer .wrap{flex-direction:column}
       dialog.quiz{width:100%;height:100%;max-height:none;margin:0;border-radius:0}
       .q-in{height:100%;max-height:none}
       .q-top{padding-top:calc(18px + env(safe-area-inset-top))}
     }
+    @media(max-width:780px) and (max-height:640px){.hero .bg{height:clamp(170px,48vw,240px)}.hero .chip{display:none}.hero h1{margin-top:0}}
     @media(max-width:370px){.hero h1{font-size:30px}.opts.row3{grid-template-columns:1fr}.support{grid-template-columns:1fr}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
   </style>

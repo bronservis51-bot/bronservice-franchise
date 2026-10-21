@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111114">
+  <meta name="description" content="Откройте точку «Бронь Сервис» за 30 дней. Инвестиции около 1 млн рублей. Готовая система запуска, обучение и поддержка партнёров.">
+  <meta property="og:title" content="Франшиза Бронь Сервис — бизнес за 30 дней">
+  <meta property="og:description" content="Каждый владелец телефона — потенциальный клиент. Открытие за 30 дней, инвестиции около 1 млн ₽.">
+  <meta property="og:type" content="website">
+  <title>Франшиза Бронь Сервис — ваша точка за 30 дней</title>
+  <link rel="icon" href="shield-white.png" type="image/png">
+  <style>
+    :root{--ink:#131316;--night:#111114;--night2:#1b1b20;--light:#f6f4f0;--cream:#ece9e3;--white:#fff;--muted:#747477;--wine:#a63850;--wine2:#87253d;--stroke:#dcd9d4;--radius:20px}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:72px}
+    body{margin:0;background:var(--light);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased}
+    body.modal-open{overflow:hidden}
+    a{color:inherit;text-decoration:none}button,input,select{font:inherit}
+    button{cursor:pointer}img{display:block;max-width:100%}
+    :focus-visible{outline:3px solid #ca6981;outline-offset:3px}
+    .container{width:min(1180px,calc(100% - 36px));margin-inline:auto}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:10px;line-height:1.4;letter-spacing:.15em;text-transform:uppercase;font-weight:800}
+    .eyebrow:before{content:"";height:7px;width:7px;background:currentColor;border-radius:50%;flex:none}
+    .btn{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;min-height:56px;padding:15px 20px;border:1px solid transparent;border-radius:6px;font-size:14px;font-weight:800;letter-spacing:-.015em;text-align:left;transition:transform .2s,background-color .2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-light{background:var(--white);color:var(--ink)}
+    .btn-dark{background:var(--ink);color:var(--white)}
+    .btn-wine{background:var(--wine);color:var(--white)}
+    .btn-ghost{background:transparent;border-color:#ffffff45;color:white}
+    .btn .arrow{font-size:22px;line-height:1;font-weight:400}
+    .site-header{height:66px;position:sticky;top:0;z-index:40;background:#111114f5;border-bottom:1px solid #ffffff22;backdrop-filter:blur(16px)}
+    .nav-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand img{width:138px;height:48px;object-fit:contain;object-position:left center}
+    .nav-cta{border:1px solid #ffffff55;background:transparent;color:var(--white);border-radius:6px;min-height:40px;padding:9px 14px;font-size:12px;font-weight:750;white-space:nowrap}
+    .nav-cta:hover{background:#ffffff20}
+    .hero{background:var(--night);color:white;overflow:hidden;position:relative}
+    .hero .container{position:relative}
+    .hero-copy{padding:58px 0 6px;position:relative;z-index:2}
+    .hero .eyebrow{color:#cfc8cb}
+    .hero h1{font-size:clamp(47px,11.9vw,78px);line-height:.98;letter-spacing:-.074em;font-weight:850;max-width:750px;margin:22px 0 18px}
+    .hero h1 em{font-style:normal;color:#db8798}
+    .hero .sub{font-size:16px;line-height:1.55;color:#c4c0c2;max-width:530px;margin:0 0 22px}
+    .hero-offer{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 24px}
+    .offer-pill{padding:10px 13px;border:1px solid #ffffff35;border-radius:6px;font-size:12px;color:#f2ecee;font-weight:700;white-space:nowrap}
+    .hero .btn{width:100%;max-width:370px}
+    .hero-hint{font-size:11px;color:#aaa4a7;margin:11px 0 0}
+    .hero-visual{height:360px;position:relative;margin-top:10px;display:flex;align-items:center;justify-content:center}
+    .hero-visual:before{content:"";position:absolute;inset:5% 7% 0;background:radial-gradient(ellipse at center,#93314975 0,#451e2d47 42%,transparent 72%)}
+    .orbit{position:absolute;border:1px solid #ffffff22;border-radius:50%;width:305px;height:305px;box-shadow:0 0 0 45px #ffffff06,0 0 0 90px #ffffff04}
+    .hero-visual img{height:335px;width:auto;object-fit:contain;position:relative;filter:drop-shadow(6px 20px 24px #000a);transform:rotate(-5deg)}
+    .hero-caption{position:absolute;bottom:17px;left:0;color:#a7a1a6;font-size:10px;letter-spacing:.17em;font-weight:800}
+    .stats{background:var(--night2);color:white;border-top:1px solid #ffffff16}
+    .stats-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0}
+    .stat{padding:24px 5px 22px 0}
+    .stat+.stat{padding-left:19px;border-left:1px solid #ffffff22}
+    .stat strong{display:block;font-size:40px;letter-spacing:-.075em;line-height:1}
+    .stat span{display:block;color:#b9b5b6;font-size:11px;line-height:1.45;margin-top:7px}
+    .section{padding:82px 0}
+    h2{font-size:clamp(36px,9vw,68px);line-height:1.045;letter-spacing:-.07em;font-weight:830;margin:15px 0 18px}
+    h2 em{font-style:normal;color:var(--wine)}
+    .section-lead{font-size:16px;line-height:1.6;color:#656367;margin:0;max-width:550px}
+    .manifesto{padding-bottom:50px}
+    .manifesto .big-thought{font-size:clamp(32px,8.4vw,62px);line-height:1.11;letter-spacing:-.065em;font-weight:820;max-width:920px;margin:20px 0 19px}
+    .manifesto .big-thought span{color:var(--wine)}
+    .manifesto .small-thought{font-size:16px;line-height:1.6;color:#6b686a;max-width:600px;margin:0 0 29px}
+    .wide-photo{position:relative;overflow:hidden;border-radius:var(--radius);height:clamp(275px,73vw,530px);background:#2b2529}
+    .wide-photo img{width:100%;height:100%;object-fit:cover;object-position:center}
+    .wide-photo:after{content:"";position:absolute;inset:42% 0 0;background:linear-gradient(transparent,#000b)}
+    .photo-label{position:absolute;bottom:20px;left:20px;right:20px;color:white;z-index:1;font-size:12px;font-weight:750;letter-spacing:.02em}
+    .story{background:var(--wine2);color:white;overflow:hidden;padding-bottom:0}
+    .story .eyebrow{color:#f4d5dd}
+    .story h2{max-width:820px}
+    .story h2 em{color:#f3b0bf}
+    .story .section-lead{color:#f3dbe0}
+    .story-photo{margin:34px -18px 0;position:relative;height:300px;background:#301a25}
+    .story-photo img{width:100%;height:100%;object-fit:cover;object-position:center}
+    .story-photo:after{content:"";position:absolute;inset:40% 0 0;background:linear-gradient(transparent,#150b12bf)}
+    .story-photo .overlay{position:absolute;bottom:23px;left:20px;right:20px;z-index:2;display:flex;align-items:end;justify-content:space-between;color:white}
+    .story-photo .overlay strong{font-size:64px;letter-spacing:-.09em;line-height:.85}
+    .story-photo .overlay span{font-size:12px;max-width:110px;text-align:right;line-height:1.4}
+    .story-bridge{background:var(--night);color:white;padding:70px 0}
+    .bridge-grid{display:grid;gap:24px;align-items:center}
+    .bridge-quote{font-size:clamp(30px,7.8vw,54px);font-weight:800;line-height:1.1;letter-spacing:-.065em;margin:12px 0}
+    .bridge-quote em{color:#d67b90;font-style:normal}
+    .bridge-desc{font-size:15px;line-height:1.6;color:#bdb8bc;max-width:450px}
+    .benefits .benefit-grid{display:grid;gap:10px;margin-top:31px}
+    .benefit{background:var(--white);border:1px solid #e9e5e1;border-radius:15px;padding:25px;display:grid;grid-template-columns:44px 1fr;align-items:start;gap:10px;min-height:120px}
+    .benefit-icon{height:38px;width:38px;border-radius:50%;border:1px solid #dbbcc4;color:var(--wine);display:grid;place-items:center;font-size:23px}
+    .benefit h3{margin:2px 0 7px;font-size:22px;line-height:1.13;letter-spacing:-.045em}
+    .benefit p{font-size:13px;line-height:1.55;color:#777176;margin:0}
+    .benefits-tag{margin-top:23px;font-size:12px;color:#777;line-height:1.6}
+    .timeline{background:var(--cream)}
+    .timeline-head{margin-bottom:24px}
+    .timeline-items{display:grid;gap:0;border-top:1px solid #d2ccc8}
+    .time-item{padding:23px 0;border-bottom:1px solid #d2ccc8;display:grid;grid-template-columns:82px 1fr;gap:18px;align-items:start}
+    .time-item .day{font-size:13px;line-height:1.4;color:var(--wine2);font-weight:850;letter-spacing:-.02em}
+    .time-item strong{display:block;font-size:19px;letter-spacing:-.035em;line-height:1.2}
+    .time-item p{font-size:13px;line-height:1.55;color:#706d70;margin:8px 0 0}
+    .timeline .footnote{font-size:11px;color:#807b7b;line-height:1.5;margin:17px 0 0}
+    .investment{background:var(--night);color:white}
+    .investment .eyebrow{color:#c2b6bc}
+    .investment h2{margin-bottom:20px}
+    .investment h2 em{color:#d67b90}
+    .investment .price-block{padding:30px 24px;border-radius:var(--radius);border:1px solid #ffffff2b;background:linear-gradient(125deg,#242125,#161619);margin:30px 0 20px;overflow:hidden}
+    .price-kicker{display:block;color:#c4bdc1;font-weight:750;font-size:12px}
+    .price-main{font-size:clamp(54px,15vw,102px);line-height:1.08;letter-spacing:-.088em;font-weight:850;margin:12px 0 22px;white-space:nowrap}
+    .price-main small{font-size:.38em;letter-spacing:-.04em}
+    .price-row{border-top:1px solid #ffffff2f;padding-top:20px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+    .price-row strong{font-size:17px;display:block;line-height:1.25}
+    .price-row span{display:block;font-size:12px;color:#b0abb0;line-height:1.5;margin-top:7px}
+    .investment .btn{width:100%;max-width:400px}
+    .investment .price-note{font-size:11px;line-height:1.55;color:#aaa1a6;margin:13px 0 0;max-width:650px}
+    .partner{background:var(--light)}
+    .partner-photo{width:100%;height:320px;object-fit:cover;object-position:center 27%;border-radius:var(--radius)}
+    .partner-copy{margin-top:26px}
+    .partner-copy h2{font-size:clamp(34px,8.5vw,57px)}
+    .proof-placeholder{border:1px dashed #b5a8ad;border-radius:14px;padding:20px;margin-top:23px;background:#ffffff82;display:flex;gap:14px;align-items:start}
+    .proof-placeholder .symbol{font-size:27px;color:var(--wine)}
+    .proof-placeholder b{display:block;font-size:14px;margin:0 0 5px}
+    .proof-placeholder p{margin:0;font-size:12px;line-height:1.5;color:#777176}
+    .final{background:var(--wine2);color:white;text-align:left}
+    .final h2{font-size:clamp(48px,11.8vw,80px);max-width:800px}
+    .final h2 em{color:#f0acbd}
+    .final p{font-size:16px;color:#f0dadd;line-height:1.6;max-width:510px}
+    .final .btn{width:100%;max-width:380px;margin-top:20px}
+    .final-hint{font-size:11px;opacity:.78;margin-top:14px}
+    .mini-faq{background:var(--light);padding:62px 0 85px}
+    .mini-faq h2{font-size:32px}
+    .faq-list{margin-top:21px;border-top:1px solid var(--stroke)}
+    details{border-bottom:1px solid var(--stroke)}
+    summary{cursor:pointer;list-style:none;padding:19px 2px;display:flex;gap:18px;justify-content:space-between;align-items:center;font-weight:750;font-size:15px}
+    summary::-webkit-details-marker{display:none}
+    summary:after{content:"+";font-size:23px;font-weight:400;color:var(--wine)}
+    details[open] summary:after{content:"−"}
+    details p{font-size:14px;line-height:1.6;color:#6d686c;margin:0 0 20px}
+    .footer{background:var(--night);color:#b1aaae;padding:35px 0 100px;font-size:12px}
+    .footer-logo{width:154px;height:53px;object-fit:contain;object-position:left center;margin-bottom:20px}
+    .footer a{color:white}
+    .footer-contact{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:26px;font-size:14px}
+    .footer-bottom{border-top:1px solid #ffffff27;padding-top:18px;display:grid;gap:7px;font-size:11px;line-height:1.5}
+    .mobile-action{position:fixed;z-index:35;bottom:0;left:0;right:0;background:#131316f0;padding:10px 16px calc(10px + env(safe-area-inset-bottom));border-top:1px solid #ffffff2c;backdrop-filter:blur(14px)}
+    .mobile-action .btn{min-height:52px;width:100%;padding:12px 17px;font-size:14px}
+    body.modal-open .mobile-action{display:none}
+    dialog.lead-dialog{position:fixed;inset:0;border:0;padding:0;background:var(--light);color:var(--ink);margin:auto;width:min(100%,540px);max-width:none;max-height:none;box-shadow:0 22px 90px #0007;overscroll-behavior:contain}
+    dialog.lead-dialog::backdrop{background:#09090cbd;backdrop-filter:blur(6px)}
+    .dialog-inside{padding:24px 20px 34px;height:100%;overflow:auto}
+    .dialog-top{display:flex;justify-content:space-between;gap:12px;align-items:center}
+    .dialog-label{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.14em;color:var(--wine)}
+    .dialog-close{width:40px;height:40px;border:1px solid #ccc6c7;background:white;border-radius:50%;font-size:24px;line-height:1;display:grid;place-items:center;color:var(--ink)}
+    .dialog-title{font-size:clamp(32px,8.5vw,44px);letter-spacing:-.067em;line-height:1.06;margin:24px 0 11px;font-weight:850}
+    .dialog-sub{font-size:14px;line-height:1.6;color:#777074;margin:0 0 26px}
+    .form-progress{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:28px}
+    .form-progress span{height:4px;border-radius:4px;background:#d9d1d3}
+    .form-progress span.active{background:var(--wine)}
+    .form-step[hidden]{display:none!important}
+    .field{display:block;margin-bottom:18px}
+    .field>span{display:block;font-size:13px;font-weight:800;margin-bottom:9px}
+    .field input,.field select{display:block;appearance:none;width:100%;height:54px;padding:0 14px;border-radius:8px;border:1px solid #cbc4c4;background:#fff;color:var(--ink);font-size:16px;outline-color:var(--wine)}
+    .field select{background-image:linear-gradient(45deg,transparent 50%,#555 50%),linear-gradient(135deg,#555 50%,transparent 50%);background-position:calc(100% - 20px) 24px,calc(100% - 15px) 24px;background-size:5px 5px;background-repeat:no-repeat;padding-right:40px}
+    .field input::placeholder{color:#a7a1a3}
+    .form-actions{display:flex;gap:9px;margin-top:23px}
+    .form-actions .btn{flex:1;min-width:0}
+    .form-actions .btn.back{flex:0 0 95px;background:#e1dcda;color:#2b2528}
+    .consent{display:flex;gap:10px;align-items:flex-start;font-size:12px;line-height:1.5;color:#686266;margin-top:8px}
+    .consent input{width:19px;height:19px;accent-color:var(--wine);flex-shrink:0;margin:1px 0 0}
+    .form-foot{font-size:11px;line-height:1.55;color:#81797b;margin:18px 0 0}
+    @media(min-width:700px){
+      .container{width:min(1180px,calc(100% - 72px))}
+      .site-header{height:76px}.brand img{width:160px}
+      .hero .container{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:center;min-height:655px}
+      .hero-copy{padding:64px 0 76px}.hero h1{font-size:clamp(60px,6.4vw,92px)}.hero-visual{height:610px;margin:0 -20px 0 10px}
+      .hero-visual img{height:560px}.orbit{height:430px;width:430px}
+      .hero-caption{bottom:55px;left:24px}.hero .btn{width:auto;min-width:270px}
+      .stats-grid{grid-template-columns:repeat(2,1fr);max-width:760px}.stat{padding:29px 10px}.stat strong{font-size:62px}.stat span{font-size:13px}
+      .section{padding:120px 0}.manifesto{padding-bottom:105px}
+      .story-photo{height:450px;margin:60px 0 -70px;border-radius:var(--radius);overflow:hidden}
+      .story{padding-bottom:70px}.story-photo .overlay{bottom:34px;left:35px;right:35px}
+      .story-photo .overlay strong{font-size:100px}.story-photo .overlay span{max-width:170px;font-size:14px}
+      .bridge-grid{grid-template-columns:1.25fr .75fr;gap:70px}.story-bridge{padding:110px 0}
+      .benefits .benefit-grid{grid-template-columns:repeat(3,1fr)}.benefit{grid-template-columns:1fr;min-height:215px;padding:28px}
+      .time-item{grid-template-columns:180px 1fr;gap:45px}.time-item .day{font-size:16px}.time-item strong{font-size:27px}
+      .timeline-items{max-width:880px}.timeline-head{margin-bottom:40px}
+      .investment .container{display:grid;grid-template-columns:.8fr 1.2fr;align-items:center;column-gap:85px}
+      .investment .eyebrow,.investment h2,.investment>.container>p{grid-column:1}
+      .investment .price-block{grid-column:2;grid-row:1 / span 4;margin:0}
+      .investment .btn{grid-column:1;max-width:360px}.investment .price-note{grid-column:1}
+      .partner .container{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:70px}.partner-photo{height:580px}.partner-copy{margin:0}
+      .final{text-align:center}.final h2,.final p{margin-left:auto;margin-right:auto}.final .btn{margin-left:auto;margin-right:auto}.final .eyebrow{justify-content:center}
+      .mini-faq .container{max-width:790px}
+      .mobile-action{display:none}
+      .footer{padding-bottom:35px}.footer-bottom{grid-template-columns:1fr 1fr}
+      dialog.lead-dialog{border-radius:22px;max-height:min(92vh,780px);height:auto;overflow:hidden}
+      .dialog-inside{padding:32px 40px 40px;max-height:min(92vh,780px)}
+    }
+    @media(max-width:369px){
+      .hero h1{font-size:43px}.price-main{font-size:49px}.offer-pill{font-size:11px;padding:9px 10px}
+      .hero-visual{height:300px}.hero-visual img{height:290px}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Бронь Сервис — наверх"><img src="bron-logo-white.png" alt="Бронь Сервис" width="160" height="52"></a>
+      <button class="nav-cta" type="button" data-lead>Купить франшизу ↗</button>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-copy">
+          <div class="eyebrow">Франшиза «Бронь Сервис»</div>
+          <h1 id="hero-title">У каждого есть телефон.<br><em>У вас — бизнес</em> на его защите.</h1>
+          <p class="sub">Откройте свою точку защиты гаджетов с поддержкой нашей команды.</p>
+          <div class="hero-offer"><span class="offer-pill">30 дней до открытия</span><span class="offer-pill">Инвестиции ≈ 1 млн ₽</span></div>
+          <button class="btn btn-light" type="button" data-lead>Купить франшизу <span class="arrow">↗</span></button>
+          <p class="hero-hint">Начните с короткой анкеты — обсудим ваш город.</p>
+        </div>
+        <div class="hero-visual">
+          <div class="orbit" aria-hidden="true"></div>
+          <img src="hero-phone.webp" alt="Смартфон с защитной плёнкой «Бронь Сервис»" width="755" height="1292" fetchpriority="high">
+          <span class="hero-caption">БРОНЬ СЕРВИС / ЗАЩИТА ГАДЖЕТОВ</span>
+        </div>
+      </div>
+    </section>
+    <section class="stats" aria-label="Бронь Сервис в цифрах">
+      <div class="container stats-grid">
+        <div class="stat"><strong>38</strong><span>открытых торговых точек*</span></div>
+        <div class="stat"><strong>2019</strong><span>год начала работы</span></div>
+      </div>
+    </section>
+    <section class="section manifesto">
+      <div class="container">
+        <div class="eyebrow">01 / Идея</div>
+        <p class="big-thought">Все, у кого есть телефон, — <span>наши потенциальные клиенты.</span></p>
+        <p class="small-thought">Телефон всегда с нами. Его хочется сохранить. А доступный средний чек делает защиту массовой услугой.</p>
+        <figure class="wide-photo" style="margin:0">
+          <img src="product-screen-protection.webp" alt="Мастер «Бронь Сервис» аккуратно устанавливает защиту на экран смартфона" loading="lazy" width="1400" height="950">
+          <figcaption class="photo-label">Простой продукт. Понятная ценность.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="section story">
+      <div class="container">
+        <div class="eyebrow">02 / Наша история</div>
+        <h2>Начали с защиты гаджетов.<br><em>Создали сеть.</em></h2>
+        <p class="section-lead">С 2019 года мы развиваем формат компактных торговых точек. Теперь делимся опытом с новыми партнёрами.</p>
+        <figure class="story-photo">
+          <img src="franchise-point.webp" alt="Реальная торговая точка «Бронь Сервис»" loading="lazy" width="1500" height="1000">
+          <figcaption class="overlay"><strong>38</strong><span>открытых торговых точек*</span></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="story-bridge">
+      <div class="container bridge-grid">
+        <div><div class="eyebrow">03 / Ваш старт</div><p class="bridge-quote">Мы уже прошли путь от идеи до сети.<br><em>Теперь ваша очередь.</em></p></div>
+        <p class="bridge-desc">Вместо старта с чистого листа — готовые лекала, технологии, обучение и поддержка команды, которая каждый день работает с этим продуктом.</p>
+      </div>
+    </section>
+    <section class="section benefits">
+      <div class="container">
+        <div class="eyebrow">04 / Что вы получаете</div>
+        <h2>Не один.<br><em>Вместе с нами.</em></h2>
+        <div class="benefit-grid">
+          <article class="benefit"><div class="benefit-icon" aria-hidden="true">↗</div><div><h3>Запуск под ключ</h3><p>Помогаем с локацией, оформлением и подготовкой торговой точки.</p></div></article>
+          <article class="benefit"><div class="benefit-icon" aria-hidden="true">◎</div><div><h3>Обучение и лекала</h3><p>Передаём технологию оклейки, базу шаблонов и стандарты работы.</p></div></article>
+          <article class="benefit"><div class="benefit-icon" aria-hidden="true">∞</div><div><h3>Поддержка после старта</h3><p>Поставки материалов, маркетинговые наработки и сопровождение.</p></div></article>
+        </div>
+      </div>
+    </section>
+    <section class="section timeline">
+      <div class="container">
+        <div class="timeline-head">
+          <div class="eyebrow">05 / Как открываемся</div>
+          <h2>От решения до точки.<br><em>30 дней.</em></h2>
+          <p class="section-lead">Понятный маршрут от первого разговора до первых клиентов.</p>
+        </div>
+        <div class="timeline-items">
+          <div class="time-item"><div class="day">Дни 01–07</div><div><strong>Знакомимся и выбираем место</strong><p>Обсуждаем город, условия и подходящую локацию.</p></div></div>
+          <div class="time-item"><div class="day">Дни 08–20</div><div><strong>Готовим точку и команду</strong><p>Оборудование, оформление, обучение, материалы.</p></div></div>
+          <div class="time-item"><div class="day">Дни 21–30</div><div><strong>Открываем двери клиентам</strong><p>Финальная подготовка, запуск и поддержка.</p></div></div>
+        </div>
+        <p class="footnote">План запуска на 30 дней. Конкретный график согласуем с учётом готовности локации и оборудования.</p>
+      </div>
+    </section>
+    <section class="section investment" id="terms">
+      <div class="container">
+        <div class="eyebrow">06 / Инвестиции</div>
+        <h2>Свой бизнес.<br><em>Реальный старт.</em></h2>
+        <p class="section-lead" style="color:#c5bfc2">Один компактный формат, понятная технология и помощь действующей сети.</p>
+        <div class="price-block">
+          <span class="price-kicker">Общие инвестиции в открытие</span>
+          <div class="price-main">≈ 1 млн <small>₽</small></div>
+          <div class="price-row">
+            <div><strong>450 000 ₽</strong><span>паушальный взнос включён в общую сумму</span></div>
+            <div><strong>Остальная часть</strong><span>торговая точка, оборудование, материалы и подготовка к запуску</span></div>
+          </div>
+        </div>
+        <button class="btn btn-light" type="button" data-lead>Купить франшизу <span class="arrow">↗</span></button>
+        <p class="price-note">Инвестиции ориентировочные, точная сумма зависит от города и условий открытия. Информация не является публичной офертой.</p>
+      </div>
+    </section>
+    <section class="section partner">
+      <div class="container">
+        <img class="partner-photo" src="franchise-handshake.webp" alt="Представители «Бронь Сервис» встречаются с новым партнёром" loading="lazy" width="900" height="1350">
+        <div class="partner-copy">
+          <div class="eyebrow">07 / Люди и партнёрство</div>
+          <h2>За каждой точкой — <em>человек.</em></h2>
+          <p class="section-lead">Мы строим сеть вместе с людьми, которые хотят развивать своё дело под знакомым брендом.</p>
+          <div class="proof-placeholder" aria-label="Место для будущего отзыва партнёра">
+            <span class="symbol" aria-hidden="true">◌</span>
+            <div><b>Здесь появится история партнёра</b><p>Добавим настоящее фото или короткое видео с отзывом — без придуманных цитат.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section final" id="apply">
+      <div class="container">
+        <div class="eyebrow">Следующая точка — ваша?</div>
+        <h2>Начнём<br><em>с вашего города.</em></h2>
+        <p>Оставьте короткую заявку. Познакомимся, обсудим локацию и расскажем, как открыть «Бронь Сервис».</p>
+        <button class="btn btn-light" type="button" data-lead>Купить франшизу <span class="arrow">↗</span></button>
+        <div class="final-hint">2 шага · без регистрации · связь напрямую с командой</div>
+      </div>
+    </section>
+    <section class="mini-faq">
+      <div class="container">
+        <div class="eyebrow">Коротко о главном</div>
+        <h2>Остались вопросы?</h2>
+        <div class="faq-list">
+          <details><summary>Сколько нужно для открытия?</summary><p>Около 1 млн ₽, включая паушальный взнос 450 000 ₽, оборудование и подготовку торговой точки.</p></details>
+          <details><summary>Нужен ли опыт в бизнесе?</summary><p>Необязательно. Мы обучаем продукту, технологии оклейки и базовым процессам работы точки.</p></details>
+          <details><summary>Как отправляется анкета?</summary><p>После заполнения откроется WhatsApp с готовым сообщением. Вы самостоятельно подтвердите отправку — и наша команда сможет связаться с вами.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <img class="footer-logo" src="bron-logo-white.png" alt="Бронь Сервис" width="160" height="52">
+      <div class="footer-contact"><a href="tel:+79956666614">+7 995 666-66-14</a><a href="https://wa.me/79956666614" target="_blank" rel="noopener noreferrer">Написать в WhatsApp ↗</a></div>
+      <div class="footer-bottom"><span>© 2026 «Бронь Сервис». Все права защищены.</span><span>* Число открытых точек — по материалам компании на октябрь 2026 г. Информация о франшизе носит ознакомительный характер.</span></div>
+    </div>
+  </footer>
+  <div class="mobile-action">
+    <button class="btn btn-light" type="button" data-lead>Купить франшизу <span class="arrow">↗</span></button>
+  </div>
+  <dialog class="lead-dialog" id="leadDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-inside">
+      <div class="dialog-top">
+        <div class="dialog-label">Бронь Сервис / Заявка</div>
+        <button class="dialog-close" id="closeDialog" type="button" aria-label="Закрыть анкету">×</button>
+      </div>
+      <h2 class="dialog-title" id="dialogTitle">Давайте знакомиться.</h2>
+      <p class="dialog-sub" id="dialogSubtitle">Всего пара вопросов — и начнём обсуждать вашу точку.</p>
+      <div class="form-progress" aria-label="Прогресс анкеты"><span class="active"></span><span></span></div>
+      <form id="leadForm" novalidate>
+        <div class="form-step" data-form-step="0">
+          <label class="field" for="leadCity"><span>В каком городе хотите открыться?</span><input id="leadCity" name="city" type="text" autocomplete="address-level2" placeholder="Например, Махачкала" maxlength="80" required></label>
+          <label class="field" for="leadWhen"><span>Когда планируете начать?</span>
+            <select id="leadWhen" name="when" required>
+              <option value="" disabled selected>Выберите вариант</option>
+              <option>В ближайший месяц</option>
+              <option>В течение 1–3 месяцев</option>
+              <option>Позже, пока изучаю</option>
+            </select>
+          </label>
+          <div class="form-actions"><button class="btn btn-dark" type="button" id="leadNext">Продолжить <span class="arrow">→</span></button></div>
+        </div>
+        <div class="form-step" data-form-step="1" hidden>
+          <label class="field" for="leadName"><span>Как к вам обращаться?</span><input id="leadName" name="name" type="text" autocomplete="name" placeholder="Ваше имя" maxlength="70" required></label>
+          <label class="field" for="leadPhone"><span>Ваш телефон / WhatsApp</span><input id="leadPhone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 999 123-45-67" minlength="6" maxlength="28" required></label>
+          <label class="consent" for="leadConsent"><input id="leadConsent" name="consent" type="checkbox" required><span>Согласен(на), чтобы команда «Бронь Сервис» связалась со мной по этой заявке.</span></label>
+          <div class="form-actions"><button class="btn back" type="button" id="leadBack">← Назад</button><button class="btn btn-wine" type="submit">В WhatsApp <span class="arrow">↗</span></button></div>
+          <p class="form-foot">После нажатия откроется WhatsApp с вашей анкетой. Нажмите «Отправить» в WhatsApp, чтобы передать её команде. Сам сайт данные не сохраняет.</p>
+        </div>
+      </form>
+    </div>
+  </dialog>
+  <script>
+    (function(){
+      var dialog=document.getElementById("leadDialog");
+      var form=document.getElementById("leadForm");
+      var steps=Array.from(form.querySelectorAll("[data-form-step]"));
+      var progress=Array.from(document.querySelectorAll(".form-progress span"));
+      var title=document.getElementById("dialogTitle");
+      var subtitle=document.getElementById("dialogSubtitle");
+      var city=document.getElementById("leadCity");
+      var when=document.getElementById("leadWhen");
+      var name=document.getElementById("leadName");
+      var phone=document.getElementById("leadPhone");
+      var consent=document.getElementById("leadConsent");
+      var step=0;
+      var lastTrigger=null;
+      function renderStep(n){
+        step=n;
+        steps.forEach(function(el,i){el.hidden=i!==n;});
+        progress.forEach(function(el,i){el.classList.toggle("active",i<=n);});
+        title.textContent=n===0?"Давайте знакомиться.":"Как с вами связаться?";
+        subtitle.textContent=n===0?"Два коротких шага — и начнём обсуждать вашу точку.":"Почти готово. Подготовим заявку для нашей команды.";
+        (n===0?city:name).focus({preventScroll:true});
+      }
+      function openDialog(ev){
+        lastTrigger=ev.currentTarget;
+        form.reset();
+        document.body.classList.add("modal-open");
+        if(typeof dialog.showModal==="function"){dialog.showModal();}else{dialog.setAttribute("open","");}
+        renderStep(0);
+      }
+      function closeDialog(){
+        if(typeof dialog.close==="function"){dialog.close();}else{dialog.removeAttribute("open");}
+        document.body.classList.remove("modal-open");
+        if(lastTrigger){lastTrigger.focus({preventScroll:true});}
+      }
+      document.querySelectorAll("[data-lead]").forEach(function(button){button.addEventListener("click",openDialog);});
+      document.getElementById("closeDialog").addEventListener("click",closeDialog);
+      dialog.addEventListener("close",function(){document.body.classList.remove("modal-open");});
+      dialog.addEventListener("click",function(e){if(e.target===dialog){closeDialog();}});
+      document.getElementById("leadNext").addEventListener("click",function(){
+        if(!city.value.trim()){city.setCustomValidity("Укажите город");}else{city.setCustomValidity("");}
+        if(!city.reportValidity()){return;}
+        if(!when.reportValidity()){return;}
+        renderStep(1);
+      });
+      city.addEventListener("input",function(){city.setCustomValidity("");});
+      document.getElementById("leadBack").addEventListener("click",function(){renderStep(0);});
+      form.addEventListener("submit",function(event){
+        event.preventDefault();
+        if(!name.value.trim()){name.setCustomValidity("Укажите имя");}else{name.setCustomValidity("");}
+        if(!name.reportValidity()||!phone.reportValidity()||!consent.reportValidity()){return;}
+        var lines=["Здравствуйте! Хочу узнать об открытии франшизы «Бронь Сервис».","",
+          "Имя: "+name.value.trim(),"Телефон: "+phone.value.trim(),"Город: "+city.value.trim(),
+          "Планирую начать: "+when.value];
+        var url="https://wa.me/79956666614?text="+encodeURIComponent(lines.join(String.fromCharCode(10)));
+        window.location.assign(url);
+      });
+      name.addEventListener("input",function(){name.setCustomValidity("");});
+    })();
+  </script>
+</body>
+</html>

@@ -53,6 +53,7 @@
     .facts{display:flex;gap:36px;margin-top:clamp(28px,5vh,48px)}
     .facts b{display:block;font-size:clamp(20px,2vw,26px);letter-spacing:-.05em;line-height:1.1}
     .facts span{display:block;font-size:12px;color:var(--mute-d);margin-top:2px}
+    .hero-photo{display:none}
     .collage{position:relative;height:min(600px,calc(100svh - var(--head) - 110px));min-height:420px}
     .collage img{position:absolute;object-fit:cover;background:var(--ink3)}
     .collage .c-main{right:0;top:0;width:72%;height:88%}
@@ -167,7 +168,11 @@
       :root{--head:60px}
       .logo img{width:116px}
       .head .btn{padding:9px 13px;min-height:40px}
-      .hero .wrap{min-height:calc(100svh - var(--head));display:flex;flex-direction:column;justify-content:center;padding:28px 0 36px}
+      .hero-photo{display:block;position:relative;height:min(32svh,270px);overflow:hidden;background:var(--ink3)}
+      .hero-photo img{width:100%;height:100%;object-fit:cover;object-position:46% 42%}
+      .hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(17,18,19,.05) 0%,rgba(17,18,19,.15) 45%,var(--ink) 100%)}
+      .hero .wrap{display:block;min-height:0;padding:0 0 32px;margin-top:-28px;position:relative}
+      .numbers .photo{display:none}
       .hero h1{font-size:clamp(38px,min(12.1vw,8.6svh),80px)}
       .hero .btn{width:100%}
       .facts{justify-content:space-between;gap:12px}
@@ -194,6 +199,7 @@
       .q-top{padding-top:calc(14px + env(safe-area-inset-top))}
     }
     @media(max-width:370px){.opts.row3{grid-template-columns:1fr}}
+    @media(max-width:780px) and (max-height:620px){.hero-photo{height:22svh}.hero .lead{font-size:15px;margin-top:14px}.hero .btn{margin-top:18px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
   </style>
 </head>
@@ -208,9 +214,10 @@
 
   <main id="top">
     <section class="hero dark" aria-labelledby="h1">
+      <div class="hero-photo" aria-hidden="true"><img src="kiosk-mall.webp" alt="" width="1800" height="1350" fetchpriority="high"></div>
       <div class="wrap">
         <div>
-          <div class="kicker">Франшиза «Бронь Сервис» · с 2019 года</div>
+          <div class="kicker">Франшиза · с 2019 года</div>
           <h1 id="h1">Свой бизнес<br>на защите<br><em>телефонов.</em></h1>
           <p class="lead">Островок 4–6 м² и плёнка с дизайном на любую модель. Опыт не нужен — научим и откроемся вместе за 30 дней.</p>
           <button class="btn btn-light" type="button" data-quiz>Купить франшизу</button>

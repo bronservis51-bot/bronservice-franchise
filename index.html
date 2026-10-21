@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#111213">
-  <title>Франшиза «Бронь Сервис» — плёнка с дизайном на любой телефон</title>
-  <meta name="description" content="Островок 4–6 м² там, где есть поток людей: плёнка с дизайном на любой телефон за 25 минут. Вложения ≈1 млн ₽, окупаемость 7–10 месяцев, открытие за 30 дней.">
+  <title>Франшиза «Бронь Сервис» — свой бизнес на защите телефонов</title>
+  <meta name="description" content="Свой бизнес на защите телефонов: островок 4–6 м², плёнка с дизайном на любую модель. Опыт не нужен — обучим. Вложения ≈1 млн ₽, окупаемость 7–10 месяцев.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
-  <meta property="og:title" content="Франшиза «Бронь Сервис» — любой телефон, любой дизайн, ваш бизнес">
+  <meta property="og:title" content="Франшиза «Бронь Сервис» — свой бизнес на защите телефонов">
   <meta property="og:description" content="Вложения ≈1 млн ₽, окупаемость 7–10 месяцев, открытие за 30 дней. 38 точек в России, Казахстане и Турции.">
   <meta property="og:image" content="https://bronservis51-bot.github.io/bronservice-franchise/og-image.jpg">
   <link rel="icon" type="image/png" href="shield-white.png">
@@ -36,8 +36,7 @@
     .btn:hover{transform:translateY(-2px)}
     .btn-light{background:#fff;color:var(--ink)}.btn-light:hover{background:#e6e6e3}
     .btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:#2c2d30}
-    .btn .arr{font-size:18px;line-height:1;font-weight:400}
-
+    
     /* Шапка */
     .head{position:sticky;top:0;z-index:50;height:var(--head);background:#111213f2;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-d);color:#fff}
     .head .wrap{height:100%;display:flex;align-items:center;gap:28px}
@@ -80,9 +79,10 @@
     .note{font-size:12px;color:var(--mute);margin:16px 0 0;line-height:1.5}
 
     /* Что получаете */
-    .gets{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;border-top:1px solid var(--line)}
-    .gets li{display:flex;gap:14px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line);font-size:17px;font-weight:700;letter-spacing:-.02em;line-height:1.35}
-    .gets small{font-size:11px;color:var(--mute);font-weight:800}
+    .worries{display:grid;grid-template-columns:repeat(4,1fr);gap:0 32px;margin-top:44px}
+    .worries div{border-top:2px solid var(--ink);padding-top:18px}
+    .worries b{display:block;font-size:19px;letter-spacing:-.035em;line-height:1.2}
+    .worries p{margin:8px 0 0;font-size:15px;color:var(--mute);line-height:1.55}
 
     /* Вопросы */
     .faq{background:var(--paper2)}
@@ -161,7 +161,7 @@
     @media(max-width:1000px){
       .nav{display:none}.head .btn{margin-left:auto}
       .hero .wrap{gap:32px}
-      .gets{grid-template-columns:1fr 1fr}
+      .worries{grid-template-columns:1fr 1fr;gap:28px 32px}
     }
     @media(max-width:780px){
       :root{--head:60px}
@@ -180,8 +180,7 @@
       .step:last-child{margin-right:20px}
       .two,.final .two,.faq .wrap{grid-template-columns:1fr;gap:36px}
       .photo{aspect-ratio:4/3}
-      .gets{grid-template-columns:1fr;margin-top:28px}
-      .gets li{padding:16px 0;font-size:16px}
+      .worries{grid-template-columns:1fr;gap:24px;margin-top:32px}
       .faq summary{font-size:16px}
       .faq details p{margin-right:0}
       .final .btn{width:100%}
@@ -202,8 +201,8 @@
   <header class="head">
     <div class="wrap">
       <a class="logo" href="#top" aria-label="Бронь Сервис — наверх"><img src="bron-logo-white.png" alt="Бронь Сервис" width="132" height="50"></a>
-      <nav class="nav" aria-label="Разделы"><a href="#product">Продукт</a><a href="#money">Цифры</a><a href="#faq">Вопросы</a></nav>
-      <button class="btn btn-light" type="button" data-quiz>Купить франшизу <span class="arr">↗</span></button>
+      <nav class="nav" aria-label="Разделы"><a href="#product">Как это работает</a><a href="#money">Деньги</a><a href="#faq">Вопросы</a></nav>
+      <button class="btn btn-light" type="button" data-quiz>Купить франшизу</button>
     </div>
   </header>
 
@@ -211,14 +210,14 @@
     <section class="hero dark" aria-labelledby="h1">
       <div class="wrap">
         <div>
-          <div class="kicker">Франшиза · 38 точек в 3 странах</div>
-          <h1 id="h1">Любой телефон.<br>Любой дизайн.<br><em>Ваш бизнес.</em></h1>
-          <p class="lead">Островок там, где есть поток людей: плёнка с дизайном на любой телефон за 25 минут.</p>
-          <button class="btn btn-light" type="button" data-quiz>Купить франшизу <span class="arr">↗</span></button>
+          <div class="kicker">Франшиза «Бронь Сервис» · с 2019 года</div>
+          <h1 id="h1">Свой бизнес<br>на защите<br><em>телефонов.</em></h1>
+          <p class="lead">Островок 4–6 м² и плёнка с дизайном на любую модель. Опыт не нужен — научим и откроемся вместе за 30 дней.</p>
+          <button class="btn btn-light" type="button" data-quiz>Купить франшизу</button>
           <div class="facts">
             <div><b>≈1 млн ₽</b><span>вложения</span></div>
             <div><b>7–10 мес</b><span>окупаемость</span></div>
-            <div><b>30 дней</b><span>до открытия</span></div>
+            <div><b>38 точек</b><span>в 3 странах</span></div>
           </div>
         </div>
         <div class="collage" aria-hidden="true">
@@ -231,9 +230,9 @@
     <section class="section" id="product" aria-labelledby="product-h">
       <div class="wrap">
         <div class="rv">
-          <div class="kicker">Продукт</div>
-          <h2 id="product-h">Одна плёнка —<br><em>тысячи моделей.</em></h2>
-          <p class="lead">Плоттер вырезает её под любой телефон из нашей базы лекал. Склад чехлов не нужен.</p>
+          <div class="kicker">Почему это работает</div>
+          <h2 id="product-h">Телефон есть<br><em>у каждого.</em></h2>
+          <p class="lead">А плёнка у нас одна на все модели: плоттер вырезает её под телефон клиента из базы лекал. Склад чехлов не нужен, средний чек — около 2 000 ₽.</p>
         </div>
         <div class="steps">
           <figure class="step rv"><div><small>01</small><img src="film-wall.webp" alt="Витрина с образцами дизайнов плёнки" width="900" height="1350" loading="lazy"></div><figcaption>Клиент выбирает дизайн</figcaption></figure>
@@ -247,17 +246,17 @@
       <div class="wrap two">
         <figure class="photo rv"><img src="kiosk-mall.webp" alt="Островок «Бронь Сервис»" width="1800" height="1350" loading="lazy" style="object-position:38% center"></figure>
         <div class="rv">
-          <div class="kicker">Цифры</div>
-          <h2 id="money-h">Всё понятно<br><em>до звонка.</em></h2>
+          <div class="kicker">Деньги</div>
+          <h2 id="money-h">Сколько вложить<br><em>и когда вернётся.</em></h2>
           <div class="rows">
             <div><span>Вложения под ключ</span><b>≈1 млн ₽</b></div>
             <div><span>Из них паушальный взнос</span><b>450 000 ₽</b></div>
             <div><span>Выручка точки в месяц</span><b>200 тыс – 1 млн ₽</b></div>
             <div><span>Окупаемость</span><b>7–10 мес</b></div>
             <div><span>Роялти</span><b>7 % от выручки</b></div>
-            <div><span>Площадь островка</span><b>4–6 м²</b></div>
+            <div><span>От договора до открытия</span><b>30 дней</b></div>
           </div>
-          <p class="note">Ориентиры по работающим точкам сети. Не является публичной офертой.</p>
+          <p class="note">Ориентиры по работающим точкам сети. Расчёт под ваш город директор покажет на созвоне. Не является публичной офертой.</p>
         </div>
       </div>
     </section>
@@ -265,27 +264,25 @@
     <section class="section" aria-labelledby="gets-h">
       <div class="wrap">
         <div class="rv">
-          <div class="kicker">Что вы получаете</div>
-          <h2 id="gets-h">Не нужно<br><em>начинать с нуля.</em></h2>
+          <div class="kicker">Поддержка</div>
+          <h2 id="gets-h">Вы не будете<br><em>разбираться один.</em></h2>
         </div>
-        <ul class="gets rv">
-          <li><small>01</small>Помощь с местом и открытием</li>
-          <li><small>02</small>База лекал на тысячи моделей</li>
-          <li><small>03</small>Обучение за 5–7 дней</li>
-          <li><small>04</small>Плёнки по ценам сети</li>
-          <li><small>05</small>Бренд и реклама</li>
-          <li><small>06</small>Онлайн-кабинет и поддержка</li>
-        </ul>
+        <div class="worries rv">
+          <div><b>Нет опыта</b><p>Обучим вас или мастера за 5–7 дней: оклейка, плоттер, продажи.</p></div>
+          <div><b>Не знаете, где встать</b><p>Поможем найти место с потоком людей и проверим, свободен ли город.</p></div>
+          <div><b>Где брать плёнку</b><p>Плёнки и лекала на тысячи моделей — от сети, по её ценам.</p></div>
+          <div><b>Что после открытия</b><p>Онлайн-кабинет с планом и инструкциями, реклама и команда на связи.</p></div>
+        </div>
       </div>
     </section>
 
     <section class="section faq" id="faq" aria-labelledby="faq-h">
       <div class="wrap">
-        <div class="rv"><div class="kicker">Вопросы</div><h2 id="faq-h">Коротко<br><em>о главном.</em></h2></div>
+        <div class="rv"><div class="kicker">Вопросы</div><h2 id="faq-h">О чём обычно<br><em>спрашивают.</em></h2></div>
         <div class="faq-list rv">
-          <details><summary>Нужен ли опыт в бизнесе?</summary><p>Нет. За 5–7 дней обучаем вас или вашего мастера: оклейка, плоттер, продажи. После открытия остаёмся на связи.</p></details>
+          <details><summary>У меня нет опыта в бизнесе. Получится?</summary><p>Да. За 5–7 дней обучаем вас или вашего мастера: оклейка, плоттер, продажи. После открытия команда остаётся на связи, а в онлайн-кабинете — инструкции на каждый случай.</p></details>
+          <details><summary>Где можно поставить островок?</summary><p>Почти везде, где есть поток людей, — нужно всего 4–6 м². Поможем выбрать место и проверим, свободна ли территория в вашем городе.</p></details>
           <details><summary>Почему плёнка, а не чехлы?</summary><p>Чехлы нужно закупать под каждую модель — это склад и остатки. Плёнка одна на все телефоны: плоттер вырезает её по лекалу.</p></details>
-          <details><summary>Можно ли открыть в моём городе?</summary><p>Нужно место с хорошим потоком людей — островок можно поставить почти где угодно. Укажите город в анкете — проверим, свободна ли территория, и поможем с местом.</p></details>
           <details><summary>Кому франшиза не подойдёт?</summary><p>Тем, у кого нет около 1 млн ₽, кто ищет пассивный доход без участия или хочет менять продукт и стандарты под себя.</p></details>
         </div>
       </div>
@@ -295,11 +292,11 @@
       <div class="wrap two">
         <figure class="photo rv"><img src="franchise-handshake.webp" alt="Директор «Бронь Сервис» пожимает руку новому партнёру" width="900" height="1350" loading="lazy"></figure>
         <div class="rv">
-          <div class="kicker">Следующий шаг</div>
-          <h2 id="final-h">Следующая точка —<br><em>ваша?</em></h2>
-          <p class="lead">Ответьте на 5 коротких вопросов — директор компании свяжется с вами сам.</p>
-          <button class="btn btn-light" type="button" data-quiz>Купить франшизу <span class="arr">↗</span></button>
-          <p class="note">2 минуты · без регистрации</p>
+          <div class="kicker">Знакомство</div>
+          <h2 id="final-h">Начнём<br><em>с разговора.</em></h2>
+          <p class="lead">Директор компании лично знакомится с каждым будущим партнёром. Расскажите о себе в короткой анкете — он позвонит и честно скажет, подойдёт ли формат вашему городу.</p>
+          <button class="btn btn-light" type="button" data-quiz>Купить франшизу</button>
+          <p class="note">5 вопросов · 2 минуты</p>
         </div>
       </div>
     </section>
@@ -308,12 +305,12 @@
   <footer class="foot">
     <div class="wrap">
       <img src="bron-logo-white.png" alt="Бронь Сервис" width="132" height="50" style="width:132px;height:50px;object-fit:contain;object-position:left">
-      <div><a href="tel:+79956666614">+7 995 666-66-14</a> · <a href="https://wa.me/79956666614" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div>
+      <div><a href="tel:+79956666614">+7 995 666-66-14</a> · <a href="https://wa.me/79956666614" target="_blank" rel="noopener noreferrer">WhatsApp</a></div>
       <div class="legal">© 2026 «Бронь Сервис». Цифры — по данным компании на октябрь 2026 года, ориентировочные. Не является публичной офертой.</div>
     </div>
   </footer>
 
-  <div class="dock" id="dock"><button class="btn btn-light" type="button" data-quiz>Купить франшизу <span class="arr">↗</span></button></div>
+  <div class="dock" id="dock"><button class="btn btn-light" type="button" data-quiz>Купить франшизу</button></div>
 
   <dialog class="quiz" id="quiz" aria-labelledby="q-title">
     <form class="q-in" id="qform" novalidate>
@@ -399,7 +396,7 @@
       </div>
       <div class="q-foot">
         <button class="btn q-back" type="button" id="q-back" hidden aria-label="Назад">←</button>
-        <button class="btn btn-dark" type="submit" id="q-next">Дальше <span class="arr">→</span></button>
+        <button class="btn btn-dark" type="submit" id="q-next">Дальше</button>
       </div>
     </form>
   </dialog>
@@ -425,7 +422,7 @@
       bar.style.width=(done?100:(n+1)/(LAST+1)*100)+'%';
       count.textContent=done?'Готово':'Шаг '+(n+1)+' из '+(LAST+1);
       back.hidden=n===0||done;
-      next.innerHTML=done?'Закрыть':n===LAST?'Отправить анкету <span class="arr">↗</span>':'Дальше <span class="arr">→</span>';
+      next.textContent=done?'Закрыть':n===LAST?'Отправить анкету':'Дальше';
       setErr('');fb.classList.remove('on');
       form.querySelector('.q-body').scrollTop=0;
       var first=steps[n]&&steps[n].querySelector('input:not([type=radio]),input[type=radio]:checked,input[type=radio]');
@@ -458,7 +455,7 @@
     }
     function submit(){
       var p=payload();
-      next.disabled=true;next.innerHTML='Отправляем…';
+      next.disabled=true;next.textContent='Отправляем…';
       fetch(API,{method:'POST',headers:{'Content-Type':'application/json',apikey:KEY,Authorization:'Bearer '+KEY},body:JSON.stringify({p_lead:p})})
         .then(function(r){if(!r.ok)return r.json().catch(function(){return {}}).then(function(j){throw new Error(j.details||j.message||'HTTP '+r.status)})})
         .then(function(){
@@ -468,7 +465,7 @@
           try{localStorage.removeItem('bron.quiz')}catch(e){}
         })
         .catch(function(e){
-          next.innerHTML='Отправить анкету <span class="arr">↗</span>';
+          next.textContent='Отправить анкету';
           setErr(/Проверьте|Ответьте|Слишком/.test(e.message)?e.message:'');
           document.getElementById('q-wa').href='https://wa.me/'+WA+'?text='+encodeURIComponent(waText(p));
           fb.classList.add('on');

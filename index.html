@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#111213">
   <title>Франшиза «Бронь Сервис» — плёнка с дизайном на любой телефон</title>
-  <meta name="description" content="Островок 4–6 м² в торговом центре: универсальная защитная плёнка с дизайном на любой телефон. Вложения ≈1 млн ₽, окупаемость 7–10 месяцев, открытие за 30 дней. 38 точек в 3 странах.">
+  <meta name="description" content="Островок 4–6 м² в торговом центре: плёнка с дизайном на любой телефон за 25 минут. Вложения ≈1 млн ₽, окупаемость 7–10 месяцев, открытие за 30 дней.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <meta property="og:title" content="Франшиза «Бронь Сервис» — любой телефон, любой дизайн, ваш бизнес">
@@ -13,11 +13,7 @@
   <meta property="og:image" content="https://bronservis51-bot.github.io/bronservice-franchise/og-image.jpg">
   <link rel="icon" type="image/png" href="shield-white.png">
   <style>
-    :root{
-      --ink:#111213;--ink2:#18191b;--ink3:#232427;--paper:#f3f3f0;--paper2:#e9e9e5;--white:#fff;
-      --line:#d4d4cf;--line-d:#ffffff24;--mute:#76797c;--mute-d:#a3a6a9;--accent:#c8243c;
-      --wrap:min(1240px,calc(100% - 40px));--head:68px;
-    }
+    :root{--ink:#111213;--ink3:#232427;--paper:#f4f4f1;--paper2:#ebebe7;--line:#d9d9d4;--line-d:#ffffff22;--mute:#7a7d80;--mute-d:#a4a7aa;--accent:#c8243c;--wrap:min(1180px,calc(100% - 40px));--head:68px}
     *{box-sizing:border-box}
     [hidden]{display:none!important}
     html{scroll-behavior:smooth;scroll-padding-top:var(--head);-webkit-text-size-adjust:100%}
@@ -27,25 +23,22 @@
     img{display:block;max-width:100%}
     :focus-visible{outline:2px solid var(--accent);outline-offset:3px}
     .wrap{width:var(--wrap);margin-inline:auto}
-    .kicker{display:flex;align-items:center;gap:14px;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
-    .kicker:before{content:"";width:32px;height:1px;background:currentColor;opacity:.7}
+    .kicker{font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
     .dark .kicker{color:var(--mute-d)}
     h1,h2,h3{margin:0;font-weight:800}
-    h2{font-size:clamp(38px,6vw,76px);line-height:.96;letter-spacing:-.065em;margin:18px 0 0}
-    h2 em,h1 em{font-style:normal;color:#8d9094}
-    .dark h2 em,.dark h1 em{color:#86898d}
-    .lead{font-size:clamp(16px,1.4vw,18px);line-height:1.6;color:var(--mute);max-width:560px;margin:0}
+    h2{font-size:clamp(34px,5vw,64px);line-height:.98;letter-spacing:-.06em;margin:16px 0 0}
+    h1 em,h2 em{font-style:normal;color:#8d9094}
+    .lead{font-size:clamp(16px,1.35vw,18px);line-height:1.6;color:var(--mute);max-width:500px;margin:20px 0 0}
     .dark .lead{color:var(--mute-d)}
-    .section{padding:clamp(64px,9vw,112px) 0}
+    .section{padding:clamp(72px,10vw,128px) 0}
     .dark{background:var(--ink);color:#fff}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:18px;min-height:56px;padding:16px 26px;border:1px solid transparent;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:transform .18s,background .18s,border-color .18s;white-space:nowrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:56px;padding:16px 28px;border:0;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;transition:transform .18s,background .18s;white-space:nowrap}
     .btn:hover{transform:translateY(-2px)}
-    .btn-light{background:#fff;color:var(--ink)}.btn-light:hover{background:#e3e3e0}
+    .btn-light{background:#fff;color:var(--ink)}.btn-light:hover{background:#e6e6e3}
     .btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:#2c2d30}
-    .btn-line{border-color:#ffffff40;color:#fff;background:transparent}.btn-line:hover{border-color:#fff}
     .btn .arr{font-size:18px;line-height:1;font-weight:400}
 
-    /* ШАПКА */
+    /* Шапка */
     .head{position:sticky;top:0;z-index:50;height:var(--head);background:#111213f2;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line-d);color:#fff}
     .head .wrap{height:100%;display:flex;align-items:center;gap:28px}
     .logo img{width:132px;height:50px;object-fit:contain;object-position:left center}
@@ -53,159 +46,82 @@
     .nav a:hover{color:#fff}
     .head .btn{min-height:42px;padding:10px 16px;font-size:11px;gap:10px;margin-left:8px}
 
-    /* ПЕРВЫЙ ЭКРАН */
-    .hero{position:relative;overflow:hidden}
-    .hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff09 1px,transparent 1px),linear-gradient(90deg,#ffffff09 1px,transparent 1px);background-size:80px 80px;-webkit-mask-image:linear-gradient(90deg,transparent 35%,#000);mask-image:linear-gradient(90deg,transparent 35%,#000);pointer-events:none}
-    .hero .wrap{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:48px;align-items:center;min-height:min(calc(100svh - var(--head)),880px);padding:clamp(28px,5vh,64px) 0}
-    .hero h1{font-size:clamp(46px,min(6vw,10.5vh),92px);line-height:.92;letter-spacing:-.075em;margin:clamp(18px,3vh,30px) 0 clamp(18px,3vh,28px)}
-    .hero .lead{max-width:520px}
-    .hero-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:clamp(22px,3.6vh,34px)}
-    .hero-facts{display:flex;flex-wrap:wrap;gap:0;margin-top:clamp(24px,4vh,40px);border-top:1px solid var(--line-d)}
-    .hero-facts div{padding:16px 26px 0 0;margin-right:26px}
-    .hero-facts div+div{padding-left:26px;border-left:1px solid var(--line-d)}
-    .hero-facts b{display:block;font-size:clamp(22px,2.2vw,30px);letter-spacing:-.05em;line-height:1.05}
-    .hero-facts span{font-size:12px;color:var(--mute-d)}
-    .collage{position:relative;height:min(640px,calc(100svh - var(--head) - 90px));min-height:440px}
+    /* Первый экран */
+    .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;min-height:min(calc(100svh - var(--head)),860px);padding:clamp(28px,5vh,64px) 0}
+    .hero h1{font-size:clamp(44px,min(5.6vw,10.5vh),84px);line-height:.93;letter-spacing:-.075em;margin:clamp(18px,3vh,28px) 0 0}
+    .hero .lead{max-width:440px}
+    .hero .btn{margin-top:clamp(24px,4vh,36px)}
+    .facts{display:flex;gap:36px;margin-top:clamp(28px,5vh,48px)}
+    .facts b{display:block;font-size:clamp(20px,2vw,26px);letter-spacing:-.05em;line-height:1.1}
+    .facts span{display:block;font-size:12px;color:var(--mute-d);margin-top:2px}
+    .collage{position:relative;height:min(600px,calc(100svh - var(--head) - 110px));min-height:420px}
     .collage img{position:absolute;object-fit:cover;background:var(--ink3)}
-    .collage .c-main{right:0;top:0;width:70%;height:86%}
-    .collage .c-sub{left:0;bottom:0;width:48%;height:50%;border:8px solid var(--ink)}
-    .collage .tag{position:absolute;right:16px;bottom:calc(14% + 16px);background:#fff;color:var(--ink);padding:12px 16px;font-size:12px;font-weight:800;line-height:1.3;max-width:200px}
-    .collage .tag b{display:block;font-size:28px;letter-spacing:-.06em;line-height:1}
+    .collage .c-main{right:0;top:0;width:72%;height:88%}
+    .collage .c-sub{left:0;bottom:0;width:46%;height:48%;border:8px solid var(--ink)}
 
-    /* ЦИФРЫ СЕТИ */
-    .stats{background:var(--paper2)}
-    .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
-    .stat{padding:28px 20px 30px;border-right:1px solid var(--line)}
-    .stat:first-child{padding-left:0}.stat:last-child{border-right:0}
-    .stat b{display:block;font-size:clamp(36px,4.4vw,58px);letter-spacing:-.08em;line-height:1}
-    .stat span{display:block;margin-top:8px;font-size:13px;font-weight:700;color:var(--mute)}
+    /* Продукт */
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:48px}
+    .step{margin:0}
+    .step div{aspect-ratio:4/5;overflow:hidden;background:var(--paper2)}
+    .step img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+    .step:hover img{transform:scale(1.03)}
+    .step figcaption{display:flex;gap:12px;align-items:baseline;padding-top:14px;font-size:17px;font-weight:800;letter-spacing:-.03em}
+    .step figcaption small{font-size:11px;color:var(--mute);letter-spacing:.08em}
 
-    /* ПРОДУКТ */
-    .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end;margin-bottom:48px}
-    .steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-    .step-card{position:relative;margin:0;background:var(--ink);color:#fff;overflow:hidden;aspect-ratio:3/4}
-    .step-card img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
-    .step-card:hover img{transform:scale(1.03)}
-    .step-card:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#000000d9)}
-    .step-card figcaption{position:absolute;left:22px;right:22px;bottom:20px;z-index:1}
-    .step-card small{display:block;font-size:11px;font-weight:800;letter-spacing:.14em;color:#d4d6d8}
-    .step-card strong{display:block;font-size:clamp(20px,2vw,26px);letter-spacing:-.045em;line-height:1.1;margin:8px 0 6px}
-    .step-card span{display:block;font-size:13px;color:#c9cbcd;line-height:1.5}
-    .pluses{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px}
-    .plus{border-top:2px solid var(--ink);padding-top:18px}
-    .plus b{display:block;font-size:20px;letter-spacing:-.04em;line-height:1.2;margin-bottom:8px}
-    .plus p{margin:0;font-size:14px;color:var(--mute);line-height:1.6}
-    .also{display:flex;flex-wrap:wrap;gap:8px;margin-top:32px;align-items:center}
-    .also span{font-size:12px;font-weight:800;color:var(--mute);margin-right:6px}
-    .also i{font-style:normal;border:1px solid var(--line);padding:8px 12px;font-size:13px;font-weight:700}
+    /* Цифры */
+    .numbers{background:#fff}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+    .photo{margin:0;aspect-ratio:4/5;overflow:hidden;background:var(--paper2)}
+    .photo img{width:100%;height:100%;object-fit:cover}
+    .rows{margin-top:32px;border-top:1px solid var(--line)}
+    .rows div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:15px 0;border-bottom:1px solid var(--line)}
+    .rows span{color:var(--mute);font-size:15px}
+    .rows b{font-size:clamp(19px,1.9vw,24px);letter-spacing:-.04em;text-align:right;white-space:nowrap}
+    .note{font-size:12px;color:var(--mute);margin:16px 0 0;line-height:1.5}
 
-    /* ОСТРОВОК */
-    .kiosk .wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
-    .kiosk-photo{margin:0;aspect-ratio:4/3;overflow:hidden;background:var(--ink3)}
-    .kiosk-photo img{width:100%;height:100%;object-fit:cover}
-    .facts{margin:32px 0 0;padding:0;list-style:none;border-top:1px solid var(--line-d)}
-    .facts li{display:flex;justify-content:space-between;gap:20px;padding:16px 0;border-bottom:1px solid var(--line-d);font-size:15px;color:var(--mute-d)}
-    .facts li b{color:#fff;text-align:right}
+    /* Что получаете */
+    .gets{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:0 40px;border-top:1px solid var(--line)}
+    .gets li{display:flex;gap:14px;align-items:baseline;padding:20px 0;border-bottom:1px solid var(--line);font-size:17px;font-weight:700;letter-spacing:-.02em;line-height:1.35}
+    .gets small{font-size:11px;color:var(--mute);font-weight:800}
 
-    /* ДЕНЬГИ */
-    .money{background:var(--ink2)}
-    .money .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:start}
-    .money .lead{margin-top:22px}
-    .money .btn{margin-top:30px}
-    .money-note{font-size:12px;color:#8a8d90;line-height:1.6;margin:18px 0 0;max-width:420px}
-    .price{background:var(--ink3);border:1px solid var(--line-d);padding:clamp(24px,3vw,40px)}
-    .price small{font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--mute-d)}
-    .price .big{font-size:clamp(56px,7vw,100px);font-weight:800;letter-spacing:-.085em;line-height:1;margin:14px 0 6px}
-    .price .big span{font-size:.4em;letter-spacing:-.02em}
-    .price .under{font-size:14px;color:var(--mute-d);margin:0 0 22px}
-    .rows{border-top:1px solid var(--line-d)}
-    .rows div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-bottom:1px solid var(--line-d)}
-    .rows span{font-size:15px;color:var(--mute-d)}
-    .rows b{font-size:clamp(20px,2.2vw,28px);letter-spacing:-.05em;text-align:right;white-space:nowrap}
-    .rows b small{font-size:.6em;letter-spacing:0;color:var(--mute-d);font-weight:700}
-
-    /* ЧТО ВЫ ПОЛУЧАЕТЕ */
-    .gets{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
-    .get{padding:28px 26px 30px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:210px;display:flex;flex-direction:column}
-    .get i{font-style:normal;font-size:11px;font-weight:800;color:var(--mute);letter-spacing:.1em}
-    .get b{display:block;margin:auto 0 10px;padding-top:28px;font-size:22px;letter-spacing:-.045em;line-height:1.12}
-    .get p{margin:0;font-size:14px;color:var(--mute);line-height:1.55}
-    .get.dk{background:var(--ink);color:#fff}.get.dk p,.get.dk i{color:var(--mute-d)}
-
-    /* ЗАПУСК */
-    .launch{background:var(--paper2)}
-    .timeline{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #b9bbb8;margin-top:48px}
-    .tl{padding:22px 18px 24px 0;border-right:1px solid #c9cbc7}
-    .tl:not(:first-child){padding-left:18px}.tl:last-child{border-right:0}
-    .tl i{font-style:normal;display:inline-block;font-size:12px;font-weight:800;border:1px solid #b2b4b1;padding:5px 9px}
-    .tl b{display:block;font-size:19px;letter-spacing:-.04em;line-height:1.15;margin:26px 0 8px}
-    .tl p{margin:0;font-size:13px;color:var(--mute);line-height:1.5}
-    .tl.last i{background:var(--ink);color:#fff;border-color:var(--ink)}
-    .bar30{display:flex;align-items:center;gap:28px;background:var(--ink);color:#fff;padding:22px 28px;margin-top:28px}
-    .bar30 b{font-size:clamp(40px,5vw,64px);letter-spacing:-.08em;line-height:1;white-space:nowrap}
-    .bar30 span{color:var(--mute-d);font-size:15px}
-
-    /* КОМУ ПОДХОДИТ */
-    .fit-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;margin-top:44px}
-    .fit{padding:clamp(24px,3vw,36px)}
-    .fit h3{display:flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:10px}
-    .fit h3 span{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:15px;flex:none}
-    .fit ul{margin:0;padding:0;list-style:none}
-    .fit li{padding:15px 0;border-bottom:1px solid var(--line);font-size:17px;font-weight:700;letter-spacing:-.02em;line-height:1.35}
-    .fit li:last-child{border-bottom:0}
-    .fit.yes{background:#fff}.fit.yes h3 span{background:var(--ink);color:#fff}
-    .fit.no{border:1px solid var(--line)}.fit.no h3 span{border:1px solid var(--mute);color:var(--mute)}
-    .fit.no li{color:var(--mute);font-weight:500}
-
-    /* ПАРТНЁРСТВО */
-    .partner .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px;align-items:center}
-    .partner-photo{margin:0;aspect-ratio:4/5;overflow:hidden;background:var(--ink3)}
-    .partner-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
-    .partner h2{font-size:clamp(36px,4.6vw,62px)}.partner .lead{margin-top:22px}
-    .qs{margin:28px 0 0;padding:0;list-style:none;counter-reset:q;border-top:1px solid var(--line-d)}
-    .qs li{counter-increment:q;display:flex;gap:18px;align-items:baseline;padding:13px 0;border-bottom:1px solid var(--line-d);font-size:16px;font-weight:700}
-    .qs li:before{content:counter(q);font-size:13px;color:var(--mute-d);width:16px}
-    .partner .btn{margin-top:30px}
-    .cta-note{font-size:12px;color:var(--mute-d);margin:12px 0 0}
-
-    /* ВОПРОСЫ */
-    .faq .wrap{display:grid;grid-template-columns:.75fr 1.25fr;gap:64px;align-items:start}
-    .faq-list{border-top:1px solid var(--line)}
-    .faq details{border-bottom:1px solid var(--line)}
+    /* Вопросы */
+    .faq{background:var(--paper2)}
+    .faq .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:64px;align-items:start}
+    .faq-list{border-top:1px solid #cfcfca}
+    .faq details{border-bottom:1px solid #cfcfca}
     .faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;padding:20px 0;font-size:18px;font-weight:800;letter-spacing:-.03em;line-height:1.3}
     .faq summary::-webkit-details-marker{display:none}
     .faq summary:after{content:"+";font-size:26px;font-weight:300;line-height:.9;transition:transform .2s}
     .faq details[open] summary:after{transform:rotate(45deg)}
     .faq details p{margin:-6px 40px 22px 0;color:#5d6063;font-size:15px;line-height:1.7}
 
-    /* ФИНАЛ И ПОДВАЛ */
-    .final{text-align:center;position:relative;overflow:hidden}
-    .final h2{font-size:clamp(46px,8vw,112px)}
-    .final .lead{margin:22px auto 0}
-    .final .btn{margin-top:32px;min-width:min(100%,320px)}
-    .foot{background:var(--ink);color:#9a9da0;border-top:1px solid var(--line-d);font-size:13px}
-    .foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px 40px;padding:30px 0 36px}
-    .foot a{color:#fff}
-    .foot .legal{flex-basis:100%;font-size:11px;line-height:1.6;border-top:1px solid var(--line-d);padding-top:18px}
+    /* Финал */
+    .final .two{grid-template-columns:.8fr 1.2fr}
+    .final .photo img{object-position:center 30%}
+    .final .btn{margin-top:32px}
+    .final .note{color:var(--mute-d)}
 
-    /* НИЖНЯЯ КНОПКА НА ТЕЛЕФОНЕ */
+    .foot{background:var(--ink);color:#8f9295;border-top:1px solid var(--line-d);font-size:13px}
+    .foot .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 40px;padding:28px 0 32px}
+    .foot a{color:#fff}
+    .foot .legal{flex-basis:100%;font-size:11px;line-height:1.6}
+
     .dock{display:none}
 
-    /* АНКЕТА */
-    dialog.quiz{border:0;padding:0;margin:auto;width:min(560px,100%);max-width:100%;max-height:min(92vh,820px);background:var(--paper);color:var(--ink);box-shadow:0 30px 100px #000a;overscroll-behavior:contain}
+    /* Анкета */
+    dialog.quiz{border:0;padding:0;margin:auto;width:min(540px,100%);max-width:100%;max-height:min(92vh,800px);background:var(--paper);color:var(--ink);box-shadow:0 30px 100px #000a;overscroll-behavior:contain}
     dialog.quiz::backdrop{background:#0b0b0ccc;backdrop-filter:blur(4px)}
-    .q-in{display:flex;flex-direction:column;max-height:min(92vh,820px)}
+    .q-in{display:flex;flex-direction:column;max-height:min(92vh,800px)}
     .q-top{display:flex;align-items:center;gap:14px;padding:18px 22px 0}
-    .q-top .q-count{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+    .q-count{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
     .q-close{margin-left:auto;width:40px;height:40px;border:1px solid var(--line);background:#fff;font-size:22px;line-height:1;cursor:pointer;display:grid;place-items:center}
     .q-bar{height:3px;background:var(--line);margin:14px 22px 0}
     .q-bar i{display:block;height:100%;width:20%;background:var(--ink);transition:width .3s}
-    .q-body{overflow:auto;padding:24px 22px 8px;flex:1}
-    .q-step[hidden]{display:none}
-    .q-step h3{font-size:clamp(26px,5vw,34px);letter-spacing:-.055em;line-height:1.05;margin:0 0 8px}
-    .q-step .hint{font-size:14px;color:var(--mute);margin:0 0 18px;line-height:1.5}
-    .q-label{display:block;font-size:13px;font-weight:800;margin:20px 0 9px}
-    .hint+.q-label{margin-top:4px}
+    .q-body{overflow:auto;padding:26px 22px 8px;flex:1}
+    .q-step h3{font-size:clamp(26px,5vw,32px);letter-spacing:-.055em;line-height:1.05;margin:0 0 20px}
+    .q-step .hint{font-size:14px;color:var(--mute);margin:-12px 0 20px;line-height:1.5}
+    .q-label{display:block;font-size:13px;font-weight:800;margin:22px 0 9px}
+    h3+.q-label,.hint+.q-label{margin-top:0}
     .q-input{width:100%;height:54px;padding:0 15px;border:1px solid #c6c6c1;background:#fff;font-size:17px;border-radius:0;-webkit-appearance:none}
     textarea.q-input{height:84px;padding:12px 15px;resize:vertical;font-size:16px}
     .q-input:focus{outline:2px solid var(--ink);outline-offset:-1px}
@@ -230,64 +146,44 @@
     .trap{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
     .q-foot{display:flex;gap:8px;padding:14px 22px calc(18px + env(safe-area-inset-bottom));border-top:1px solid var(--line);background:var(--paper)}
     .q-foot .btn{flex:1;min-height:54px}
-    .q-foot .q-back{flex:0 0 auto;background:transparent;border-color:#c6c6c1;color:var(--ink);padding:16px 18px}
-    .q-done{text-align:center;padding:40px 8px 24px}
+    .q-foot .q-back{flex:0 0 auto;background:transparent;border:1px solid #c6c6c1;color:var(--ink);padding:16px 18px}
+    .q-done{text-align:center;padding:48px 8px 24px}
     .q-done .ok{width:64px;height:64px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:30px;margin:0 auto 22px}
-    .q-done h3{font-size:clamp(28px,6vw,38px)}
-    .q-done p{font-size:17px;color:#45484b;max-width:380px;margin:12px auto 0;line-height:1.55}
+    .q-done h3{font-size:clamp(28px,6vw,36px);margin:0}
+    .q-done p{font-size:17px;color:#45484b;max-width:360px;margin:12px auto 0;line-height:1.55}
     .q-fallback{display:none;margin-top:14px;font-size:14px;line-height:1.5}
     .q-fallback.on{display:block}
     .q-fallback a{text-decoration:underline;font-weight:700}
 
-    /* ПОЯВЛЕНИЕ ПРИ ПРОКРУТКЕ */
-    .rv{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+    .rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
     .rv.in{opacity:1;transform:none}
 
-    @media(max-width:1080px){
+    @media(max-width:1000px){
       .nav{display:none}.head .btn{margin-left:auto}
-      .hero .wrap{grid-template-columns:1fr 1fr;gap:32px}
-      .gets{grid-template-columns:repeat(2,1fr)}
-      .timeline{grid-template-columns:repeat(3,1fr)}
-      .tl:nth-child(3){border-right:0}.tl:nth-child(4){padding-left:0}
-      .tl:nth-child(n+4){border-top:1px solid #c9cbc7}
+      .hero .wrap{gap:32px}
+      .gets{grid-template-columns:1fr 1fr}
     }
     @media(max-width:780px){
       :root{--head:60px}
       .logo img{width:116px}
       .head .btn{padding:9px 13px;min-height:40px}
-      .hero .wrap{min-height:calc(100svh - var(--head));display:flex;flex-direction:column;justify-content:center;padding:28px 0 32px}
-      .hero h1{font-size:clamp(38px,min(12.1vw,8.4svh),80px)}
-      .hero-cta .btn{flex:1 1 100%}
-      .hero-cta .btn-line{display:none}
-      .hero-facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:space-between}
-      .hero-facts div{padding:14px 10px 0 0;margin-right:0}
-      .hero-facts div+div{padding-left:10px}
-      .hero-facts b{font-size:clamp(17px,5.2vw,24px)}
-      .hero-facts span{font-size:11px;line-height:1.3;display:block;margin-top:3px}
+      .hero .wrap{min-height:calc(100svh - var(--head));display:flex;flex-direction:column;justify-content:center;padding:28px 0 36px}
+      .hero h1{font-size:clamp(38px,min(12.1vw,8.6svh),80px)}
+      .hero .btn{width:100%}
+      .facts{justify-content:space-between;gap:12px}
+      .facts b{font-size:clamp(17px,5.2vw,24px)}
+      .facts span{font-size:11px}
       .collage{display:none}
-      .stats .wrap{grid-template-columns:1fr 1fr}
-      .stat{padding:20px 14px;border-bottom:1px solid var(--line)}
-      .stat:nth-child(odd){padding-left:0}.stat:nth-child(even){border-right:0}.stat:nth-child(n+3){border-bottom:0}
-      .split{grid-template-columns:1fr;gap:18px;margin-bottom:28px}
-      .steps3{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:0 -20px;padding:0 20px 6px;scrollbar-width:none}
-      .steps3::-webkit-scrollbar{display:none}
-      .step-card{flex:0 0 78%;scroll-snap-align:start}
-      .pluses{grid-template-columns:1fr;gap:20px;margin-top:32px}
-      .kiosk .wrap,.money .wrap,.partner .wrap,.faq .wrap{grid-template-columns:1fr;gap:32px}
-      .gets{grid-template-columns:1fr 1fr}
-      .get{min-height:0;padding:18px 16px 20px}
-      .get b{font-size:18px;padding-top:18px}
-      .get p{font-size:13px}
-      .timeline{grid-template-columns:1fr;margin-top:32px}
-      .tl,.tl:not(:first-child),.tl:nth-child(4){display:grid;grid-template-columns:96px 1fr;gap:4px 14px;padding:16px 0;border-right:0;border-top:0;border-bottom:1px solid #c9cbc7}
-      .tl i{grid-row:span 2;align-self:start;justify-self:start}
-      .tl b{margin:0;font-size:18px}
-      .bar30{gap:18px;padding:18px 20px}
-      .fit-grid{grid-template-columns:1fr}
-      .fit li{font-size:16px}
-      .partner-photo{aspect-ratio:4/3}
+      .steps{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:10px;margin:32px -20px 0;padding:0 20px 4px;scrollbar-width:none}
+      .steps::-webkit-scrollbar{display:none}
+      .step{flex:0 0 76%;scroll-snap-align:start}
+      .two,.final .two,.faq .wrap{grid-template-columns:1fr;gap:36px}
+      .photo{aspect-ratio:4/3}
+      .gets{grid-template-columns:1fr;margin-top:28px}
+      .gets li{padding:16px 0;font-size:16px}
       .faq summary{font-size:16px}
       .faq details p{margin-right:0}
+      .final .btn{width:100%}
       .dock{display:block;position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#111213f0;border-top:1px solid var(--line-d);transform:translateY(110%);transition:transform .25s}
       .dock.on{transform:none}
       .dock .btn{width:100%;min-height:52px}
@@ -297,11 +193,7 @@
       .q-in{height:100%;max-height:none}
       .q-top{padding-top:calc(14px + env(safe-area-inset-top))}
     }
-    @media(max-width:370px){
-      .hero-facts b{font-size:20px}
-      .gets{grid-template-columns:1fr}
-      .opts.row3{grid-template-columns:1fr}
-    }
+    @media(max-width:370px){.opts.row3{grid-template-columns:1fr}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
   </style>
 </head>
@@ -309,7 +201,7 @@
   <header class="head">
     <div class="wrap">
       <a class="logo" href="#top" aria-label="Бронь Сервис — наверх"><img src="bron-logo-white.png" alt="Бронь Сервис" width="132" height="50"></a>
-      <nav class="nav" aria-label="Разделы"><a href="#product">Продукт</a><a href="#money">Цифры</a><a href="#launch">Запуск</a><a href="#faq">Вопросы</a></nav>
+      <nav class="nav" aria-label="Разделы"><a href="#product">Продукт</a><a href="#money">Цифры</a><a href="#faq">Вопросы</a></nav>
       <button class="btn btn-light" type="button" data-quiz>Купить франшизу <span class="arr">↗</span></button>
     </div>
   </header>
@@ -320,13 +212,10 @@
         <div>
           <div class="kicker">Франшиза · 38 точек в 3 странах</div>
           <h1 id="h1">Любой телефон.<br>Любой дизайн.<br><em>Ваш бизнес.</em></h1>
-          <p class="lead">Островок «Бронь Сервис» в торговом центре: универсальная защитная плёнка с дизайном под любую модель телефона. Клиент выбирает рисунок — через 25 минут уходит с новым телефоном.</p>
-          <div class="hero-cta">
-            <button class="btn btn-light" type="button" data-quiz>Купить франшизу <span class="arr">↗</span></button>
-            <a class="btn btn-line" href="#money">Сколько это стоит</a>
-          </div>
-          <div class="hero-facts">
-            <div><b>≈1 млн ₽</b><span>вложения под ключ</span></div>
+          <p class="lead">Островок в торговом центре: плёнка с дизайном на любой телефон за 25 минут.</p>
+          <button class="btn btn-light" type="button" data-quiz>Купить франшизу <span class="arr">↗</span></button>
+          <div class="facts">
+            <div><b>≈1 млн ₽</b><span>вложения</span></div>
             <div><b>7–10 мес</b><span>окупаемость</span></div>
             <div><b>30 дней</b><span>до открытия</span></div>
           </div>
@@ -334,171 +223,83 @@
         <div class="collage" aria-hidden="true">
           <img class="c-main" src="film-design.webp" alt="" width="1000" height="1500" fetchpriority="high">
           <img class="c-sub" src="film-roses.webp" alt="" width="900" height="1350">
-          <div class="tag"><b>≈25 мин</b>от выбора дизайна до готового телефона</div>
         </div>
       </div>
     </section>
 
-    <section class="stats" aria-label="Сеть в цифрах">
-      <div class="wrap">
-        <div class="stat"><b>2019</b><span>открыли первую точку</span></div>
-        <div class="stat"><b>38</b><span>точек работают сейчас</span></div>
-        <div class="stat"><b>3</b><span>страны: Россия, Казахстан, Турция</span></div>
-        <div class="stat"><b>2 000 ₽</b><span>средний чек</span></div>
-      </div>
-    </section>
-
-    <section class="section" id="product">
-      <div class="wrap">
-        <div class="split rv">
-          <div><div class="kicker">01 / Продукт</div><h2>Одна плёнка —<br><em>тысячи моделей.</em></h2></div>
-          <p class="lead">Мы не держим склад чехлов под каждый телефон. Плёнка универсальная: плоттер вырезает её точно под модель клиента из нашей базы лекал. iPhone, Samsung, Xiaomi, новый или пятилетний — материал один и тот же.</p>
-        </div>
-        <div class="steps3">
-          <figure class="step-card rv"><img src="film-wall.webp" alt="Витрина «Бронь Сервис» с образцами дизайнов плёнки" width="900" height="1350" loading="lazy"><figcaption><small>01</small><strong>Клиент выбирает дизайн</strong><span>На витрине — принты, текстуры и однотонные плёнки.</span></figcaption></figure>
-          <figure class="step-card rv"><img src="film-roses.webp" alt="Вырезанная по лекалу плёнка с розами на корпусе iPhone" width="900" height="1350" loading="lazy" style="object-position:center 60%"><figcaption><small>02</small><strong>Плоттер режет под модель</strong><span>Лекало из базы — точно по камерам, кнопкам и граням.</span></figcaption></figure>
-          <figure class="step-card rv"><img src="film-apply.webp" alt="Мастер приглаживает текстурную плёнку на корпусе Samsung" width="1500" height="1000" loading="lazy" style="object-position:40% center"><figcaption><small>03</small><strong>Мастер клеит за 25 минут</strong><span>Гарантия на плёнку — 45 дней.</span></figcaption></figure>
-        </div>
-        <div class="pluses">
-          <div class="plus rv"><b>Нет склада под модели</b><p>Один материал на все телефоны. Новая модель вышла — добавляем лекало в базу, а не закупаем партию.</p></div>
-          <div class="plus rv"><b>Покупка за минуту</b><p>Средний чек ≈2 000 ₽. Клиент решает у витрины, пока гуляет по торговому центру.</p></div>
-          <div class="plus rv"><b>Высокая маржа</b><p>Материал недорогой — основную ценность создаёт работа мастера и дизайн.</p></div>
-        </div>
-        <div class="also rv"><span>Ещё на точке:</span><i>Корпус 360°</i><i>Экран</i><i>Камера</i><i>Ноутбуки и планшеты</i></div>
-      </div>
-    </section>
-
-    <section class="section dark kiosk" aria-labelledby="kiosk-h">
-      <div class="wrap">
-        <figure class="kiosk-photo rv"><img src="kiosk-mall.webp" alt="Островок «Бронь Сервис» в торговом центре" width="1800" height="1350" loading="lazy"></figure>
-        <div class="rv">
-          <div class="kicker">02 / Формат</div>
-          <h2 id="kiosk-h">Островок<br>в торговом<br><em>центре.</em></h2>
-          <ul class="facts">
-            <li>Площадь <b>4–6 м²</b></li>
-            <li>Склад и производство <b>не нужны</b></li>
-            <li>Персонал <b>мастер на смену</b></li>
-            <li>Место в ТЦ <b>подбираем вместе</b></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark money" id="money" aria-labelledby="money-h">
+    <section class="section" id="product" aria-labelledby="product-h">
       <div class="wrap">
         <div class="rv">
-          <div class="kicker">03 / Цифры</div>
-          <h2 id="money-h">Цифры —<br><em>до звонка.</em></h2>
-          <p class="lead">Ориентиры по работающим точкам сети. Расчёт под ваш город, аренду и торговый центр сделаем на созвоне.</p>
-          <button class="btn btn-light" type="button" data-quiz>Получить расчёт <span class="arr">↗</span></button>
-          <p class="money-note">Не является публичной офертой. Выручка зависит от места, трафика ТЦ и работы точки.</p>
+          <div class="kicker">Продукт</div>
+          <h2 id="product-h">Одна плёнка —<br><em>тысячи моделей.</em></h2>
+          <p class="lead">Плоттер вырезает её под любой телефон из нашей базы лекал. Склад чехлов не нужен.</p>
         </div>
-        <div class="price rv">
-          <small>Вложения в открытие под ключ</small>
-          <div class="big">≈1 млн <span>₽</span></div>
-          <p class="under">Включая паушальный взнос, островок, плоттер, стартовые плёнки и обучение.</p>
+        <div class="steps">
+          <figure class="step rv"><div><img src="film-wall.webp" alt="Витрина с образцами дизайнов плёнки" width="900" height="1350" loading="lazy"></div><figcaption><small>01</small>Клиент выбирает дизайн</figcaption></figure>
+          <figure class="step rv"><div><img src="film-roses.webp" alt="Плёнка с розами, вырезанная по лекалу под iPhone" width="900" height="1350" loading="lazy" style="object-position:center 60%"></div><figcaption><small>02</small>Плоттер режет под модель</figcaption></figure>
+          <figure class="step rv"><div><img src="film-apply.webp" alt="Мастер клеит текстурную плёнку на Samsung" width="1500" height="1000" loading="lazy" style="object-position:40% center"></div><figcaption><small>03</small>Мастер клеит за 25 минут</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section numbers" id="money" aria-labelledby="money-h">
+      <div class="wrap two">
+        <figure class="photo rv"><img src="kiosk-mall.webp" alt="Островок «Бронь Сервис» в торговом центре" width="1800" height="1350" loading="lazy" style="object-position:38% center"></figure>
+        <div class="rv">
+          <div class="kicker">Цифры</div>
+          <h2 id="money-h">Всё понятно<br><em>до звонка.</em></h2>
           <div class="rows">
-            <div><span>Паушальный взнос</span><b>450 000 <small>₽</small></b></div>
-            <div><span>Выручка точки в месяц</span><b>200 тыс – 1 млн <small>₽</small></b></div>
-            <div><span>Окупаемость</span><b>7–10 <small>мес</small></b></div>
-            <div><span>Роялти</span><b>7 <small>% от выручки</small></b></div>
-            <div><span>Средний чек</span><b>≈2 000 <small>₽</small></b></div>
+            <div><span>Вложения под ключ</span><b>≈1 млн ₽</b></div>
+            <div><span>Из них паушальный взнос</span><b>450 000 ₽</b></div>
+            <div><span>Выручка точки в месяц</span><b>200 тыс – 1 млн ₽</b></div>
+            <div><span>Окупаемость</span><b>7–10 мес</b></div>
+            <div><span>Роялти</span><b>7 % от выручки</b></div>
+            <div><span>Островок в ТЦ</span><b>4–6 м²</b></div>
           </div>
+          <p class="note">Ориентиры по работающим точкам сети. Не является публичной офертой.</p>
         </div>
       </div>
     </section>
 
     <section class="section" aria-labelledby="gets-h">
       <div class="wrap">
-        <div class="split rv">
-          <div><div class="kicker">04 / Что вы получаете</div><h2 id="gets-h">Не нужно<br><em>начинать с нуля.</em></h2></div>
-          <p class="lead">Семь лет мы открывали точки, меняли витрины, искали плёнки и учили мастеров. Вы получаете то, что уже сработало.</p>
-        </div>
-        <div class="gets">
-          <div class="get rv"><i>01</i><b>Помощь в открытии</b><p>Выбор ТЦ и места, проект островка, подготовка к старту.</p></div>
-          <div class="get rv"><i>02</i><b>База лекал</b><p>Шаблоны под тысячи моделей телефонов и гаджетов.</p></div>
-          <div class="get rv"><i>03</i><b>Обучение за 5–7 дней</b><p>Оклейка, работа с плоттером, продажи у витрины.</p></div>
-          <div class="get rv"><i>04</i><b>Плёнки по ценам сети</b><p>Поставки материалов и инструментов без поиска поставщиков.</p></div>
-          <div class="get rv"><i>05</i><b>Бренд и маркетинг</b><p>Фирменный стиль, вывеска, готовые рекламные материалы.</p></div>
-          <div class="get dk rv"><i>06</i><b>Кабинет и поддержка</b><p>Онлайн-кабинет: план, выручка, база знаний. И команда на связи после старта.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section launch" id="launch" aria-labelledby="launch-h">
-      <div class="wrap">
-        <div class="rv"><div class="kicker">05 / Запуск</div><h2 id="launch-h">От звонка —<br><em>к открытию.</em></h2></div>
-        <div class="timeline">
-          <div class="tl rv"><i>1 неделя</i><b>Знакомство и расчёт</b><p>Созвон, финмодель под ваш город.</p></div>
-          <div class="tl rv"><i>1 неделя</i><b>Договор и план</b><p>Условия и этапы открытия.</p></div>
-          <div class="tl rv"><i>2–3 недели</i><b>Место и оснащение</b><p>ТЦ, островок, плоттер, витрина.</p></div>
-          <div class="tl rv"><i>5–7 дней</i><b>Обучение</b><p>Практика оклейки и продаж.</p></div>
-          <div class="tl last rv"><i>Старт</i><b>Открытие</b><p>Первые клиенты — и сопровождение дальше.</p></div>
-        </div>
-        <div class="bar30 rv"><b>30 дней</b><span>от подписания договора до первого клиента</span></div>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="fit-h">
-      <div class="wrap">
-        <div class="rv"><div class="kicker">06 / Честно</div><h2 id="fit-h">Франшиза подходит<br><em>не всем.</em></h2></div>
-        <div class="fit-grid">
-          <div class="fit yes rv">
-            <h3><span>✓</span>Подходит, если вы</h3>
-            <ul>
-              <li>готовы вложить около 1 млн ₽</li>
-              <li>хотите бизнес с понятным продуктом и проверенной системой</li>
-              <li>будете на точке сами или наймёте управляющего и будете контролировать</li>
-              <li>в вашем городе есть торговый центр с хорошим потоком</li>
-            </ul>
-          </div>
-          <div class="fit no rv">
-            <h3><span>✕</span>Не подходит, если вы</h3>
-            <ul>
-              <li>ищете пассивный доход без участия</li>
-              <li>хотите менять продукт и стандарты под себя</li>
-              <li>рассчитываете на быстрые деньги без вложений</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section dark partner" id="apply" aria-labelledby="partner-h">
-      <div class="wrap">
-        <figure class="partner-photo rv"><img src="franchise-handshake.webp" alt="Директор «Бронь Сервис» пожимает руку новому партнёру" width="900" height="1350" loading="lazy"></figure>
         <div class="rv">
-          <div class="kicker">07 / Следующий шаг</div>
-          <h2 id="partner-h">С каждым партнёром<br><em>знакомится директор.</em></h2>
-          <p class="lead">Ответьте на несколько вопросов — так мы сразу поймём, подойдёт ли формат вашему городу, и придём на созвон с расчётом.</p>
-          <ul class="qs"><li>Где и когда хотите открыться</li><li>Какой у вас бюджет</li><li>Кто будет работать на точке</li><li>Как с вами связаться</li></ul>
-          <button class="btn btn-light" type="button" data-quiz>Купить франшизу <span class="arr">↗</span></button>
-          <p class="cta-note">2 минуты · без регистрации · ответит директор компании</p>
+          <div class="kicker">Что вы получаете</div>
+          <h2 id="gets-h">Не нужно<br><em>начинать с нуля.</em></h2>
         </div>
+        <ul class="gets rv">
+          <li><small>01</small>Помощь с местом и открытием</li>
+          <li><small>02</small>База лекал на тысячи моделей</li>
+          <li><small>03</small>Обучение за 5–7 дней</li>
+          <li><small>04</small>Плёнки по ценам сети</li>
+          <li><small>05</small>Бренд и реклама</li>
+          <li><small>06</small>Онлайн-кабинет и поддержка</li>
+        </ul>
       </div>
     </section>
 
     <section class="section faq" id="faq" aria-labelledby="faq-h">
       <div class="wrap">
-        <div class="rv"><div class="kicker">08 / Вопросы</div><h2 id="faq-h">Коротко<br><em>о главном.</em></h2></div>
+        <div class="rv"><div class="kicker">Вопросы</div><h2 id="faq-h">Коротко<br><em>о главном.</em></h2></div>
         <div class="faq-list rv">
-          <details><summary>Сколько всего нужно денег?</summary><p>Около 1 млн ₽ под ключ. В эту сумму входят паушальный взнос 450 000 ₽, островок, плоттер, витрина, стартовый запас плёнок и обучение. Точная сумма зависит от города и аренды — посчитаем на созвоне.</p></details>
-          <details><summary>Сколько зарабатывает точка?</summary><p>Выручка работающих точек сети — от 200 тыс до 1 млн ₽ в месяц и больше, окупаемость 7–10 месяцев. Цифры зависят от торгового центра, места в нём и работы мастера. На созвоне покажем финмодель под ваш город.</p></details>
-          <details><summary>Какие регулярные платежи?</summary><p>Роялти — 7 % от выручки. Оно считается автоматически в онлайн-кабинете франчайзи. Все условия закрепляем в договоре до старта.</p></details>
-          <details><summary>Почему универсальная плёнка, а не чехлы?</summary><p>Чехлы нужно закупать под каждую модель — это склад, остатки и устаревший товар. Плёнка одна на все телефоны: плоттер вырезает её по лекалу из нашей базы. Новая модель телефона — это новое лекало, а не новая закупка.</p></details>
-          <details><summary>Нужен ли опыт в бизнесе?</summary><p>Нет. Обучаем вас или вашего мастера за 5–7 дней: оклейка, плоттер, продажи у витрины. После открытия команда остаётся на связи, а в кабинете франчайзи — база знаний с инструкциями.</p></details>
-          <details><summary>Можно ли открыть в моём городе?</summary><p>Нужен торговый центр с хорошим потоком покупателей. Укажите город в анкете — проверим, свободна ли территория, и поможем выбрать ТЦ и место.</p></details>
-          <details><summary>Сколько времени занимает открытие?</summary><p>30 дней от подписания договора до первого клиента: место и оснащение — 2–3 недели, обучение — 5–7 дней.</p></details>
+          <details><summary>Нужен ли опыт в бизнесе?</summary><p>Нет. За 5–7 дней обучаем вас или вашего мастера: оклейка, плоттер, продажи. После открытия остаёмся на связи.</p></details>
+          <details><summary>Почему плёнка, а не чехлы?</summary><p>Чехлы нужно закупать под каждую модель — это склад и остатки. Плёнка одна на все телефоны: плоттер вырезает её по лекалу.</p></details>
+          <details><summary>Можно ли открыть в моём городе?</summary><p>Нужен торговый центр с хорошим потоком. Укажите город в анкете — проверим, свободна ли территория, и поможем с местом.</p></details>
+          <details><summary>Кому франшиза не подойдёт?</summary><p>Тем, у кого нет около 1 млн ₽, кто ищет пассивный доход без участия или хочет менять продукт и стандарты под себя.</p></details>
         </div>
       </div>
     </section>
 
     <section class="section dark final" aria-labelledby="final-h">
-      <div class="wrap rv">
-        <div class="kicker" style="justify-content:center">Следующая точка</div>
-        <h2 id="final-h">Может быть<br><em>вашей.</em></h2>
-        <p class="lead">Заполните короткую анкету — директор компании свяжется с вами сам.</p>
-        <button class="btn btn-light" type="button" data-quiz>Купить франшизу <span class="arr">↗</span></button>
+      <div class="wrap two">
+        <figure class="photo rv"><img src="franchise-handshake.webp" alt="Директор «Бронь Сервис» пожимает руку новому партнёру" width="900" height="1350" loading="lazy"></figure>
+        <div class="rv">
+          <div class="kicker">Следующий шаг</div>
+          <h2 id="final-h">Следующая точка —<br><em>ваша?</em></h2>
+          <p class="lead">Ответьте на 5 коротких вопросов — директор компании свяжется с вами сам.</p>
+          <button class="btn btn-light" type="button" data-quiz>Купить франшизу <span class="arr">↗</span></button>
+          <p class="note">2 минуты · без регистрации</p>
+        </div>
       </div>
     </section>
   </main>
@@ -507,7 +308,7 @@
     <div class="wrap">
       <img src="bron-logo-white.png" alt="Бронь Сервис" width="132" height="50" style="width:132px;height:50px;object-fit:contain;object-position:left">
       <div><a href="tel:+79956666614">+7 995 666-66-14</a> · <a href="https://wa.me/79956666614" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div>
-      <div class="legal">© 2026 «Бронь Сервис». Цифры сети и экономики точек — по данным компании на октябрь 2026 года, ориентировочные. Информация на сайте не является публичной офертой.</div>
+      <div class="legal">© 2026 «Бронь Сервис». Цифры — по данным компании на октябрь 2026 года, ориентировочные. Не является публичной офертой.</div>
     </div>
   </footer>
 
@@ -523,7 +324,6 @@
 
         <section class="q-step" data-step="0">
           <h3>Где хотите открыться?</h3>
-          <p class="hint">Проверим, свободна ли территория, и подберём торговые центры.</p>
           <label class="q-label" for="q-city">Город</label>
           <input class="q-input" id="q-city" name="city" autocomplete="address-level2" placeholder="Например, Краснодар" maxlength="80">
           <span class="q-label">Когда хотите открыть точку?</span>
@@ -537,18 +337,17 @@
 
         <section class="q-step" data-step="1" hidden>
           <h3>Какой у вас бюджет?</h3>
-          <p class="hint">Открытие под ключ — около 1 млн ₽, включая паушальный взнос 450 000 ₽.</p>
+          <p class="hint">Открытие под ключ — около 1 млн ₽.</p>
           <div class="opts">
             <label class="opt"><input type="radio" name="budget" value="full"><span>Есть вся сумма ≈ 1 млн ₽</span></label>
             <label class="opt"><input type="radio" name="budget" value="partial"><span>Часть своя, часть — кредит или партнёр</span></label>
             <label class="opt"><input type="radio" name="budget" value="none"><span>Пока нет такой суммы</span></label>
           </div>
-          <p class="q-warn" id="q-warn">Честно: без этой суммы открыть точку не получится. Можно оставить заявку на будущее — директор свяжется, когда вам будет удобно.</p>
+          <p class="q-warn" id="q-warn">Без этой суммы открыть точку не получится. Можно оставить заявку на будущее.</p>
         </section>
 
         <section class="q-step" data-step="2" hidden>
           <h3>Кто будет работать на точке?</h3>
-          <p class="hint">Первые месяцы владелец обычно сам на точке или рядом.</p>
           <div class="opts">
             <label class="opt"><input type="radio" name="manage" value="self"><span>Сам(а), буду на точке</span></label>
             <label class="opt"><input type="radio" name="manage" value="manager"><span>Найму управляющего</span></label>
@@ -564,7 +363,6 @@
 
         <section class="q-step" data-step="3" hidden>
           <h3>Есть место в торговом центре?</h3>
-          <p class="hint">Островку нужно 4–6 м² в проходном месте.</p>
           <div class="opts">
             <label class="opt"><input type="radio" name="place" value="has"><span>Есть место в ТЦ</span></label>
             <label class="opt"><input type="radio" name="place" value="options"><span>Есть варианты, нужно выбрать</span></label>
@@ -574,7 +372,6 @@
 
         <section class="q-step" data-step="4" hidden>
           <h3>Как с вами связаться?</h3>
-          <p class="hint">Директор позвонит или напишет сам — обычно в течение рабочего дня.</p>
           <label class="q-label" for="q-name">Имя</label>
           <input class="q-input" id="q-name" name="name" autocomplete="name" placeholder="Как к вам обращаться" maxlength="80">
           <label class="q-label" for="q-phone">Телефон</label>
@@ -585,7 +382,7 @@
             <label class="opt"><input type="radio" name="contact_via" value="telegram"><span>Telegram</span></label>
             <label class="opt"><input type="radio" name="contact_via" value="call"><span>Звонок</span></label>
           </div>
-          <label class="q-label" for="q-comment">Вопрос или комментарий <span style="font-weight:500;color:var(--mute)">— необязательно</span></label>
+          <label class="q-label" for="q-comment">Комментарий <span style="font-weight:500;color:var(--mute)">— необязательно</span></label>
           <textarea class="q-input" id="q-comment" name="comment" maxlength="1000" placeholder="Например: есть место в ТЦ «Галерея»"></textarea>
           <label class="consent"><input type="checkbox" id="q-consent" checked><span>Согласен(на) на обработку моих данных, чтобы «Бронь Сервис» связался со мной по этой заявке.</span></label>
         </section>
@@ -599,7 +396,7 @@
         <p class="q-err" id="q-err" role="alert"></p>
         <p class="q-fallback" id="q-fallback">Не получилось отправить анкету. <a id="q-wa" href="https://wa.me/79956666614" target="_blank" rel="noopener noreferrer">Отправьте ответы в WhatsApp</a> — это займёт секунду.</p>
       </div>
-      <div class="q-foot" id="q-foot">
+      <div class="q-foot">
         <button class="btn q-back" type="button" id="q-back" hidden aria-label="Назад">←</button>
         <button class="btn btn-dark" type="submit" id="q-next">Дальше <span class="arr">→</span></button>
       </div>
@@ -709,7 +506,7 @@
     [].forEach.call(document.querySelectorAll('[data-quiz]'),function(b){b.addEventListener('click',open)});
     if(location.hash==='#anketa')open();
 
-    // Нижняя кнопка на телефоне — после первого экрана
+    // Нижняя кнопка на телефоне — после первого экрана, кроме последнего блока
     var dock=document.getElementById('dock'), hero=document.querySelector('.hero'), fin=document.querySelector('.final');
     if('IntersectionObserver' in window){
       var vis={hero:true,final:false};
